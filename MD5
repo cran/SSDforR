@@ -1,4 +1,4 @@
-77259bbdc63dc748e7418162232e8ae2 *DESCRIPTION
+24aacfbb6b4d2475530006c6bfdb02d2 *DESCRIPTION
 8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -10,7 +10,7 @@ a6068b3238bccf75483a8e933eb59c1b *R/ABautopacf.R
 a3bd639f6066bc8da609fad0f647c834 *R/ABlineD.R
 242aaecacc19e2e0f88c9f92113fb46d *R/ABlines.R
 ca2af902396c774dcef6f77d3b2900f2 *R/ABma.R
-243ec7db7f320c4c1ca8ddf538e2d570 *R/ABplot.R
+1b25fb1dd86dbf769a2d8b4696d11dcd *R/ABplot.R
 42ee2fa414b8650a7706fa02b3c976a5 *R/ABplotm.R
 53be400a0d167e8f137cd1f4235c3b4e *R/ABregres.R
 3720c366674d6207a2bca8fc365d5da2 *R/ABrf2.R
@@ -31,6 +31,7 @@ aa64df4334c9f75df0382f6559fdc778 *R/Cchart.R
 d603b15b63efcee9c19975d19a5c992a *R/GABrf2.R
 71b6bce2acef499780ff289d6dde6b89 *R/GABttest.R
 3803b03ca853827ee5e76a828bb9e6f7 *R/Gindex.R
+af9bd413d3edfc72108f2d5e4a701378 *R/Gline.R
 5674fab6a0574d259eba68f40a50a452 *R/Gmedian.R
 25f564cca5263589ef82bb542dc507c3 *R/IQRbandgraph.R
 21b5dbd9a512d598f74fffc748e224e6 *R/IQRlegend.R
@@ -112,6 +113,7 @@ b1318aaa0043422e0ca137753c415963 *man/Arimadiff.Rd
 4a378aeb3bdf49b128f511931043b904 *man/GABttest.Rd
 6f2b65aab6933beb492f031841ca0eb4 *man/Getcsv.Rd
 ede120142c0e723d76c8a549bf13a86f *man/Gindex.Rd
+10cb61c1c948967166dc7969e49ecbf6 *man/Gline.Rd
 51649797f3f087874e58c1b8e9d3fca6 *man/Gmedian.Rd
 e130bc15c1d5c34fbb130f54dfdf441f *man/IQRbandgraph.Rd
 3717aac24c16befce71c550e71719849 *man/IQRlegend.Rd

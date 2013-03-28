@@ -35,6 +35,7 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("1-You can add lines between phases by using the ABlines() function.")
   writeLines("2-You can add text by using the ABtext() function.")
-  writeLines("3-You can also add a mean, median, sd line by using the ABstat() function.")
+  writeLines("3-You can add a mean, median, sd line by using the ABstat() function.")
+  writeLines("4-You can also add a goal line using the Gline() function.")
   writeLines("-------------------------------------------------------------------------------------")
 }
