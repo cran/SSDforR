@@ -107,7 +107,14 @@ function(behavior,phaseX,v1,v2){
   gbmean=Bbmean-Abmean
   gbline=Bbrline-Abrline
   gbmedian=Bbmedian-Abmedian
-  
+  writeLines("")
+  l1<-c("small effect size: <.3")
+  l2<-c("medium effect size: .31 to .5 ")
+  l3<-c("large effect size: >.51")
+  writeLines(l1)
+  writeLines(l2)
+  writeLines(l3)
+  writeLines("")
   writeLines("------------------------------------------------------g-index-------------------------------------------------------------")
   writeLines(" ")
   writeLines("-----------------------------------------------------Above Lines----------------------------------------------------------")
@@ -123,10 +130,11 @@ function(behavior,phaseX,v1,v2){
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="g-index" )
   
-  abline(h=meanA,col="green",lwd=2)
-  abline(reg=regA,col='Blue',lty="dashed",lwd=2)
+  abline(reg=regA,col='blue',lty="dotted",lwd=3)
+  abline(h=meanA,col="gray",lwd=2)
+
   abline(h=medianA,col='black',lwd=2)
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("regression line","mean ","median"), col = c("blue","green","black"), lwd = 1,ncol=3,bty ="n")
+  legend("center", c("median","mean","regression line"), col = c("black","gray","blue"), lty=c("solid","solid","dotted"),lwd = 3,ncol=3,bty ="n")
 }

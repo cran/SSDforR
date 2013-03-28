@@ -16,6 +16,8 @@ function(behavior,phaseX,v){
   endA<-tmaxA+startA-1
   A<-behavior[startA:endA]
   trimmean=mean(A,trim=.1,na.rm=T)
+  trm<-c("10% Trim Mean=",round(trimmean,3))
+  print(trm)
   l<-locator(1)
   mlin<-l$x+mlin
   segments(x0=l$x,x1=mlin,y0=trimmean,col="red",lty=2,lwd=3)

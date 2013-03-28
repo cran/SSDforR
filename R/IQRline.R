@@ -21,6 +21,8 @@ function(behavior,phaseX,v){
   p25<-q[2]
   omedianu<-p75
   omedianb<-p25
+  p2575<-c(omedianu,omedianb)
+  print(p2575)
   l<-locator(1)
   mlin<-l$x+mlin+1
   segments(x0=l$x,x1=mlin,y0=omedianu,lwd=3,col="black")

@@ -131,6 +131,6 @@ function(behavior,phaseX, v1,v2){
   abline(reg=regA,col='Blue',lty="dashed")
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("regression line"), col = c("blue"), lwd = 1,ncol=2,bty ="n") 
+  legend("center", c("regression line"),lty=c("dashed"), col = c("blue"), lwd = 1,ncol=2,bty ="n") 
   
 }
