@@ -29,7 +29,7 @@ ABautopacf(behavior, phaseX, v, lags)
 \references{
 Go to www.ssdanalysis.com for more information.
 }
-\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin,PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

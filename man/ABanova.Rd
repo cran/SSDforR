@@ -24,7 +24,7 @@ ABanova(behavior, phaseX)
 
 Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p89, p147}
 \author{Charles Auerbach,PhD &
-Wendy Zeitlin Schudrich,PhD; Yeshiva University,
+Wendy Zeitlin,PhD; Yeshiva University,
 Wurzweiler School of Social Work
 %%  ~~who you are~~
 

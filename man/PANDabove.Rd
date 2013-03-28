@@ -39,7 +39,7 @@ Parker, R.I. & Hagan-Burker, S. & Vannest, K. (2007).  Percentage of all non-ove
 %% ~put references to the literature/web site here ~
 }
 }
-\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin,PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -22,7 +22,7 @@ Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Sing
 Go to www.ssdanlysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University; Wurzweiler School of Social Work
+\author{Charles Auerbach,PhD & Wendy Zeitlin,PhD; Yeshiva University; Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

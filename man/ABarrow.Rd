@@ -17,7 +17,7 @@ ABarrow()
 Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. 
 Oxford University Press, 2014. p46-p50
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD; Yeshiva University, Wurzweiler School of Social Work
+\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -48,7 +48,7 @@ Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statisti
 {Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach, PhD and Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD and Wendy Zeitlin,PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 
