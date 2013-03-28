@@ -17,7 +17,10 @@ ABtext(textx)
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information.
+\references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p30, p46, p47, p48, p50, p51, p60, p61, p71, p73, p75
+
+Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work

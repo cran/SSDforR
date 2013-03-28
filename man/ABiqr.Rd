@@ -32,6 +32,8 @@ ABiqr(behavior, phaseX, v1, ABxlab, ABylab, ABmain)
 }
 }
 \references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p133
+
 Go to www.ssdanalysis.com for more information.
 }
 \author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich,PhD; Yeshiva University, Wurzweiler School of Social Work

@@ -27,7 +27,10 @@ SDAband(behavior, phaseX, v, bandX)
 }
 
 
-\references{Go to www.ssdnalysis.com for more information.
+\references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p131
+
+Go to www.ssdnalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work

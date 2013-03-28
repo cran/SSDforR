@@ -1,7 +1,6 @@
 RobustCDCbelow <-
 function(behavior,phaseX,v1,v2){
-  if("MASS" %in% rownames(installed.packages()) == FALSE) {install.packages("MASS")}
-  require(MASS)
+  
   nsucces=c(0,0,0,0,5,6,6,7,8,8,9,9,10,11,12,12,12,13,13,14,14,15,15,17,17,18,18,19,19,20,20,21,22,23,23,24,24,25,25,26,27,27,28,28,29,29,30,31,31,32)
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]

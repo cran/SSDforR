@@ -36,7 +36,10 @@ Rchartsd(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
 {Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
 
 }
-{Go to www.ssdanalysis.com for more information.}
+{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p76, p109, p139
+
+Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
 

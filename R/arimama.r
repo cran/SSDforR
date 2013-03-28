@@ -1,7 +1,6 @@
 Arimama <-
 function(behavior,phaseX,v,m){
-  if("TTR" %in% rownames(installed.packages()) == FALSE) {install.packages("TTR")}
-  require(TTR)
+  
 t1<-table(phaseX)
 tmax<-t1[names(t1)==v]
 start<-match(v,phaseX)

@@ -1,7 +1,6 @@
 ABrobust <-
 function(behavior,phaseX,v1,v2){
-  if("MASS" %in% rownames(installed.packages()) == FALSE) {install.packages("MASS")}
-  require(MASS)
+  
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)

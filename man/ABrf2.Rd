@@ -26,6 +26,8 @@ ABrf2(behavior, phaseX, v1)
 \references{
 {Huitema, B.F. & McKean, J.W. (1994). Two reduced-biased autocorrelation estimators:  rF1 and rF2.  Perceptual and Motor Skills, 78(1), 323-330.
 
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p18, p37-41, p65, p66, p141
+
 Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Package to Analyze Single-System Data. Research on Social Work Practice, 23(3), 346-353. doi:10.1177/104973153477213
 
 }

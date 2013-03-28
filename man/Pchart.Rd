@@ -33,6 +33,8 @@ Pchart(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
 }
 
 \references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p75, p139-140
+
 {Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
 
 }

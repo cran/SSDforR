@@ -16,7 +16,10 @@ ABlines(behavior)
 %%     ~~Describe \code{behavior} here~~
 }
 }
-\references{Go to www.ssdanlysis.com for more information.
+\references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p46, p50, p51, p60, p61, p71, p75, p76, p79, p105, p108, p129
+
+Go to www.ssdanlysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University; Wurzweiler School of Social Work

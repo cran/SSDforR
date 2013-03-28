@@ -27,6 +27,8 @@ Effectsize(behavior, phaseX, v1, v2)
 }
 
 \references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p56-57, p103, p135
+
 {Cohen, J.(1988).Statistical Power analysis for the behavioral sciences (2nd ed). Hillsdale, NJ: Lawrence Erlbaum Associates, Inc.
 
 Glass, G. V., McGaw, B., & Smith, M. L. (1981) Meta-analysis in social research. Thousand Oaks, CA: SAGE Publications, Inc.

@@ -27,6 +27,8 @@ GABrf2(behavior, phaseX, timeX, v1)
 }
 
 \references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p99, p101, p147
+
 {Huitema, B.F. & McKean, J.W. (1994). Two reduced-biased autocorrelation estimators:  rF1 and rF2.  Perceptual and Motor Skills, 78(1), 323-330.
 
 }

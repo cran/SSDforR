@@ -23,7 +23,10 @@ diffchart(behavior, phaseX, v1)
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information.
+\references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p39, p40, p65-66, p90, p142
+
+Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work

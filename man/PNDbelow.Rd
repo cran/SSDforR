@@ -32,7 +32,13 @@ PNDbelow(behavior, phaseX, v1, v2)
 Scruggs, T.E. & Mastropieri, M.A. (2012). PND at 25:  Past, present, and future trends in summarizing single-subject research.  Remedial and Special Education, 34(1), 9-19.
 
 }
-{Go to www.ssdanalysis.com for more information.}
+{Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p60, p137
+
+Lenz, A.S. (2012). Calculating effect size in single-case research:  A comparison of nonoverlap methods.  Measurement and Evaluation in Counseling and Development, 46(1), 64-73.
+
+Parker, R.I. & Hagan-Burker, S. & Vannest, K. (2007).  Percentage of all non-overlapping data:  An alternative to PND.  The Journal of Special Education, 40(4), 194-204.
+
+Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work

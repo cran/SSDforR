@@ -37,6 +37,9 @@ Cchart(behavior, phaseX, v1, bandX, ABxlab, ABylab, ABmain)
 
 
 \references{
+
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p77, p140
+
 {Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice: Guidelines for the accountable professional (6th ed.).  New York:  Pearson.
 
 Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.

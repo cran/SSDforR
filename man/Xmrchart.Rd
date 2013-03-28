@@ -42,7 +42,10 @@ Xmrchart(behavior, phaseX, v1, bandX, ABxlab, ABylab, ABmain)
 Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
 
 }
-{Go to www.ssdanalysis.com for more information.}
+{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. P75-76 
+
+Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work

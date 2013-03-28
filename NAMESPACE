@@ -1,2 +1,7 @@
 exportPattern("^[[:alpha:]]+")
+
 import(psych)
+import(TTR)
+import(MASS)
+import(tcltk)
+import(TSA)

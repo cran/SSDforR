@@ -1,7 +1,6 @@
 ABma <-
 function(behavior,phaseX,v1){
-  if("TTR" %in% rownames(installed.packages()) == FALSE) {install.packages("TTR")}
-  require(TTR)
+ 
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)

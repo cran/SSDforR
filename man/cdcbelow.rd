@@ -27,6 +27,9 @@ CDCbelow(behavior, phaseX, v1, v2)
 }
 
 \references{
+
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p85, p143
+
   {Fisher, W.W., Kelley, M.E. & Lomas, J.E. (2003).  Visual aids and structured criteria for improving visual inspection and interpretation of single-case designs.  Journal of Applied Behavior Analysis, 36(3), 387-406.
   
 }

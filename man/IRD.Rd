@@ -27,6 +27,9 @@ IRD(behavior, phaseX, v1, v2)
 }
 
 \references{
+
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p62-65, p136
+
 {Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice:  Guidelines for the accountable professional (6th ed.). New York:  Pearson.
 
 Parker, R.I. & Hagan-Burke, S. (2007). Median-based overlap analysis for single case data:  A second study.  Behavior Modification, 31(6), 919-936.

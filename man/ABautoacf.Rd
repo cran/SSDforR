@@ -25,7 +25,10 @@ ABautoacf(behavior, phaseX, v, l)
 %%     ~~Describe \code{lags} here~~
 }
 }
+\references{Go to www.ssdanalysis.com for more information.
+%% ~put references to the literature/web site here ~
 
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p42 ,p141 }
 \author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 }
 %%  ~~who you are~~

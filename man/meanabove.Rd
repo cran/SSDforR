@@ -26,7 +26,10 @@ meanabove(behavior, phaseX, v1, v2)
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information.
+\references{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p84, p144
+
+Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeiltlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work

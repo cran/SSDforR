@@ -30,7 +30,9 @@ RobustCDCabove(behavior, phaseX, v1, v2)
 {Fisher, W.W., Kelley, M.E. & Lomas, J.E. (2003).  Visual aids and structured criteria for improving visual inspection and interpretation of single-case designs.  Journal of Applied Behavior Analysis, 36(3), 387-406.
   
 }
-{Go to www.ssdanalysis.com for more information.}
+{
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p86, p144
+Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
