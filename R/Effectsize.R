@@ -14,8 +14,10 @@ function(behavior,phaseX,v1,v2) {
  
   S<-sqrt(((n1*(s1[names(s1)==v1]^2)+(n2*s1[names(s1)==v2]^2))/totaln))
   CD<-(DIFF/S)
-  
-  t1<-table(phaseX)
+ 
+  cm=gamma((totaln/2))/(sqrt(totaln/2)*gamma((totaln-1)/2))
+  G<-CD*cm
+   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
   endA<-tmaxA+startA-1
@@ -48,28 +50,37 @@ IV<-c(PA,PB)
   writeLines(l1)
   writeLines(l2)
   writeLines(l3)
-  writeLines("*************************************************")
-  writeLines("********************ES************************")
+  writeLines("********************************************************")
+  writeLines("********************ES**********************************")
   
-  l4<-c("ES=    ",round(es,3))
+  es1<-round(es,5)
+  pes1<-c("ES=        ",es1)
   eschange=pnorm(es)-.5
   l5<-c("% change=",round(eschange,4)*100)
-  print(c(l4,l5))
+  print(c(pes1,l5))
   
   
   
-  writeLines("**************d-index**************************")
-  cd1<-(round(abs(CD),3))
-  pcd1<-c("d-index=",cd1)
+  writeLines("*****************d-index*******************************")
+  cd1<-(round(abs(CD),5))
+  pcd1<-c("d-index=   ",cd1)
   dchange=pnorm(CD)-.5
   l6<-c("% change=",round(dchange,4)*100)
   
   print(c(pcd1,l6))
   
-  
-  writeLines("**************Pearson's r************************")
+ writeLines("*****************Hedges's g****************************")
+  hchange=pnorm(G)-.5
+G1<-(round(abs(G),5))
+PG1<-c("Hedges's g=",G1)
+l7<-c("% change=",round(hchange,4)*100)
+
+print(c(PG1,l7))
+
+  writeLines("*****************Pearson's r***************************")
   print(round(rvalue,3))
-  writeLines("**************R-squared**************************")
+  writeLines("*****************R-squared*****************************")
   print(round(rvalue2,3))
   
+
 }

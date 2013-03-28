@@ -1,7 +1,9 @@
-aca4ca24d7711d3b6bdc4511938bb2b9 *DESCRIPTION
+9c650212bdf14145d113068b79807ce0 *DESCRIPTION
 01666a1a618a141346184553cb216dcb *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
+52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
+a6068b3238bccf75483a8e933eb59c1b *R/ABautopacf.R
 0c51e979b977f62f341e3a613945c8e6 *R/ABbinomial.R
 55c896d48dc81f489babfca499e37229 *R/ABdescrip.R
 70a0ee84826fa8427e67e93b4f171bcf *R/ABiqr.R
@@ -19,11 +21,13 @@ adce132b6e418995ec8af7bde419d942 *R/ABtsplot.R
 700a091883b20c1c948f8653d7a90353 *R/ABttest.R
 f2832ff98c1b8f64f295b36fc2a74af5 *R/Append.R
 880a112c0a332c2add332f05fffdc2a6 *R/Aregres.R
+120e0636e41c12334c66ac039f57ca76 *R/Arimadiff.R
+8527dc45b029d92a06203afdf2bbe3f9 *R/Arimama.R
 b7b16f46c6e96e41cd1c04bf5c80f57d *R/Arobust.R
 cc9e1f78fee3be9cadb128b72045871c *R/CDCabove.R
 ef04bc77ca049d2bebfe9a2d503313d4 *R/CDCbelow.R
 aa64df4334c9f75df0382f6559fdc778 *R/Cchart.R
-163eba573c41e4ebf639f4affcb30624 *R/Effectsize.R
+1c9ea08b5467d0d7bee1b965dd2d8493 *R/Effectsize.R
 d603b15b63efcee9c19975d19a5c992a *R/GABrf2.R
 71b6bce2acef499780ff289d6dde6b89 *R/GABttest.R
 f76b30354ac9502387804e6e47fd7c59 *R/Gindex.R
@@ -61,10 +65,6 @@ e4120ff2a0c748389b7adcb6a4a961a1 *R/Trimline.R
 6657f6e60434b6938688bebc3b980e0b *R/XRchart.R
 873b2bb187579f1cb2366ba13a763bea *R/Xmrchart.R
 905f570dcf1a201d3366887516d0c1ab *R/abarrow.r
-52486efb2f145f23c0c873d4e8018d79 *R/abautoacf.r
-a6068b3238bccf75483a8e933eb59c1b *R/abautopacf.r
-120e0636e41c12334c66ac039f57ca76 *R/arimadiff.r
-8527dc45b029d92a06203afdf2bbe3f9 *R/arimama.r
 f6c199c6911d2eb7d553e5cd36f7fba2 *R/diffchart.R
 ed8652ff720536a4dba29e04c83ba6c0 *R/getcsv.r
 3aeb6d7d8c1524eb22c3a6638e7d2adf *R/insert.R
