@@ -1,7 +1,9 @@
 ABstat <-
 function(behavior,phaseX,v,statX){
-  instruct<-"Click the mouse in the beginning of the phase you want the line in."
-  print(instruct)
+ 
+  writeLines("-------------------------------------------------------------------------------------")
+  writeLines("Click the mouse in the beginning of the phase you want the line in")
+  writeLines("-------------------------------------------------------------------------------------")
   abmedian<-tapply(behavior, phaseX,statX)
   tphase<-table(phaseX)
   mlin<- tphase[names(tphase)==v]

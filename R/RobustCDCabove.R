@@ -1,4 +1,4 @@
-robustCDC <-
+RobustCDCabove <-
 function(behavior,phaseX,v1,v2){
   if("MASS" %in% rownames(installed.packages()) == FALSE) {install.packages("MASS")}
   require(MASS)
@@ -9,7 +9,9 @@ function(behavior,phaseX,v1,v2){
   endA<-tmaxA+startA-1
   A<-behavior[startA:endA]
   
-  meanA=mean(A,trim=.1,na.rm=T)
+  meanA=mean(A,na.rm=T)
+  sdA=(sd(A,na.rm=T))*.25
+  meanA<-meanA+sdA
   x1=(c(seq(1:tmaxA)))
   
   regA<-rlm(A~x1)
@@ -32,11 +34,13 @@ function(behavior,phaseX,v1,v2){
   end<-which(is.na(cdcl))
   iv<-insert(iv,NA,end)
   x2=iv[end+1:total]
+  
   regc<-rlm(cdcl~iv)
   
   
   
   x2<-na.omit(x2)
+  yA<-yA+sdA
   Byhat<-yA+x2*BetaA
   Byhat<-na.omit(Byhat)
   yhatA<-Byhat[startA:endA]
@@ -57,9 +61,7 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  nbelowline<-B<Byhat
-  nbelowmean<-B<meanA
-  nbelow<-table(nbelowline,nbelowmean)
+ 
   
   
   naboveline<-B>Byhat
@@ -72,23 +74,21 @@ function(behavior,phaseX,v1,v2){
   lin1<-c("needed=", needed)
   print(lin1)
   writeLines("-----------------above lines------------------")
-  writeLines ("TRUE, TRUE = Number above the lines")
+ writeLines ("TRUE, TRUE = Number above the lines")
   
   print(nabove)
   
-  writeLines("-----------------below lines------------------")
-  writeLines ("TRUE, TRUE = Number below the lines")
-  print(nbelow)
+  
   
   graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC" )
   
-  abline(h=meanA,col="green")
-  abline(reg=regA,col='Blue',lty="dashed")
+  abline(h=(meanA),col="green")
+  abline(a=yA,b=BetaA,col='Blue',lty="dashed")
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("robust regression line","trimmed mean line"), col = c("blue","green"), lwd = 1,ncol=2,bty ="n")  
-  
+  legend("center", c("Adj. regression line","Adj. mean line"), col = c("blue","green"), lwd = 1,ncol=2,bty ="n")  
+ 
 }

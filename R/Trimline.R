@@ -1,7 +1,8 @@
 Trimline <-
 function(behavior,phaseX,v){
-  instruct<-"Click the mouse in the beginning of the phase you want the line in."
-  print(instruct)
+  writeLines("-------------------------------------------------------------------------------------")
+  writeLines("Click the mouse in the beginning of the phase you want the line in")
+  writeLines("-------------------------------------------------------------------------------------")
   abmedian<-tapply(behavior, phaseX,sd)
   meansd<-tapply(behavior, phaseX,mean)
   tphase<-table(phaseX)

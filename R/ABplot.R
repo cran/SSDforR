@@ -22,13 +22,19 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
     j=j+1
   }
   
+  
+  
   graphics.off()
   plot(x,y, ylim=c(0,max),xlim=c(0,numx),lwd=2,type="o",col="red", xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L' )
- instruct<-"You can add lines between phases by using the ABlines() function. You can add text by using the ABtext() function. You can also add a mean, median, sd line by using the ABstat() function." 
- strwrap(instruct) 
+ 
   
   ab<-NULL
   ab<<-recordPlot()
   
   
-  }
+  writeLines("-------------------------------------------------------------------------------------")
+  writeLines("1-You can add lines between phases by using the ABlines() function.")
+  writeLines("2-You can add text by using the ABtext() function.")
+  writeLines("3-You can also add a mean, median, sd line by using the ABstat() function.")
+  writeLines("-------------------------------------------------------------------------------------")
+}

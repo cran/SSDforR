@@ -1,14 +1,14 @@
-\name{CDC}
-\alias{CDC}
+\name{RobustCDCbelow}
+\alias{RobustCDCbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Conservative Dual Criteria (CDC)
+\title{Robust Conservative Dual Criteria (CDC) using robust regression desired zone below lines
 %%  ~~function to do ... ~~
 }
-\description{The conservative dual-criteria (CDC) is a relatively new approach to comparing phases that works well when data have a moderate lag-1 autocorrelation (lower than 0.6).  This function uses two lines to define the desired zone:  the mean and the regression line of the comparison phase. 
+\description{The conservative dual-criteria (CDC) is a relatively new approach to comparing phases that works well when data have a moderate lag-1 autocorrelation (lower than 0.6).  This function uses two lines to define the desired zone:  the mean and the robust regression line of the comparison phase. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-CDC(behavior, phaseX, v1, v2)
+RobustCDCbelow(behavior, phaseX, v1, v2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -27,11 +27,10 @@ CDC(behavior, phaseX, v1, v2)
 }
 
 \references{
-  {Fisher, W.W., Kelley, M.E. & Lomas, J.E. (2003).  Visual aids and structured criteria for improving visual inspection and interpretation of single-case designs.  Journal of Applied Behavior Analysis, 36(3), 387-406.
+{Fisher, W.W., Kelley, M.E. & Lomas, J.E. (2003).  Visual aids and structured criteria for improving visual inspection and interpretation of single-case designs.  Journal of Applied Behavior Analysis, 36(3), 387-406.
   
 }
-  {Go to www.ssdanalysis.com for more information.
-}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
@@ -40,8 +39,9 @@ CDC(behavior, phaseX, v1, v2)
 
 \examples{
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
-pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-CDC(cry,pcry,"A","B")
+pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", 
+NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
+RobustCDCbelow(cry,pcry,"A","B")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -55,9 +55,10 @@ function(behavior,phaseX,v1,v2){
   nabovemean<-A>meanA
   nabovemedian<-A>medianA
   Aarline=(sum(naboveline))/length(A)
+  
   Aamean=(sum(nabovemean))/length(A)
   Aamedian=(sum(nabovemedian))/length(A)
-  
+ 
   
   #intervention line
   x2<-na.omit(x2)
@@ -94,11 +95,13 @@ function(behavior,phaseX,v1,v2){
   nabovemedian<-B>medianA
   
   Barline=(sum(naboveline))/length(B)
+ 
   Bamean=(sum(nabovemean))/length(B)
   Bamedian=(sum(nabovemedian))/length(B)
   #*************************************
   gamean=Bamean-Aamean
   galine=Barline-Aarline
+  
   gamedian=Bamedian-Aamedian
   
   gbmean=Bbmean-Abmean

@@ -1,4 +1,4 @@
-CDC <-
+CDCbelow <-
 function(behavior,phaseX,v1,v2){
   
   nsucces=c(0,0,0,0,5,6,6,7,8,8,9,9,10,11,12,12,12,13,13,14,14,15,15,17,17,18,18,19,19,20,20,21,22,23,23,24,24,25,25,26,27,27,28,28,29,29,30,31,31,32)
@@ -10,6 +10,7 @@ function(behavior,phaseX,v1,v2){
   
   meanA=mean(A,na.rm=T)
   sdA=(sd(A,na.rm=T))*.25
+  meanA=meanA-sdA
   x1=(c(seq(1:tmaxA)))
   
   regA<-lm(A~x1)
@@ -38,6 +39,7 @@ function(behavior,phaseX,v1,v2){
   
   
   x2<-na.omit(x2)
+  yA<-yA-sdA
   Byhat<-yA+x2*BetaA
   Byhat<-na.omit(Byhat)
   yhatA<-Byhat[startA:endA]
@@ -63,19 +65,14 @@ function(behavior,phaseX,v1,v2){
   nbelow<-table(nbelowline,nbelowmean)
   
   
-  naboveline<-B>Byhat
-  nabovemean<-B>meanA
   
-  nabove<-table(naboveline,nabovemean)
+  
   
   needed=nsucces[tmaxB]
   
   lin1<-c("needed=", needed)
   print(lin1)
-  writeLines("-----------------above lines------------------")
- writeLines ("TRUE, TRUE = Number above the lines")
-  
-  print(nabove)
+ 
   
   writeLines("-----------------below lines------------------")
   writeLines ("TRUE, TRUE = Number below the lines")

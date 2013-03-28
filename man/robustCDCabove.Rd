@@ -1,14 +1,14 @@
-\name{robregbelow}
-\alias{robregbelow}
+\name{RobustCDCabove}
+\alias{RobustCDCabove}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Chi-square - desired values below robust regression line
+\title{Robust Conservative Dual Criteria (CDC) using robust regression desired zone above lines
 %%  ~~function to do ... ~~
 }
-\description{Chi-square test comparing the frequency of observations below the robust  regression line in a comparison phase to another phase.
+\description{The conservative dual-criteria (CDC) is a relatively new approach to comparing phases that works well when data have a moderate lag-1 autocorrelation (lower than 0.6).  This function uses two lines to define the desired zone:  the mean and the robust regression line of the comparison phase. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-robregbelow(behavior, phaseX, v1, v2)
+RobustCDCabove(behavior, phaseX, v1, v2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,15 +18,19 @@ robregbelow(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter of comparison phase in quotation marks (e.g., "A")
+  \item{v1}{phase letter of first (i.e., comparison) phase between quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{letter of second phase in quotation marks (e.g., "B")
+  \item{v2}{phase letter of second phase between quotation marks (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information.
+\references{
+{Fisher, W.W., Kelley, M.E. & Lomas, J.E. (2003).  Visual aids and structured criteria for improving visual inspection and interpretation of single-case designs.  Journal of Applied Behavior Analysis, 36(3), 387-406.
+  
+}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
 \author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
@@ -37,7 +41,7 @@ robregbelow(behavior, phaseX, v1, v2)
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
 pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA,
 "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-robregbelow(cry,pcry,"A","B1")
+RobustCDCabove(cry,pcry,"A","B")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

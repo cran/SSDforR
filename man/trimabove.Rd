@@ -35,7 +35,8 @@ trimabove(behavior, phaseX, v1, v2)
 
 \examples{
 esteem<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
-pesteem<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
+pesteem<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", 
+NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
 trimabove(esteem, pesteem,"A","B1")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

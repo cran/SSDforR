@@ -1,7 +1,7 @@
 Package: SSDforR
 Type: Package
 Title: SSD for R to analyze single system data
-Version: 1.1
+Version: 1.2
 Date: 2013-03-28
 Author: Charles Auerbach,PHD Wendy Zeitlin Schudrich,PHD Wurzweiler
         School of Social Work
@@ -11,7 +11,7 @@ Suggests: MASS, TSA,TTR
 Description: Package to visually and statistically analyze single
         system data
 License: GPL (>= 2)
-Packaged: 2013-04-23 13:59:53 UTC; charlie
+Packaged: 2013-05-20 12:38:32 UTC; charlie
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-04-24 15:48:18
+Date/Publication: 2013-05-20 15:51:29

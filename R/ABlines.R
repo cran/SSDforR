@@ -1,7 +1,9 @@
 ABlines <-
   function(behavior){
-    instruct<-"Click the mouse on the top of the graph where the vertical line should begin. Repeat at the bottom of the graph for where the line should end.  "
     
+    writeLines("-------------------------------------------------------------------------------------")
+    writeLines("Click the mouse in the gap between the phases you want the line in.")
+    writeLines("-------------------------------------------------------------------------------------")
     l<-locator(1)
     
     
