@@ -1,6 +1,6 @@
 PANDbelow <-
 function(behavior,phaseX,v1,v2){
-  
+  if("psych" %in% rownames(installed.packages()) == FALSE) {install.packages("psych")} 
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -64,6 +64,12 @@ function(behavior,phaseX,v1,v2){
   max<-behavior[maxy]+1
   
   numx<-sum(!is.na(behavior))+3
+  numphalf = nump/2
+  a=numphalf
+  b=length(B)-numphalf
+  c=length(A)-numphalf
+  d=numphalf
+  rpandphi=phi(c(a,b,c,d))
   
   PAND<-c("PAND Below = ",round(p,2),"Minimum overlapping to remove",nump)
   print(PAND)
@@ -72,7 +78,9 @@ function(behavior,phaseX,v1,v2){
   writeLines(".70 to .89 = moderate effectiveness")
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
-  
+  writeLines("--------------------------------------------")
+  phir<-c("Robust Phi = ",abs(rpandphi))
+  print(phir)
   
   
 }

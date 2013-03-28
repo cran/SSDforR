@@ -52,8 +52,7 @@ function(behavior,phaseX,v1){
   phase <-c(phase,NA)
   transdat<-data.frame(diff,phase)
   a<-readline("Save results? (y/n) ")
-  if (a=="y")
-  {require(tcltk)}
+
   if (a=="y")
   {write.csv(transdat,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)}
   

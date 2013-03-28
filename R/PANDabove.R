@@ -1,6 +1,6 @@
 PANDabove <-
 function(behavior,phaseX,v1,v2){
-  
+  if("psych" %in% rownames(installed.packages()) == FALSE) {install.packages("psych")} 
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -48,7 +48,6 @@ function(behavior,phaseX,v1,v2){
   ab<<-recordPlot() 
   #***********************above baseline
   nbaboveline<-B<as.numeric(yo)
-  print(nbaboveline)
   nump=sum(nbaboveline)
   nx= (length(B)+length(A))-nump
   
@@ -67,13 +66,22 @@ function(behavior,phaseX,v1,v2){
   numx<-sum(!is.na(behavior))+3
   
   PAND<-c("PAND Above = ",round(p,2),"Minimum overlapping to remove",nump)
+   
+  numphalf = nump/2
+  a=numphalf
+  b=length(B)-numphalf
+  c=length(A)-numphalf
+  d=numphalf
+  rpandphi=phi(c(a,b,c,d))
+  
   print(PAND)
   writeLines("-------------------------------------------")
   writeLines(".90 or above = very effective" )
   writeLines(".70 to .89 = moderate effectiveness")
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
-  
- 
+  writeLines("--------------------------------------------")
+ phir<-c("Robust Phi = ",abs(rpandphi))
+  print(phir)
   
 }

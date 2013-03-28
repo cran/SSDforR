@@ -15,7 +15,7 @@ XRchart(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
   \item{behavior}{behavior variable
 %%     ~~Describe \code{behavior} here~~
 }
-  \item{groupX}{phase variable
+  \item{groupX}{grouping variable
 %%     ~~Describe \code{groupX} here~~
 }
   \item{bandX}{number of standard deviations desired (e.g., 2)

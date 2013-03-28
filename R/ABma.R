@@ -28,8 +28,8 @@ function(behavior,phaseX,v1){
   ma<-c(ma,NA)
   transdat<-data.frame(ma,phase)
   a<-readline("Save results? (y/n) ")
-  if (a=="y")
-  {require(tcltk)}
+  
+  
   if (a=="y")
   {write.csv(transdat,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)}
   
