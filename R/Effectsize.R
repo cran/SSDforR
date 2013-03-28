@@ -6,12 +6,13 @@ function(behavior,phaseX,v1,v2) {
   tphase<-table(phaseX)
   n1<- tphase[names(tphase)==v1]
   n2<- tphase[names(tphase)==v2]
-  totaln<-n1+n2
+  
   n1<-n1-1 
   n2<-n2-1
-  
+  totaln<-n1+n2
   DIFF<-mean1[names(mean1)==v1]-mean1[names(mean1)==v2]
-  S<-sqrt(((n1*(s1[names(s1)==v1]^2)+n2*(s1[names(s1)==v2]^2))/totaln))
+ 
+  S<-sqrt(((n1*(s1[names(s1)==v1]^2)+(n2*s1[names(s1)==v2]^2))/totaln))
   CD<-(DIFF/S)
   
   t1<-table(phaseX)
