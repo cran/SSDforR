@@ -1,6 +1,6 @@
 Trimline <-
 function(behavior,phaseX,v){
-  instruct<-"Click the mouse in the beginning of the pahse you want the line in."
+  instruct<-"Click the mouse in the beginning of the phase you want the line in."
   print(instruct)
   abmedian<-tapply(behavior, phaseX,sd)
   meansd<-tapply(behavior, phaseX,mean)
@@ -22,8 +22,8 @@ function(behavior,phaseX,v){
   u<-readline("accept line? (y/n) ")
   if (u=="n")
   {replayPlot(ab)}
-  if (u=="y")
-   ab<-NULL 
+  
+ ab<-NULL 
   ab<<-recordPlot()
   
  

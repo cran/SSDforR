@@ -57,7 +57,7 @@ function(behavior,phaseX,v1,v2){
   
   max<-cdcl[maxy]+1
   numx<-sum(!is.na(cdcl))+3
-  par(mfrow=c(3,3)) 
+  #par(mfrow=c(3,3)) 
   
   maxy=which.max(behavior)
   

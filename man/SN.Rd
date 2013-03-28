@@ -1,7 +1,7 @@
 \name{SN}
 \alias{SN}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{scientific notation
+\title{Scientific notation
 %%  ~~function to do ... ~~
 }
 \description{Converts scientific notation to decimals.
@@ -12,21 +12,20 @@ SN(value)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{value}{the scientific notation value
+  \item{value}{value to be converted from scientific notation
 %%     ~~Describe \code{value} here~~
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wndy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 
 \examples{
-
-  SN(2.73e-16)  
+SN(2.73e-16)  
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -1,10 +1,10 @@
 \name{trimbelow}
 \alias{trimbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Chi-square below mean trim line
+\title{Chi-square - desired values below the trimmed mean
 %%  ~~function to do ... ~~
 }
-\description{Chi-square test comparing the frequency of observations below the 10 percent trim mean in any two phases
+\description{Chi-square test comparing the frequency of observations below the reference phase trimmed mean in any two phases.
 
 }
 \usage{
@@ -18,18 +18,18 @@ trimbelow(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter of first phase i.e. "A"
+  \item{v1}{first phase letter in quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{letter of second phase i.e "B"
+  \item{v2}{second phase letter in quotation marks (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com
+\references{Go to www.ssdanalysis.com for more information
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeiltlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshvia University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

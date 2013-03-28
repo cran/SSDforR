@@ -18,18 +18,18 @@ ABautopacf(behavior, phaseX, v, lags)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{letter for phase being tested i.e "A"
+  \item{v}{letter for phase being tested (e.g.,"A")
 %%     ~~Describe \code{v} here~~
 }
-  \item{lags}{number of lags 1 2 3 etc.
+  \item{lags}{number of lags (e.g., 1, 2, 3)
 %%     ~~Describe \code{lags} here~~
 }
 }
 
 \references{
-go to ssdanalysis.com for more in formation
+Go to www.ssdanalysis.com for more information.
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wrzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

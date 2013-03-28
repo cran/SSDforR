@@ -1,10 +1,10 @@
 \name{sd2bandgraph}
 \alias{sd2bandgraph}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{2-SD band graph base line only
+\title{2-standard deviation band graph for one phase
 %%  ~~function to do ... ~~
 }
-\description{2-SD band graph for the baseline only
+\description{Produces graph for one phase with mean and two standard deviation bands displayed.  Output in the Console displays the sd, the  mean, and values for the sd bands. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,24 +18,24 @@ sd2bandgraph(behavior, phaseX, v1, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{phase letter i.e. "A"
+  \item{v1}{phase letter (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{ABxlab}{x labels
+  \item{ABxlab}{x-axis label in quotation marks (e.g., "week")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y labels
+  \item{ABylab}{y-axis label in quotation marks (e.g., "amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title in quotation marks (e.g., "Crying")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{got www.ssdanakysis.com for more information
+\references{Go www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wndy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -18,17 +18,18 @@ ABautoacf(behavior, phaseX, v, l)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{letter for phase tested i.e. "A"
+  \item{v}{letter for phase tested (e.g., "A")
 %%     ~~Describe \code{v} here~~
 }
-  \item{l}{number of lags i.e 1 2 3,etc. 
+  \item{l}{number of lags (e.g. 1, 2, 3) 
 %%     ~~Describe \code{lags} here~~
 }
 }
 
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich, PHD Wurzweiler School of Social Work
-%%  ~~who you are~~
+\author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 }
+%%  ~~who you are~~
+
 
 \examples{cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
 pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")

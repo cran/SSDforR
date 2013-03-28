@@ -33,4 +33,6 @@ print(sd1)
 print(psdu)
 print(pmean)
 print(psdb)
+ab<-NULL
+ab<<-recordPlot()
 }

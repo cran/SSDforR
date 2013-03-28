@@ -4,7 +4,7 @@
 \title{Set graphic environment
 %%  ~~function to do ... ~~
 }
-\description{Used prior to ABplotm to set up graphic environment
+\description{Used prior to ABplotm to set up graphic environment.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -12,18 +12,18 @@ plotnum(nr, nc)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{nr}{number of rows i.e 2
+  \item{nr}{number of rows of graphs desired (e.g., 2)
 %%     ~~Describe \code{nr} here~~
 }
-  \item{nc}{number of columns i.e 1
+  \item{nc}{number of columns of graphs desired (e.g., 3)
 %%     ~~Describe \code{nc} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

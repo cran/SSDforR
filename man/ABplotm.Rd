@@ -1,10 +1,10 @@
 \name{ABplotm}
 \alias{ABplotm}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Mulch line plot
+\title{Multiple line plot
 %%  ~~function to do ... ~~
 }
-\description{This function builds a multiple  line chart for a given behavior across all phases.  A space separates each phase.
+\description{This function should be used to create multiple line charts.  This function must be used after the environment is set up using the plotnum() function.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,21 +18,21 @@ ABplotm(behavior, phaseX, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{ABxlab}{x label between quotes
+  \item{ABxlab}{label for x-axis between quotation marks
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label between quotes
+  \item{ABylab}{label for y-axis between quotation marks
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title between quotes
+  \item{ABmain}{main title for graph between quotation marks
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{Go to WWW.analysis.com for more information
+\references{Go to www.analysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University; Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -1,10 +1,10 @@
 \name{Rchart}
 \alias{Rchart}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{SPC R-chart
+\title{SPC R-chart using mean range
 %%  ~~function to do ... ~~
 }
-\description{The R-Chart is designed to detect changes in variation over time. There are two forms of this chart available with SSD for R. One version of the R-chart, which is recommended when the sample size is small (i.e., less than ten), uses the mean range of the samples to track variation.
+\description{The R-Chart is designed to detect changes in variation over time. This is one of two forms of the R-chart and should be used with small samples.  This function uses the mean range of samples to track variation.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -15,27 +15,31 @@ Rchart(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
   \item{behavior}{behavior variable
 %%     ~~Describe \code{behavior} here~~
 }
-  \item{groupX}{grouping variables i.e. day
+  \item{groupX}{grouping variables (e.g., day)
 %%     ~~Describe \code{groupX} here~~
 }
-  \item{bandX}{2 number of standard deviations 1 2 or 3
+  \item{bandX}{number of standard deviations desired (e.g., 2)
 %%     ~~Describe \code{bandX} here~~
 }
-  \item{ABxlab}{x label "weeks"
+  \item{ABxlab}{x-axis label in quotation marks (e.g., "weeks")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label "amount"
+  \item{ABylab}{y-axis label in quotation marks (e.g., "amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title for graph in quotation marks (e.g., "Problem Range")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{got ssdanalysis for more information
+\references{
+{Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
+
+}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

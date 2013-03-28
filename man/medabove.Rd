@@ -1,10 +1,10 @@
 \name{medabove}
 \alias{medabove}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Chi-square above median
+\title{Chi-square - desired values above the median
 %%  ~~function to do ... ~~
 }
-\description{Chi-square test comparing the frequency of observations above the median in any two phases.
+\description{Chi-square test comparing the frequency of observations above the reference phase median in any two phases.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,26 +18,26 @@ medabove(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{phase letter of first phase i.e. "A"
+  \item{v1}{first phase letter (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{phase letter of second phase i.e. "B"
+  \item{v2}{second phase letter (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{got to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 
 \examples{
 
-cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
-pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-medabove(cry,pcry,"A","B1")
+esteem<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
+pesteem<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
+medabove(esteem, pesteem,"A","B1")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

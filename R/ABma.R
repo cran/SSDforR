@@ -13,10 +13,10 @@ function(behavior,phaseX,v1){
   
   plot(A, lwd=2,type="l",col="blue", xlab="Time", ylab="behavior", bty='L',main="Moving Average  Plot" )
   
-  lines(t,lwd=2,type="l",col="red" )
+  lines(t,lwd=2,type="l",col="red",lty=2 )
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("MA","Behavior"), col = c("red", "blue"), lwd = 1,ncol=2,bty ="n")
+  legend("center", c("MA","Behavior"), col = c("red", "blue"),lty=c(2,1), lwd = 1,ncol=2,bty ="n")
   behavior=c(A,NA)
   
  

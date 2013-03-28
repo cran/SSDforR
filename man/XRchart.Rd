@@ -4,7 +4,7 @@
 \title{SPC XR-Chart
 %%  ~~function to do ... ~~
 }
-\description{This chart can be used when there are multiple observations per sample.
+\description{This chart can be used when there are multiple observations per sample and uses the mean of each sample to create the chart.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,24 +18,28 @@ XRchart(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
   \item{groupX}{phase variable
 %%     ~~Describe \code{groupX} here~~
 }
-  \item{bandX}{number of SDs 1,2, or 3
+  \item{bandX}{number of standard deviations desired (e.g., 2)
 %%     ~~Describe \code{bandX} here~~
 }
-  \item{ABxlab}{x label
+  \item{ABxlab}{x-axis label in quotation marks (e.g., "week")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label
+  \item{ABylab}{y-axis label in quotation marks (e.g., "mean amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title for chart in quotation marks (e.g., "Admits to Hospital")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com for more information
+\references{
+{Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
+
+}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

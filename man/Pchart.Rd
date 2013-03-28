@@ -4,7 +4,7 @@
 \title{SPC P-chart
 %%  ~~function to do ... ~~
 }
-\description{When the target behavior has a binary outcome (i.e., completing or not completing a task), comparing the proportion of tasks completed over time or between phases can be measured.  Attendance (vs. non-attendance) in a group, child welfare workers completing records on time (vs. not completing on time), workers completing home visits (vs. not completing home visits), if a patient is compliant with medication (vs. non-compliant), or if a patient with hearing loss wears his or her hearing aid (vs. not hearing the hearing aid) are all possible examples of task completion that can be assessed using p-charts.   
+\description{This function builds a P-chart and can be used when the target behavior has a binary outcome.  This chart allows for a comparison of the proportion of tasks completed over time or between phases.  A space separates each phase.    
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,24 +18,28 @@ Pchart(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
   \item{groupX}{grouping variable
 %%     ~~Describe \code{groupX} here~~
 }
-  \item{bandX}{number of standard deviations 1 2 or 3
+  \item{bandX}{number of standard deviations desired (e.g., 2)
 %%     ~~Describe \code{bandX} here~~
 }
-  \item{ABxlab}{x label
+  \item{ABxlab}{label for x-axis between quotation marks (e.g., "weeks")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label
+  \item{ABylab}{label for y-axis between quotation marks (e.g., "attendance"")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title for chart between quotation marks (e.g., "Attendance Over Time")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com for more info
+\references{
+{Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
+
+}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

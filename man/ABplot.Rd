@@ -1,10 +1,10 @@
 \name{ABplot}
 \alias{ABplot}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Line Plot graph
+\title{Simple line graph
 %%  ~~function to do ... ~~
 }
-\description{This function builds a simple line chart for a given behavior across all phases.  A space separates each phase.
+\description{This function builds a simple line graph for a given behavior across all phases.  A space separates each phase.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,22 +18,26 @@ ABplot(behavior, phaseX, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{ABxlab}{x label should be between quotes i.e. "weeks"
+  \item{ABxlab}{label for x-axis between quotation marks
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label should be between quotes i.e. "amount"
+  \item{ABylab}{label for y-axis between quotation marks
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title should be between quotes i.e. "Crying"
+  \item{ABmain}{main title for graph between quotation marks
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
 \references{
-Go to www.ssdanalysis.com for more information
+{Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Package to Analyze Single-System Data. Research on Social Work Practice, 23(3), 346-353. doi:10.1177/104973153477213
+
+}
+{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Wurzweiler School of Social Work
+}
+\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

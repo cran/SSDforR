@@ -1,10 +1,10 @@
 \name{robregbelow}
 \alias{robregbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Chi-square robust regression below the line 
+\title{Chi-square - desired values below robust regression line
 %%  ~~function to do ... ~~
 }
-\description{Chi-square test comparing the frequency of observations below the robust regression line in any two phases.
+\description{Chi-square test comparing the frequency of observations below the robust  regression line in a comparison phase to another phase.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,18 +18,18 @@ robregbelow(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{first phase letter i.e. "A"
+  \item{v1}{letter of comparison phase in quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{second phase letter i.e. "B"
+  \item{v2}{letter of second phase in quotation marks (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

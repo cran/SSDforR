@@ -4,7 +4,7 @@
 \title{Analysis of variance
 %%  ~~function to do ... ~~
 }
-\description{computes one-way ANOVA and performs Tukey multiple comparison test. This test should only be used if there is not a trend in any phase AND there is no problem with autocorrelation in any phase.  Use ANOVA instead of  a t-test when comparing more than two phases
+\description{Computes one-way ANOVA and performs Tukey multiple comparison post-hoc test. Use ANOVA instead of  a t-test when comparing more than two phases.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -12,16 +12,18 @@ ABanova(behavior, phaseX)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{behavior}{
+  \item{behavior}{behavior variable
 %%     ~~Describe \code{behavior} here~~
 }
-  \item{phaseX}{Phase Variable
+  \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
 }
-
-\author{Charles Auerbach,PHD 
-Wendy Zeitlin Schudrich,PHD
+\references{Go to www.ssdanalysis.com for more information.
+%% ~put references to the literature/web site here ~
+}
+\author{Charles Auerbach,PhD &
+Wendy Zeitlin Schudrich,PhD; Yeshiva University,
 Wurzweiler School of Social Work
 %%  ~~who you are~~
 

@@ -1,10 +1,10 @@
 \name{SDAband}
 \alias{SDAband}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Adds SD bands to ABplot. Click on phase twice to add upper and lower bands
+\title{Adds standard deviation bands to an ABplot
 %%  ~~function to do ... ~~
 }
-\description{Adds SD bands to ABplot
+\description{Adds standard deviation bands to an ABplot. Click in the phase twice to add upper and lower bands.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,19 +18,19 @@ SDAband(behavior, phaseX, v, bandX)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{phase band is based upon i.e "A"
+  \item{v}{phase band is based upon (e.g., "A")
 %%     ~~Describe \code{v} here~~
 }
-  \item{bandX}{how many SDs 1, 2, or 3 
+  \item{bandX}{number of standard deviations desired (e.g., 2) 
 %%     ~~Describe \code{bandX} here~~
 }
 }
 
 
-\references{go to www.ssdnalysis.com for more information
+\references{Go to www.ssdnalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wndy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

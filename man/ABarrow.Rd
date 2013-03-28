@@ -1,20 +1,20 @@
 \name{ABarrow}
 \alias{ABarrow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Draw Arrow on Graph
+\title{Draw arrow on graph
 %%  ~~function to do ... ~~
 }
-\description{This function enables users to draw an arrow on a graph. For example, an arrow can be drawn from a text label of a critical event to a point on the graph. Once the function is invoked, the user is prompted to accept the arrow or not.
+\description{This function enables users to draw an arrow on a graph. For example, an arrow can be drawn from a text label of a critical event to a point on the graph. 
 }
 \usage{
 ABarrow()
 }
 
 
-\references{go to www.ssdanalysis for more information
+\references{Go to www.ssdanalysis.com for more information
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

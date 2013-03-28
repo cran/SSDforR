@@ -4,7 +4,7 @@
 \title{Effect size
 %%  ~~function to do ... ~~
 }
-\description{R Effect size function automatically displays the percent change for both the ES and d-index calculations of effect size for any two phases
+\description{The effect size function automatically displays the percent change and calculated values for both the ES and d-index for any two phases.  Information for interpretting calculated values appears in the Console.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,18 +18,27 @@ Effectsize(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{first phase letter i.e. "A"
+  \item{v1}{first phase letter between quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{second phase letter i.e. "B"
+  \item{v2}{second phase letter between quotation marks (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{Go to WWW.analysis for more information
+\references{
+{Cohen, J.(1988).Statistical Power analysis for the behavioral sciences (2nd ed). Hillsdale, NJ: Lawrence Erlbaum Associates, Inc.
+
+Glass, G. V., McGaw, B., & Smith, M. L. (1981) Meta-analysis in social research. Thousand Oaks, CA: SAGE Publications, Inc.
+
+Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice:  Guidelines for the accountable professional (6th ed.). New York:  Pearson.
+
+}
+{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Schudrich Wurzweiler School of Social Work
+}
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University,  Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

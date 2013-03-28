@@ -1,10 +1,10 @@
 \name{ABstat}
 \alias{ABstat}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ADD statistics line 
+\title{Add statistic line(s) 
 %%  ~~function to do ... ~~
 }
-\description{Adds a statistics line to an ABplot
+\description{Add a mean and/or median line to an ABplot.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,18 +18,23 @@ ABstat(behavior, phaseX, v, statX)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{Phase letter i.e "A"
+  \item{v}{phase letter in quotation marks (e.g., "A")
 %%     ~~Describe \code{v} here~~
 }
-  \item{statX}{statistic i.e. "mean"
+  \item{statX}{statistic in quotation marks (i.e. "mean", "median")
 %%     ~~Describe \code{statX} here~~
 }
 }
 
-\references{Go to www.ssdanalysis for more information
+\references{
+{Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Package to Analyze Single-System Data. Research on Social Work Practice, 23(3), 346-353. doi:10.1177/104973153477213
+
+}
+{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Wurzweiler School of Social Work
+}
+\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

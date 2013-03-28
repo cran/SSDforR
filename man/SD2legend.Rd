@@ -1,10 +1,10 @@
 \name{SD2legend}
 \alias{SD2legend}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{2-SD legend
+\title{SD2 legend
 %%  ~~function to do ... ~~
 }
-\description{Adds legend to 2-SD band graphs (SD2) use only when graph is completed. type IQRlegend() and return
+\description{Adds legend to SD2 band graph.  The graph can not be modified in any way after the legend is added.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -12,10 +12,10 @@ SD2legend()
 }
 %- maybe also 'usage' for other objects documented here.
 
-\references{go to www.ssdanalysis.com
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wndy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

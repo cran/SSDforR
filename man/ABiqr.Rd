@@ -4,7 +4,7 @@
 \title{Interquartile band graph through all phases
 %%  ~~function to do ... ~~
 }
-\description{Builds an iqr band graph through all phases based upon the users selection of a phase
+\description{Builds an iqr band graph through all phases based upon the user's selection of a phase
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,20 +18,25 @@ ABiqr(behavior, phaseX, v1, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter of phase statistics are based upon
+  \item{v1}{letter of phase statistics are based upon in quotation marks
 %%     ~~Describe \code{v1} here~~
 }
-  \item{ABxlab}{x labels
+  \item{ABxlab}{label for x-axis in quotation markes
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y labels
+  \item{ABylab}{label for y-axis in quotation marks
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title in quotation marks
 %%     ~~Describe \code{ABmain} here~~
 }
 }
-
+\references{
+Go to www.ssdanalysis.com for more information.
+}
+\author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich,PhD; Yeshiva University, Wurzweiler School of Social Work
+%%  ~~who you are~~
+}
 
 \examples{
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)

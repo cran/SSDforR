@@ -1,7 +1,7 @@
 \name{Append}
 \alias{Append}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Append 2 or more transformed data sets
+\title{Append data sets with additional data
 %%  ~~function to do ... ~~
 }
 \description{This function combines data files.  This is useful after data are created during transformations when using the diffchart or ABma functions. Once files with different phases are combined, you can  use the saved file for significance testing.
@@ -12,10 +12,10 @@ Append()
 }
 %- maybe also 'usage' for other objects documented here.
 
-\references{go to www.ssdanalysis for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

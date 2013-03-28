@@ -1,11 +1,10 @@
 \name{ABWilcox}
 \alias{ABWilcox}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Wilcoxin Rank Sum between 2 phases
+\title{Wilcoxon rank-sum test between two phases
 %%  ~~function to do ... ~~
 }
-\description{performs a two-sample Wilcoxon test between any two phases.
-Nonparametric test to compare means.  This test should only be used if there is not a trend in either phase AND there is no problem with autocorrelation in either phase.
+\description{Performs a two-sample Wilcoxon rank-sum nonparametric test between any two phases.
 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -20,18 +19,18 @@ ABWilcox(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{first phase letter i.e. "A"
+  \item{v1}{first phase letter (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{second phase letter i.e. "B"
+  \item{v2}{second phase letter (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{Go to www.ssdanalysis for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

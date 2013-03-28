@@ -1,10 +1,10 @@
 \name{IRD}
 \alias{IRD}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{IRD line
+\title{Improvement Rate Difference (IRD) calculation and line
 %%  ~~function to do ... ~~
 }
-\description{when using the IRD (Parker & Hagan-Burke, 2007) you will need to visually identify the smallest number of data points that would be needed to be removed to eliminate all overlap or ties between phases.
+\description{This effect size function will compute the IRD and display a graph in the graph window.  The user will be prompted to enter a value for a reference line, identify the number of intervention points remaining and the number of baseline data points that would be needed to be removed in order to eliminate all overlap or ties between phases.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,20 +18,29 @@ IRD(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{phase letter for first phase i.e "A"
+  \item{v1}{first phase letter (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{phase letter for second phase i.e "B"
+  \item{v2}{second phase letter (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{got www.ssdanalysis.com
+\references{
+{Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice:  Guidelines for the accountable professional (6th ed.). New York:  Pearson.
+
+Parker, R.I. & Hagan-Burke, S. (2007). Median-based overlap analysis for single case data:  A second study.  Behavior Modification, 31(6), 919-936.
+
+}
+{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
-%%  ~~who you are~~
 }
+\author{
+Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
+}
+%%  ~~who you are~~
+
 
 \examples{
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)

@@ -4,7 +4,7 @@
 \title{PAND legend
 %%  ~~function to do ... ~~
 }
-\description{Adds legend to PAND graph
+\description{Adds a legend to PAND graph. The graph can not be modified in any way after the legend is added.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -12,17 +12,17 @@ PANDlegend()
 }
 %- maybe also 'usage' for other objects documented here.
 
-\references{go to ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 
 \examples{
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
 pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-PANDabove(cry,pcry,"A","B1")
+PANDbelow(cry,pcry,"A","B1")
 PNDlegend()
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

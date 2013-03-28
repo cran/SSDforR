@@ -1,10 +1,10 @@
 \name{Cchart}
 \alias{Cchart}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{SPC C-Chart
+\title{SPC C-chart
 %%  ~~function to do ... ~~
 }
-\description{This function builds a c-chart and is used with individual (i.e., ungrouped) data.  A space separates each phase.  For use when the outcome variable is a count (i.e., ratio level) variable.
+\description{This function builds a C-chart and is used with individual (i.e., ungrouped) data.  A space separates each phase.  For use when the outcome variable is a count (i.e., ratio-level) variable.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,28 +18,34 @@ Cchart(behavior, phaseX, v1, bandX, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{phase letter mean SD are base upon
+  \item{v1}{phase letter analysis is based upon in quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{bandX}{number of standard deviation i.e. 2 
+  \item{bandX}{number of standard deviations desired (e.g., 2)
 %%     ~~Describe \code{bandX} here~~
 }
-  \item{ABxlab}{x label between quotes "weeks"
+  \item{ABxlab}{label for x-axis between quotation marks (e.g., "weeks")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label between quotes "amount"
+  \item{ABylab}{label for y-axis between quotation marks (e.g., "amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title between quotation marks (e.g., Crying)
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
 
-\references{Go to ssdanalysis.com for more information
+\references{
+{Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice: Guidelines for the accountable professional (6th ed.).  New York:  Pearson.
+
+Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
+
+}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD and Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD and Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

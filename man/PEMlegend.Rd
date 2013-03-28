@@ -4,7 +4,7 @@
 \title{PEM legend
 %%  ~~function to do ... ~~
 }
-\description{Adds legend to PEM graph
+\description{Adds a legend to a PEM graph.  The graph can not be modified in any way after the legend is added.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -12,10 +12,10 @@ PEMlegend()
 }
 %- maybe also 'usage' for other objects documented here.
 
-\references{go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

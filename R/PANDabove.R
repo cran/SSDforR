@@ -42,10 +42,10 @@ function(behavior,phaseX,v1,v2){
   yo<-readline("Y ordinate for your reference line  " )
   
   abline(h=yo,col="gray",lwd=3)
+ 
   ab<-NULL
   
   ab<<-recordPlot() 
-  
   #***********************above baseline
   nbaboveline<-B<as.numeric(yo)
   print(nbaboveline)
@@ -58,7 +58,7 @@ function(behavior,phaseX,v1,v2){
   
   max<-cdcl[maxy]+1
   numx<-sum(!is.na(cdcl))+3
-  par(mfrow=c(3,3)) 
+  #par(mfrow=c(3,3)) 
   
   maxy=which.max(behavior)
   
@@ -74,6 +74,6 @@ function(behavior,phaseX,v1,v2){
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
   
-  
+ 
   
 }

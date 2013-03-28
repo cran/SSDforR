@@ -26,10 +26,10 @@ function(behavior,phaseX,v){
   segments(x0=l$x,x1=mlin,y0=omedianu,lwd=3,col="black")
   l<-locator(1)
   segments(x0=l$x,x1=mlin,y0=omedianb,lwd=3,col="black")
-  u<-readline("accept line? (y/n) ")
+ u<-readline("accept line? (y/n) ")
   if (u=="n")
   {replayPlot(ab)}
-  if (u=="y")
+  
     ab<-NULL
     ab<<-recordPlot()
 }

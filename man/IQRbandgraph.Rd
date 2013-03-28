@@ -1,10 +1,10 @@
 \name{IQRbandgraph}
 \alias{IQRbandgraph}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Interquartial Band Graph
+\title{Interquartile band graph
 %%  ~~function to do ... ~~
 }
-\description{Draws a band graph for a selected phase
+\description{Draws an interquartile band graph for any phase.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,24 +18,24 @@ IQRbandgraph(behavior, phaseX, v1, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter for phase bands will be drawn for i.e "A"
+  \item{v1}{letter for phase for which bands will be drawn (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{ABxlab}{x labels
+  \item{ABxlab}{label for x-axis in quotation marks (e.g., "weeks")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y labels
+  \item{ABylab}{lable for y-axis in quotation marks (e.g., "amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title for graph in quotation marks (e.g., "Crying")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University,  Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

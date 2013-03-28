@@ -4,7 +4,7 @@
 \title{Median line for group data
 %%  ~~function to do ... ~~
 }
-\description{Places median line of baseline in group Box plot
+\description{Places median line for baseline in group boxplot.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,16 +18,16 @@ Gmedian(behavior, phaseX, v)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{phase letter for baseline i.e. "A"
+  \item{v}{phase letter for baseline (e.g., "A")
 %%     ~~Describe \code{v} here~~
 }
 }
 
 
-\references{Go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University,  Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

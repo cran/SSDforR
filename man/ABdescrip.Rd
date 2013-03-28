@@ -5,7 +5,7 @@
 %%  ~~function to do ... ~~
 }
 \description{
-This function produces descriptive statistics for all phases. Statistics produced are: mean, 10% trimmed mean, median, standard deviation (sd), coefficient of variation (CV), range, interquartile range, and quantiles.  Graphical output for this function is a boxplot of data in each phase.
+This function produces descriptive statistics for all phases. Statistics produced are: mean, 10 percent trimmed mean, median, standard deviation (sd), coefficient of variation (CV), range, interquartile range, and quantiles.  Graphical output for this function is a boxplot of data in each phase.
 }
 \usage{
 ABdescrip(behavior, PhaseX)
@@ -21,9 +21,14 @@ ABdescrip(behavior, PhaseX)
 }
 
 \references{
-Go to www.ssdanalysis.com for more information
+{Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Package to Analyze Single-System Data. Research on Social Work Practice, 23(3), 346-353. doi:10.1177/104973153477213
+
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+{Go to www.ssdanalysis.com for more information.
+%% ~put references to the literature/web site here ~
+}
+}
+\author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich,PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

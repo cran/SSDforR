@@ -32,5 +32,6 @@ function(behavior,phaseX,v1,ABxlab,ABylab,ABmain){
   
   tprint=c(psdu,pmean,psdb)
   print(tprint)
-  
+  ab<-NULL
+  ab<<-recordPlot()
 }

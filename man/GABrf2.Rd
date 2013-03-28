@@ -18,18 +18,23 @@ GABrf2(behavior, phaseX, timeX, v1)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{timeX}{time variable i.e. weeks
+  \item{timeX}{time variable (e.g., week)
 %%     ~~Describe \code{timeX} here~~
 }
-  \item{v1}{letter of phase being tested "A"
+  \item{v1}{letter of phase being tested  in quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
 }
 
-\references{For more information go to www.ssdanalysis.com
+\references{
+{Huitema, B.F. & McKean, J.W. (1994). Two reduced-biased autocorrelation estimators:  rF1 and rF2.  Perceptual and Motor Skills, 78(1), 323-330.
+
+}
+{Go to www.ssdanalysis.com for more information.
+}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

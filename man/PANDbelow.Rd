@@ -1,10 +1,10 @@
 \name{PANDbelow}
 \alias{PANDbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{PAND below
+\title{PAND - desired values below the reference line
 %%  ~~function to do ... ~~
 }
-\description{Percentage of Non-overlapping Data (PND) below the line. This type of effect size is calculated by using the percentage of data point in the intervention / treatment phase that exceeds a notable point in the baseline phase (Lenz, 2012; Scruggs & Mastropieri, 2012;  Scruggs & Mastropieri, 1998)
+\description{This effect size function evaluates the percentage of all non-overlapping Data (PAND) above the reference line in the comparison phase. Users will be prompted to enter a value for the reference line.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,24 +18,30 @@ PANDbelow(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter for first phase i.e "A"
+  \item{v1}{first phase variable (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{letter for second phase i.e "B"
+  \item{v2}{second phase variable (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
-\references{go to www.ssdanalysis.com
+\references{
+{Lenz, A.S. (2012). Calculating effect size in single-case research:  A comparison of nonoverlap methods.  Measurement and Evaluation in Counseling and Development, 46(1), 64-73.
+
+Parker, R.I. & Hagan-Burker, S. & Vannest, K. (2007).  Percentage of all non-overlapping data:  An alternative to PND.  The Journal of Special Education, 40(4), 194-204.
+
+}
+{
+Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+}
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 
 \examples{
-
-
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
 pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
 PANDbelow(cry,pcry,"A","B1")    

@@ -1,10 +1,10 @@
 \name{Rchartsd}
 \alias{Rchartsd}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{SPC R-chart with SD
+\title{SPC R-chart using standard deviation
 %%  ~~function to do ... ~~
 }
-\description{If the sample size is larger than ten, use of the standard deviation is recommended over the range (Orme & Cox, 2001).  Although our hypothetical data have a sample size of twelve.
+\description{The R-Chart is designed to detect changes in variation over time. This is one of two forms of the R-chart and should be used with samples larger than ten.  This function uses the standard deviation of samples to track variation.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -15,27 +15,32 @@ Rchartsd(behavior, groupX, bandX, ABxlab, ABylab, ABmain)
   \item{behavior}{behavior variable
 %%     ~~Describe \code{behavior} here~~
 }
-  \item{groupX}{grouping variable i.e. day
+  \item{groupX}{grouping variable (e.g., day)
 %%     ~~Describe \code{groupX} here~~
 }
-  \item{bandX}{number of standard deviations 1,2 or 3
+  \item{bandX}{number of standard deviations desired (e.g., 2)
 %%     ~~Describe \code{bandX} here~~
 }
-  \item{ABxlab}{x labels
+  \item{ABxlab}{label for x-axis in quotation marks, (e.g., "day")
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y labels
+  \item{ABylab}{label for y-axis in quotation marks (e.g., "amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title
+  \item{ABmain}{main title for graph in quotation marks (e.g., "Variation in Admits")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{go to ssdanalysis for more information
+\references{
+{Orme, J. & Cox, M.E. (2001). Analyzing single-subject design data using statistical proces control charts.  Social Work Research, 25(2), 115-127.
+
+}
+{Go to www.ssdanalysis.com for more information.}
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

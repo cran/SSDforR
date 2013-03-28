@@ -1,10 +1,10 @@
 \name{Trimline}
 \alias{Trimline}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Trim mean line added to ABplot
+\title{Trimmed mean line added to ABplot
 %%  ~~function to do ... ~~
 }
-\description{Adds Trim mean line to ABplot. Click on phase to add line
+\description{Adds trimmed mean line to ABplot. Click in the phase of the ABplot to add line.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,15 +18,15 @@ Trimline(behavior, phaseX, v)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{letter of phase trim mean is base upon
+  \item{v}{letter of phase for which trimmed mean is desired in quotation marks (e.g., "A")
 %%     ~~Describe \code{v} here~~
 }
 }
 
-\references{go to www.ssdanalysis for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wndy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva Univesity, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

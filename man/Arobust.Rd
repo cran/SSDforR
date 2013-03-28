@@ -1,11 +1,11 @@
 \name{Arobust}
 \alias{Arobust}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Robust Regression for a single phase
+\title{Robust regression for a single phase
 %%  ~~function to do ... ~~
 }
 \description{Uses MASS package developed by Brian Ripley <ripley@stats.ox.ac.uk> to
-conduct robust regression comparing any single phase. Coefficients and residuals are produced for each phase. Also a graph with a regression line is displayed for the phase in the graph window
+conduct robust regression for a single phase. Coefficients and residuals are produced. Also a graph with a regression line is displayed for the phase in the graph window.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -19,15 +19,15 @@ Arobust(behavior, phaseX, v1)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{phase letter i.e. "A"
+  \item{v1}{phase letter (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzeiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

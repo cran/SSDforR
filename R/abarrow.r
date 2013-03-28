@@ -9,8 +9,8 @@ function(){
   u<-readline("accept line? (y/n) ")
   if (u=="n")
   {replayPlot(ab)}
-  if (u=="y")
-    ab<-NULL
+ 
+   ab<-NULL
         ab<<-recordPlot()
   
   

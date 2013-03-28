@@ -1,7 +1,7 @@
 \name{ABregres}
 \alias{ABregres}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{OLS regression to compare trends between phases
+\title{OLS regression to compare phases
 %%  ~~function to do ... ~~
 }
 \description{Conducts OLS regression comparing any two phases. Coefficients and residuals are produced for each phase. Also a graph with a regression line is displayed for each phase in the graph window.
@@ -18,19 +18,24 @@ ABregres(behavior, phaseX, v1, v2)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{first phase letter i.e. "A"
+  \item{v1}{first phase letter (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{second phase letter i.e "B"
+  \item{v2}{second phase letter (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
 }
 
 
-\references{Go to www.ssdanalysis.com for more information
+\references{
+{Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Package to Analyze Single-System Data. Research on Social Work Practice, 23(3), 346-353. doi:10.1177/104973153477213
+
+}
+{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeiltlin Schudrich Wurzweiler School of Social Work
+}
+\author{Charles Auerbach, PhD & Wendy Zeiltlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -4,7 +4,7 @@
 \title{insert 
 %%  ~~function to do ... ~~
 }
-\description{Not used insert function
+\description{Insert function - this function is not in use by SSD for R end-users.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -22,10 +22,15 @@ insert(v, e, pos)
 %%     ~~Describe \code{pos} here~~
 }
 }
-
+\references{Go to www.ssdanalysis.com for more information.
+%% ~put references to the literature/web site here ~
+}
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University,  Wurzweiler School of Social Work
+%%  ~~who you are~~
+}
 
 \examples{
-#insert()
+# This function is not in use by SSD for R end-users.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

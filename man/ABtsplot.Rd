@@ -4,7 +4,7 @@
 \title{Time series plot for SSD Data
 %%  ~~function to do ... ~~
 }
-\description{This function builds time series chart for a given behavior across all phases.  A space separates each phase. There are no connecting dots.
+\description{This function builds a time series chart for a given behavior across all phases.  A space separates each phase. There are no connecting dots.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,21 +18,21 @@ ABtsplot(behavior, phaseX, ABxlab, ABylab, ABmain)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{ABxlab}{x label text should be between quotes i.e. "week"
+  \item{ABxlab}{label for x-axis between quotation marks (e.g., "week") 
 %%     ~~Describe \code{ABxlab} here~~
 }
-  \item{ABylab}{y label text should be between quotes i.e. "amount"
+  \item{ABylab}{label for y-axis between quotation marks (e.g., "amount")
 %%     ~~Describe \code{ABylab} here~~
 }
-  \item{ABmain}{main title should be between quotes i.e. "Crying"
+  \item{ABmain}{main title graph between quotation mark (e.g., "Crying")
 %%     ~~Describe \code{ABmain} here~~
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zietlin Schudrich, PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

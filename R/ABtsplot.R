@@ -25,4 +25,6 @@ graphics.off()
 ts.plot(y, ylim=c(0,max),xlim=c(0,numx),col="red", xlab=ABxlab, ylab=ABylab, main=ABmain )
 instruct<-"You can add lines between phases by using the ABlines() function. You can add text by using the ABtext() function. You can also add a mean, median, sd line by using the ABstat() function." 
 strwrap(instruct) 
+ab<-NULL
+ab<<-recordPlot()
 }

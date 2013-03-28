@@ -6,4 +6,5 @@ function(phaseX,v1,v2,successA,successB){
   psucessA=successA/tmaxA
   b=binom.test(x=successB, n=tmaxB, p=psucessA)
   print(b)
+ 
 }

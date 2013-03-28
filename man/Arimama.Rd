@@ -1,10 +1,10 @@
 \name{Arimama}
 \alias{Arimama}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Moving average uses Package TTR
+\title{Moving average for ARIMA 
 %%  ~~function to do ... ~~
 }
-\description{Moving average over any period
+\description{Moving average over any period for ARIMA.  Uses TTR Package.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,18 +18,18 @@ Arimama(behavior, phaseX, v, m)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v}{phase letter i.e. "A"
+  \item{v}{phase letter in quotation markse (e.g., "A")
 %%     ~~Describe \code{v} here~~
 }
-  \item{m}{number of periods to average over i.e. 2
+  \item{m}{number of periods to average over (e.g., 2)
 %%     ~~Describe \code{m} here~~
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles 
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

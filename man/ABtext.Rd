@@ -4,7 +4,7 @@
 \title{Add text to graph
 %%  ~~function to do ... ~~
 }
-\description{Text to be entered on graph must appear between quotation marks
+\description{Add text to graphs. Text must appear between quotation marks.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -12,15 +12,15 @@ ABtext(textx)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{textx}{text string entered between quotes i.e "baseline"
+  \item{textx}{text string must be entered between quotation marks (e.g., "baseline")
 %%     ~~Describe \code{textx} here~~
 }
 }
 
-\references{Go to www.ssdanalysis.com for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich Wurzweiler School of Social work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

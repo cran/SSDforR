@@ -5,7 +5,7 @@
 %%  ~~function to do ... ~~
 }
 \description{
-Binomial test comparing the number of observations of a phase in a desired zone to another phase. User needs to select method for defining a desired zone (e.g., below one SD)
+Binomial test comparing the number of observations of a phase in a desired zone to another phase. User needs to select method for defining a desired zone (e.g., below one SD).
 }
 \usage{
 ABbinomial(phaseX, v1, v2, successA, successB)
@@ -15,24 +15,24 @@ ABbinomial(phaseX, v1, v2, successA, successB)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter of first phase i.e."A"
+  \item{v1}{letter of first phase (e.g.,"A")
 %%     ~~Describe \code{v1} here~~
 }
-  \item{v2}{letter of second phase i.e. "B"
+  \item{v2}{letter of second phase (e.g., "B")
 %%     ~~Describe \code{v2} here~~
 }
-  \item{successA}{number in desired zone for first phase
+  \item{successA}{occurrences in desired zone for first phase
 %%     ~~Describe \code{successA} here~~
 }
-  \item{successB}{number in desired zone for second phase
+  \item{successB}{occurrences in desired zone for second phase
 %%     ~~Describe \code{successB} here~~
 }
 }
 
 \references{
-go to www.ssdanalysis.com for more information
+Go to www.ssdanalysis.com for more information.
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wuezweiler School of Social Work
+\author{Charles Auerbach,PhD & Wendy Zeitlin Schudrich,PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -2,10 +2,10 @@
 \alias{SSDforR}
 
 \title{
-SSD for R Visual and statistical analysis of single-subject-data
+List of all functions in SSD for R
 }
 \description{
-To list all function type SSDforR() in the console Visual analysis includes simple graphs, band graphs, SPC charts and more. Text can be added lines separating phases can be added. Statistical tests include descriptive, CDC, t-test, effect size, PND, PMD G-index, chi-square and more)
+Lists all the functions available in the SSD for R package.
 }
 \usage{
 SSDforR()
@@ -13,10 +13,9 @@ SSDforR()
 
 
 \references{
-see www.ssdanalysis.com for more information
+Go to www.ssdanalysis.com for more information.
 }
-\author{Charles Auerbach & Wendy Zeitlin 
-Wurzweiler school of social work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University,  Wurzweiler school of social work
 
 }
 

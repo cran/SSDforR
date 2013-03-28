@@ -1,10 +1,10 @@
 \name{diffchart}
 \alias{diffchart}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Difference Transformation
+\title{Difference transformation
 %%  ~~function to do ... ~~
 }
-\description{Produces first difference transformation on a phase
+\description{Produces first difference transformation on any phase.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -18,15 +18,15 @@ diffchart(behavior, phaseX, v1)
   \item{phaseX}{phase variable
 %%     ~~Describe \code{phaseX} here~~
 }
-  \item{v1}{letter for phase to be transformed i.e "A"
+  \item{v1}{letter for phase to be transformed between quotation marks (e.g., "A")
 %%     ~~Describe \code{v1} here~~
 }
 }
 
-\references{go to www.ssdanalysis for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva University, Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

@@ -4,8 +4,8 @@
 \title{IQR legend
 %%  ~~function to do ... ~~
 }
-\description{This function enables the user to place legend on a graph.  
-NOTE:  Once this legend is in place, the graph can no longer be altered.type IQRlegend() and return
+\description{This function creates a legend on an IQR band graph.  
+NOTE:  Once this legend is in place, the graph can no longer be altered.
 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -14,10 +14,10 @@ IQRlegend()
 }
 %- maybe also 'usage' for other objects documented here.
 
-\references{go to ssdanalysis for more information
+\references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach,PHD & Wendy Zeitlin Schudrich,PHD Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD & Wendy Zeitlin Schudrich, PhD; Yeshiva Univeresity,  Wurzweiler School of Social Work
 %%  ~~who you are~~
 }
 

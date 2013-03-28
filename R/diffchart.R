@@ -39,11 +39,11 @@ function(behavior,phaseX,v1){
   
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(diff,ylim=c(mindiff,max),type="l",col="red",bty='L',main="Difference Chart")
+  plot(diff,ylim=c(mindiff,max),type="l",col="red",bty='L',lty=2,main="Difference Chart")
   lines(A,ylim=c(min,max),type="l",col="blue")
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("diff","Behavior"), col = c("red", "blue"), lwd = 1,ncol=2,bty ="n")
+  legend("center", c("diff","Behavior"), col = c("red", "blue"), lty=c(2,1),lwd = 1,ncol=2,bty ="n")
         
   diff=c(diff,NA)
   behavior=c(A,NA)
