@@ -1,0 +1,57 @@
+\name{GABttest}
+\alias{GABttest}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{T-test for group data
+%%  ~~function to do ... ~~
+}
+\description{Computes t-test on group data.
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+}
+\usage{
+GABttest(behavior, phaseX, timeX, v1, v2)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{behavior}{behavior variable
+%%     ~~Describe \code{behavior} here~~
+}
+  \item{phaseX}{phase variable
+%%     ~~Describe \code{phaseX} here~~
+}
+  \item{timeX}{time variable i.e week
+%%     ~~Describe \code{timeX} here~~
+}
+  \item{v1}{first phase letter
+%%     ~~Describe \code{v1} here~~
+}
+  \item{v2}{second phase letter
+%%     ~~Describe \code{v2} here~~
+}
+}
+
+\references{go to ssdanalysis for more information
+%% ~put references to the literature/web site here ~
+}
+\author{Charles Auerbach,PHD & Wendy Zeitlin,PHD Wurzweiler School of Social Work
+%%  ~~who you are~~
+}
+
+\examples{
+attend<-c(0,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,1,1,0,0,1,NA,
+0,1,1,0,1,1,0,1,1,1,0,1,0,0,1,1,1,1,0,0,1,1,0,1,0,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+
+week<-c(1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,NA,6,6,6,6,6,7,7,7,7,7,
+8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,11,11,11,11,11,12,12,12,12,12,13,
+13,13,13,13,14,14,14,14,14,15,15,15,15,15)
+
+pattend<-c("A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A",
+"A","A","A",NA,"B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B",
+"B","B","B","B","B","B","B","B","B","B","B","B","B","B",
+"B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B")
+GABttest(attend, pattend, week, "A", "B")
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ ~kwd1 }
+\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
