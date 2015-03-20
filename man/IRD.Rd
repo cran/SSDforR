@@ -40,7 +40,7 @@ Parker, R.I. & Hagan-Burke, S. (2007). Median-based overlap analysis for single 
 }
 }
 \author{
-Charles Auerbach, PhD & Wendy Zeitlin,PhD; Yeshiva University, Wurzweiler School of Social Work
+Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
 }
 %%  ~~who you are~~
 
