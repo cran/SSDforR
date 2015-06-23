@@ -1,6 +1,7 @@
+
 ABtext <-
 function(textx){
- 
+  text<-NULL
   writeLines("------------------------------------------------------------------------")
   writeLines("Click the mouse where you want the text to begin.")
   writeLines("------------------------------------------------------------------------")

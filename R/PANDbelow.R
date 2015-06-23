@@ -1,6 +1,6 @@
 PANDbelow <-
 function(behavior,phaseX,v1,v2){
-  if("psych" %in% rownames(installed.packages()) == FALSE) {install.packages("psych")} 
+
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
