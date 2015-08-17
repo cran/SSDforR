@@ -4,8 +4,9 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   maxy=which.max(behavior)
   max<-behavior[maxy]+1
   numx<-sum(!is.na(behavior))+3
-  
-  y<-na.omit(behavior)
+  miny=which.min(behavior)
+  min<-behavior[miny]
+   y<-na.omit(behavior)
   total=length(y)
   x=(1:total)
   
@@ -25,7 +26,7 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   
   
   graphics.off()
-  plot(x,y, ylim=c(0,max),xlim=c(0,numx),lwd=2,type="o",col="red", xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L' )
+  plot(x,y, ylim=c(min,max),xlim=c(0,numx),lwd=2,type="o",col="red", xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L' )
  
   
   ab<-NULL
