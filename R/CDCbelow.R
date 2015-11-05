@@ -55,7 +55,8 @@ function(behavior,phaseX,v1,v2){
   maxy=which.max(behavior)
   
   max<-behavior[maxy]+1
-  
+  miny=which.min(behavior)
+  min<-behavior[miny]
   numx<-sum(!is.na(behavior))+3
   
   
@@ -81,7 +82,7 @@ function(behavior,phaseX,v1,v2){
   graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC" )
+  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC" )
   
   abline(h=(meanA),col="green")
   abline(a=yA,b=BetaA,col='Blue',lty="dashed")

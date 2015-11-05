@@ -81,6 +81,31 @@ print(c(PG1,l7))
   print(round(rvalue,3))
   writeLines("*****************R-squared*****************************")
   print(round(rvalue2,3))
+  a<-readline("(s)ave, (a)ppend, or (n)either results? (s/a or n) ")
   
+  ES<-cd1
+ 
+  ES=data.frame(ES)
+  
+  if (a=="s")
+    {Label<-readline("Enter a behavior variable label ")
+    ES<-data.frame(ES,Label)
+  write.csv(ES,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)
+  
+   } 
 
+   if (a=="a")
+   { Label<-readline("Enter a behavior variable label ")
+   ES<-cd1
+     ES<-data.frame(ES,Label)
+     writeLines("*****************open file to append to***************************")
+     effA<-read.table(file.choose(),header=TRUE,sep=',') 
+            out=rbind(effA,ES)
+            writeLines(" ")
+            writeLines(" ")
+            writeLines(" ")
+            writeLines("*****************save appended file***************************")            
+      write.csv(out,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE) }
+   
+  
 }
