@@ -3,6 +3,8 @@ function(behavior,phaseX,v1,v2) {
   mean1 <-tapply(behavior,phaseX,mean,na.rm=T)
   s1 <-tapply(behavior,phaseX, sd, na.rm=T)
  
+ 
+  
   tphase<-table(phaseX)
   n1<- tphase[names(tphase)==v1]
   n2<- tphase[names(tphase)==v2]
@@ -14,6 +16,8 @@ function(behavior,phaseX,v1,v2) {
  
   S<-sqrt(((n1*(s1[names(s1)==v1]^2)+(n2*s1[names(s1)==v2]^2))/totaln))
   CD<-(DIFF/S)
+
+   V<-S^2
  
   cm=gamma((totaln/2))/(sqrt(totaln/2)*gamma((totaln-1)/2))
   G<-CD*cm
@@ -89,7 +93,7 @@ print(c(PG1,l7))
   
   if (a=="s")
     {Label<-readline("Enter a behavior variable label ")
-    ES<-data.frame(ES,Label)
+    ES<-data.frame(ES,V,Label)
   write.csv(ES,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)
   
    } 
@@ -97,7 +101,7 @@ print(c(PG1,l7))
    if (a=="a")
    { Label<-readline("Enter a behavior variable label ")
    ES<-cd1
-     ES<-data.frame(ES,Label)
+     ES<-data.frame(ES,V,Label)
      writeLines("*****************open file to append to***************************")
      effA<-read.table(file.choose(),header=TRUE,sep=',') 
             out=rbind(effA,ES)

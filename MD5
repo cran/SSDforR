@@ -1,5 +1,5 @@
-466c57574ca443c01341cc833ec739d0 *DESCRIPTION
-14e02d9b0ad0b0c07094cb02c994c65a *NAMESPACE
+7725b45bdf7539eca24aa7de342b14cf *DESCRIPTION
+b40b58ec4c564124b802b78c2a8fcad0 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
 52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
@@ -27,7 +27,7 @@ e95dcdf7297739b05ffba4889ac7bb3d *R/Arimama.R
 aa67200b9fdef03f4bbab2125c4fc1ce *R/CDCabove.R
 9dbdb3b43f4b08e62a33e999d325adc5 *R/CDCbelow.R
 aa64df4334c9f75df0382f6559fdc778 *R/Cchart.R
-dcbbfc17665f0c053a27c681eb98b689 *R/Effectsize.R
+f1104dbd27ee8a8559c33e5c6f298bea *R/Effectsize.R
 d603b15b63efcee9c19975d19a5c992a *R/GABrf2.R
 71b6bce2acef499780ff289d6dde6b89 *R/GABttest.R
 f76b30354ac9502387804e6e47fd7c59 *R/Gindex.R
@@ -74,6 +74,7 @@ c6fa891e719885c5e373d68896343fab *R/listnames.R
 1629111cc887bb54a113fcec61c2d4ba *R/meanbelow.R
 b0dc902f50199a2dcdd02cee7c663512 *R/medabove.R
 d99cbee42453b98f9b1c5b9691e5e9fe *R/medbelow.R
+a742d41e1804eae7dabc0ef1e7f9e366 *R/metareg.R
 d2bfe469d1af005a3f9ab60860a9e947 *R/plotnum.R
 3856b5ddf43e12120e8316dd7825ffb0 *R/regabove.R
 9b91a9f7bb9edf54ebd7dd9cbb191d25 *R/regbelow.R
@@ -151,6 +152,7 @@ c1816082f49913b29c12fb8728e7d1ae *man/meanabove.rd
 f03b799d609112354f95b2bcea132564 *man/meanbelow.rd
 3ee00233de1ea6f7dd4babe76daf7534 *man/medabove.rd
 40d1c2defc6dfc1fc97c2e259a8f6dc4 *man/medbelow.rd
+c139a73b06989502079e7e1b606e4e7a *man/metareg.Rd
 d9f486744e27d3a3472917b150773024 *man/pandabove.rd
 57256c511752dd97dae9ce7b4e97da37 *man/pandbelow.rd
 b1747fa4b6da7afe647e6454d85949a5 *man/pemlegend.rd
