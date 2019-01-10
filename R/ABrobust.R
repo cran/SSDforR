@@ -31,8 +31,9 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  graphics.off()
+ 
   par(mfrow=c(2,2))
+  
   plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab="behavior", bty='L',main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   plot(x2,B,lwd=2,type="o",col="green", xlab="time", ylab="",bty='L', main=v2 )

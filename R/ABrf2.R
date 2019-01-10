@@ -68,8 +68,8 @@ sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
   print(regA)
   yA<-regA$coefficients[1]
   BetaA<-regA$coefficient[2]
-  graphics.off()
-  
+  #graphics.off()
+  layout(rbind(1,2), heights=c(4,1))
   plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab="behavior", main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   

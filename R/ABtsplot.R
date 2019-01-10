@@ -21,11 +21,11 @@ while (j <= np){
   j=j+1
 }
 
-graphics.off()
+#graphics.off()
+layout(rbind(1,2), heights=c(4,1))
 ts.plot(y, ylim=c(0,max),xlim=c(0,numx),col="red", xlab=ABxlab, ylab=ABylab, main=ABmain )
 
-ab<-NULL
-ab<<-recordPlot()
+
 writeLines("-------------------------------------------------------------------------------------")
 writeLines("1-You can add lines between phases by using the ABlines() function.")
 writeLines("2-You can add text by using the ABtext() function.")

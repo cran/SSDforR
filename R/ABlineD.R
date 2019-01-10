@@ -1,5 +1,8 @@
 ABlineD <-
 function(behavior){
+  targetindex<-dev.cur() 
+  targetindex<-recordPlot() 
+  
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("Click the mouse in the gap between the phases you want the line in.")
   writeLines("-------------------------------------------------------------------------------------")
@@ -17,10 +20,8 @@ function(behavior){
   
   u<-readline("accept line? (y/n) ")
  if (u=="n")
-  {replayPlot(ab)}
+  {replayPlot(targetindex)}
  
-    ab<-NULL
-    ab<<-recordPlot()
-  {assign('ab', recordPlot())}
+   
   
 }

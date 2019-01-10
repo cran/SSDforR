@@ -45,8 +45,8 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   if (f2==TRUE)
   {miny=Lband-2}
   
-  graphics.off()
-  layout(rbind(1,2), heights=c(6,1))
+  #graphics.off()
+  layout(rbind(1,2), heights=c(4,1))
   plot(x,y,ylim=c(miny,maxy),type="o",col="red",ylab=ABylab,xlab=ABxlab,main=ABmain,bty="l")
   
   abline(h=bmean,col="green")
@@ -63,7 +63,5 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   print(puband)
   print(pmean)
   print(plband)
-  ab<-NULL
   
-  ab<<-recordPlot()
 }

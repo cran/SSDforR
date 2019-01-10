@@ -55,7 +55,7 @@ pattend<-c("A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A",
 ,"B","B","B",
 "B","B","B","B","B","B","B","B","B","B","B","B","B","B",
 "B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B")
-GABrf2(attend,pattend,week,"A")
+# now run: GABrf2(attend,pattend,week,"A")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

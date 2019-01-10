@@ -16,8 +16,8 @@ maxy=which.max(behavior)
 max<-behavior[maxy]
 #numx<-sum(!is.na(behavior))+1
 numx=length(x1)+1
-graphics.off()
-layout(rbind(1,2), heights=c(6,1))
+#graphics.off()
+layout(rbind(1,2), heights=c(4,1))
 plot(A,ylim=c(0,max),xlim=c(0,numx),type="o",xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L')
 abline(h=SDabove,col="blue")
 abline(h=SDbelow,col="red")
@@ -33,6 +33,5 @@ print(sd1)
 print(psdu)
 print(pmean)
 print(psdb)
-ab<-NULL
-ab<<-recordPlot()
+
 }

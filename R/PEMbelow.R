@@ -53,13 +53,11 @@ function(behavior,phaseX,v1,v2){
   writeLines(".70 to .89 = moderate effectiveness")
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
-  graphics.off()
-  layout(rbind(1,2), heights=c(6,1))
+  #graphics.off()
+  layout(rbind(1,2), heights=c(4,1))
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PEM" )
   
   abline(h=medianA,col="gray",lwd=3)
-  ab<-NULL
   
-  ab<<-recordPlot()
 }

@@ -43,17 +43,15 @@ function(behavior,phaseX,v1,ABxlab,ABylab, ABmain){
     j=j+1
   }
   
-  graphics.off()
-  layout(rbind(1,2), heights=c(6,1))
+  
+  layout(rbind(1,2), heights=c(4,1))
   plot(x,y,type="o",ylim=c(min,max),col="red",xlab=ABxlab,ylab=ABylab,main=ABmain,bty="l")
-  #
+  
   abline(h=meanA,col="green",lwd=3)
   abline(h=SDabove,col="black",lwd=3)
   abline(h=SDbelow,col="black",lwd=3)
   
-  #par(mar=c(1, 1, 1, 1))
-  #plot.new()
-  #legend("center", c("behavior","+2sd","mean","-2sd"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
+  
   sdp<-c("SD",round(sdA,2))
   psdu<-c("+2SD",round(SDabove,2))
   pmean<-c("mean",round(meanA,2))
@@ -62,7 +60,5 @@ function(behavior,phaseX,v1,ABxlab,ABylab, ABmain){
   
   tprint=c(sdp,psdu,pmean,psdb)
   print(tprint)
-  ab<-NULL
   
-  ab<<-recordPlot()
 }

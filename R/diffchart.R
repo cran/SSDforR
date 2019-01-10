@@ -35,9 +35,9 @@ function(behavior,phaseX,v1){
   maxdiff=maxdiff+2
  
 
-  graphics.off()
+  #graphics.off()
   
-  layout(rbind(1,2), heights=c(6,1))
+  layout(rbind(1,2), heights=c(4,1))
   
   plot(diff,ylim=c(mindiff,max),type="l",col="red",bty='L',lty=2,main="Difference Chart")
   lines(A,ylim=c(min,max),type="l",col="blue")

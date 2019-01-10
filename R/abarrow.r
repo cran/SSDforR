@@ -1,6 +1,9 @@
 ABarrow <-
 function(){
    
+  targetindex<-dev.cur() 
+  targetindex<-recordPlot() 
+  
    writeLines("-------------------------------------------------------------------------------------")
    writeLines("1-Click the mouse on the top of the graph where the arrow should begin.")
    writeLines("2-Repeat at the point of the graph for where the arrow should end.")
@@ -13,10 +16,8 @@ function(){
    
    u<-readline("accept line? (y/n) ")
    if (u=="n")
-   {replayPlot(ab)}
+   {replayPlot(targetindex)}
    
-   ab<-NULL
-   ab<<-recordPlot()
   
   
 }

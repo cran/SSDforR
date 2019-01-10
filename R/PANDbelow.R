@@ -35,16 +35,14 @@ function(behavior,phaseX,v1,v2){
   max<-behavior[maxy]+1
   
   numx<-sum(!is.na(behavior))+3
-  graphics.off()
-  layout(rbind(1,2), heights=c(6,1))
+  #graphics.off()
+  layout(rbind(1,2), heights=c(4,1))
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PAND" )
   yo<-readline("Y ordinate for your reference line  " )
  
   abline(h=yo,col="gray",lwd=3)
-  ab<-NULL
   
-  ab<<-recordPlot()
   
   #***********************below baseline
   nbelowline<-B>=as.numeric(yo)

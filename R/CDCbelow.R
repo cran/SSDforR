@@ -79,10 +79,10 @@ function(behavior,phaseX,v1,v2){
   writeLines ("TRUE, TRUE = Number below the lines")
   print(nbelow)
   
-  graphics.off()
+  #graphics.off()
   
-  layout(rbind(1,2), heights=c(6,1))
-  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC" )
+  layout(rbind(1,2), heights=c(4,1))
+  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC Below" )
   
   abline(h=(meanA),col="green")
   abline(a=yA,b=BetaA,col='Blue',lty="dashed")

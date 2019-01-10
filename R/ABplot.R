@@ -25,12 +25,12 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   
   
   
-  graphics.off()
+  
+  layout(rbind(1,2), heights=c(4,1))
   plot(x,y, ylim=c(min,max),xlim=c(0,numx),lwd=2,type="o",col="red", xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L' )
  
   
-  ab<-NULL
-  ab<<-recordPlot()
+  
   
   
   writeLines("-------------------------------------------------------------------------------------")

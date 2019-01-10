@@ -46,7 +46,7 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   if (f2==TRUE)
   {miny=Lband-1}
   
-  graphics.off()
+ # graphics.off()
   y<-na.omit(behavior)
   total=length(y)
   x=(1:total)
@@ -63,7 +63,7 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
     x<-insert(x,NA,e)
     j=j+1
   }
-  layout(rbind(1,2), heights=c(6,1))
+  layout(rbind(1,2), heights=c(4,1))
   
   plot(x,y,ylim=c(miny,maxy),type="o",col="red",bty='L',xlab=ABxlab,ylab=ABylab,main=ABmain)
   
@@ -81,7 +81,5 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   print(pmean)
   print(plband)
   
-  ab<-NULL
   
-  ab<<-recordPlot()
 }

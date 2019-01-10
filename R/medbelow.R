@@ -14,7 +14,7 @@ function (behavior,phaseX,v1,v2) {
   f1<-fisher.test(ctbl,alternative = "two.sided")
   print(c1)
   print(f1)
-  graphics.off()
+  #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   plot(behavior,col="red",type="o")
   abline(h=medianx,col="green")

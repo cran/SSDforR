@@ -1,9 +1,9 @@
 ABdescrip <-
   function(behavior,PhaseX){
-    graphics.off()
-    boxplot(behavior~PhaseX)
-    ab<-NULL
-    ab<<-recordPlot()
+   
+    
+    
+
     writeLines("-----------n-------------")
     t1<-table(PhaseX)
     print(t1)
@@ -44,5 +44,7 @@ ABdescrip <-
     abquan<-tapply(behavior,PhaseX,quantile,na.rm=T)
     do.call("rbind", abquan)
     
+    layout(rbind(1,2), heights=c(4,1))
+    boxplot(behavior~PhaseX)
     
   }

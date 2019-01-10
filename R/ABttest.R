@@ -25,6 +25,7 @@ t2<-t.test(A,B,var.equal=TRUE)
  Means<-c(meanA,meanB) 
   
   
-  graphics.off()
+  
+ layout(rbind(1,2), heights=c(4,1))
   barplot(Means,ylab="mean",names.arg=c(v1,v2))
 }

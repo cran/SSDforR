@@ -121,7 +121,7 @@ function(behavior,phaseX, v1,v2){
   numx<-sum(!is.na(behavior))+3
   
   
-  graphics.off()
+  #graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="Regression Line" )

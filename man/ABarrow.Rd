@@ -25,7 +25,7 @@ Oxford University Press, 2014. p46-p50
 1, 2, 1, 0, 0, 0)
 pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", 
 "B", "B", NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-ABplot(cry,pcry,"week","amount","Crying")
+# now run ABplot(cry,pcry,"week","amount","Crying")
 # now run ABarrow()
 
 }

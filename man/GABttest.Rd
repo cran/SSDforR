@@ -57,7 +57,7 @@ pattend<-c("A","A","A","A","A","A","A","A","A","A","A","A","A","A",
 "B","B","B","B","B","B","B","B","B","B","B","B","B","B",
 "B","B","B","B","B","B","B","B","B","B","B","B","B","B"
 ,"B","B","B","B")
-GABttest(attend, pattend, week, "A", "B")
+# now run GABttest(attend, pattend, week, "A", "B")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -125,8 +125,8 @@ function(behavior,phaseX,v1,v2){
   l2<-c("G mean= ",round(gbmean,3),"  G median= ", round(gbmedian,3) ,"G Regression line= ",round(gbline,3))
   print(l2)
   
-  graphics.off()
-  layout(rbind(1,2), heights=c(6,1))
+  #graphics.off()
+  layout(rbind(1,2), heights=c(4,1))
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="g-index" )
   
