@@ -57,7 +57,3 @@ day<-c(1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,NA,6,6,
 13,13,13,13,14,14,14,14,14,15,15,15,15,15)
 Pchart(attend, day, 2, "week", "amount", "Group attendance")
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

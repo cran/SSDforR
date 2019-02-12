@@ -43,7 +43,4 @@ Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Pa
 \examples{ #need to open a file
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

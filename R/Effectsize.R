@@ -47,7 +47,9 @@ IV<-c(PA,PB)
   DIFF<-mean1[names(mean1)==v2]-mean1[names(mean1)==v1]
   S<-s1[names(s1)==v1]
   es<-(DIFF/S)
-  
+  nt=n1+n2+2
+  nx=n1+1
+  ny=n2+1
   l1<-c("small effect size: <.87")
   l2<-c("medium effect size: .87 to 2.67 ")
   l3<-c("large effect size: >2.67")
@@ -58,11 +60,13 @@ IV<-c(PA,PB)
   writeLines("********************ES**********************************")
   
   es1<-round(es,5)
-  pes1<-c("ES=        ",es1)
+  pes1<-c("ES=        ",abs(es1))
   eschange=pnorm(es)-.5
   l5<-c("% change=",round(eschange,4)*100)
   print(c(pes1,l5))
-  
+  des<-abs(es1)
+  esci<- d.ci(des,n2=ny,n1=nx)
+  print(esci)
   
   
   writeLines("*****************d-index*******************************")
@@ -71,8 +75,10 @@ IV<-c(PA,PB)
   dchange=pnorm(CD)-.5
   l6<-c("% change=",round(dchange,4)*100)
   
+ dci<- d.ci(CD,n=nt,n2=ny,n1=nx)
+ 
   print(c(pcd1,l6))
-  
+  print(dci)
  writeLines("*****************Hedges's g****************************")
   hchange=pnorm(G)-.5
 G1<-(round(abs(G),5))
@@ -80,7 +86,8 @@ PG1<-c("Hedges's g=",G1)
 l7<-c("% change=",round(hchange,4)*100)
 
 print(c(PG1,l7))
-
+Gci<- d.ci(G1,n=nt,n2=ny,n1=nx)
+print(Gci)
   writeLines("*****************Pearson's r***************************")
   print(round(rvalue,3))
   writeLines("*****************R-squared*****************************")

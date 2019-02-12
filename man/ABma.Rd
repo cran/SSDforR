@@ -39,7 +39,3 @@ pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B",
 NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
 ABma(cry, pcry, "A")
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

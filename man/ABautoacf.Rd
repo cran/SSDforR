@@ -39,7 +39,3 @@ pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B",
 NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
 ABautoacf(cry, pcry, "B", 2)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

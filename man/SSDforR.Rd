@@ -25,5 +25,3 @@ Go to www.ssdanalysis.com for more information.
 \examples{SSDforR()
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
