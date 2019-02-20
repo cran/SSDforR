@@ -1,4 +1,4 @@
-068e8cf6d8b2489117bb92d1690d5b5d *DESCRIPTION
+ff3865f47656a1e7c7c9a6a8cc88e367 *DESCRIPTION
 3adae660e8a060d35c64d5a280a53e11 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -27,7 +27,7 @@ faf548a6e806130e858e02b3ace99c65 *R/Arobust.R
 7e126269b1974a602c8d6f1c0bc63ba7 *R/CDCabove.R
 0773b975cf6dfa65894a90079f2c11d9 *R/CDCbelow.R
 df66255efbf0e25f333af883ea801882 *R/Cchart.R
-4adad4d7d87c2666e6832be8b2a072e0 *R/Effectsize.R
+a15314f5aacca1b44d642f8e2a9788ee *R/Effectsize.R
 3bf83e52423bc12562e890fbbd4d8a43 *R/GABrf2.R
 2d0a654f15c8bc287d1611baf1899440 *R/GABttest.R
 551c448d94ab706339a0ce7b1a089f6f *R/Gindex.R
@@ -74,7 +74,8 @@ c6fa891e719885c5e373d68896343fab *R/listnames.R
 1629111cc887bb54a113fcec61c2d4ba *R/meanbelow.R
 b0dc902f50199a2dcdd02cee7c663512 *R/medabove.R
 39687c7051f7195ca05a114a96a4b848 *R/medbelow.R
-38135182257f7ac2d8206803f8ab206a *R/metareg.R
+4f96883073588efca1a2508f420495b4 *R/metareg.R
+e08bfc4e5c9db8f5dba54ef3ea22525a *R/metaregi.R
 6ee29cbb217eb4e2b84138b5bddbcf36 *R/plotnum.R
 cf0d89a42de96e07a6ce2d719180fcf0 *R/regabove.R
 0b0f01507c8246f64cca2e8f3fbc7362 *R/regbelow.R
@@ -152,7 +153,8 @@ c7db331226dadee482b034ab38e0fe6a *man/meanabove.rd
 748d57ead4772d13741fbc012740520f *man/meanbelow.rd
 17881f993133634bd084f6252793c225 *man/medabove.rd
 53bb7ea0fd8528cbc4ca1fb0b623d848 *man/medbelow.rd
-433882fb2533a899d767879dafc02c32 *man/metareg.Rd
+c68de06e49af2eb3de60c6092fb89939 *man/metareg.Rd
+1cd5ff1149df1c8d66c78aab84ad54e5 *man/metaregi.Rd
 866fb231732b4efb020e95c6750040c7 *man/pandabove.rd
 4967bdeb58746dcbb127aa7fa7d5f9fe *man/pandbelow.rd
 19a78330ad714d7e1c588a72b11a8e47 *man/pemlegend.rd

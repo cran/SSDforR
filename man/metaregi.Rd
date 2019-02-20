@@ -1,22 +1,24 @@
-\name{metareg}
-\alias{metareg}
+\name{metaregi}
+\alias{metaregi}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Meta Regression
+\title{Meta Regression with Moderator
 %%  ~~function to do ... ~~
 }
 \description{Meta regression for saved effect sizes in SSDforR. Use the Getcsv() function to open the saved effect size file.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-#metareg(es, v)
+metaregi(es, i, v)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{es}{effect size variable
 %%     ~~Describe \code{behavior} here~~
 }
-  \item{v}{variance of effect size
+  \item{i}{moderator
 %%     ~~Describe \code{phaseX} here~~
+}
+\item{v}{variance of effect size
 }
 }
 \references{Go to www.ssdanalysis.com for more information.
@@ -35,7 +37,7 @@ Wurzweiler School of Social Work
 \examples{
 ES<-c(.3, .4, .2, .5, .3, .4)
 V<-c(.01, .03, .04, .02, .03, .02) 
-
-metareg(ES,V)
+I<-c(1,3,5,4,6,7)
+metaregi(ES,I,V)
 
 }

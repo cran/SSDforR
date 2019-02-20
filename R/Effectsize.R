@@ -66,6 +66,7 @@ IV<-c(PA,PB)
   print(c(pes1,l5))
   des<-abs(es1)
   esci<- d.ci(des,n2=ny,n1=nx)
+  writeLines(" ")
   print(esci)
   
   
@@ -78,7 +79,9 @@ IV<-c(PA,PB)
  dci<- d.ci(CD,n=nt,n2=ny,n1=nx)
  
   print(c(pcd1,l6))
+  writeLines(" ")
   print(dci)
+  
  writeLines("*****************Hedges's g****************************")
   hchange=pnorm(G)-.5
 G1<-(round(abs(G),5))
@@ -87,6 +90,7 @@ l7<-c("% change=",round(hchange,4)*100)
 
 print(c(PG1,l7))
 Gci<- d.ci(G1,n=nt,n2=ny,n1=nx)
+writeLines(" ")
 print(Gci)
   writeLines("*****************Pearson's r***************************")
   print(round(rvalue,3))
