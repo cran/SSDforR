@@ -33,7 +33,7 @@ importFrom(stats,quantile)
 importFrom(stats,na.omit)
 importFrom(graphics,layout)
 importFrom(graphics,dotchart)
-
+importFrom(graphics,title)
 importFrom(graphics,segments)
 importFrom(graphics,lines)
 importFrom(graphics,par)

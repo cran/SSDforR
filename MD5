@@ -1,5 +1,5 @@
-ff3865f47656a1e7c7c9a6a8cc88e367 *DESCRIPTION
-3adae660e8a060d35c64d5a280a53e11 *NAMESPACE
+ab205727cad84d0b74de7c7cdb180cb5 *DESCRIPTION
+d75aadab1833e025fb31e04b3f848880 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
 52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
@@ -74,8 +74,8 @@ c6fa891e719885c5e373d68896343fab *R/listnames.R
 1629111cc887bb54a113fcec61c2d4ba *R/meanbelow.R
 b0dc902f50199a2dcdd02cee7c663512 *R/medabove.R
 39687c7051f7195ca05a114a96a4b848 *R/medbelow.R
-4f96883073588efca1a2508f420495b4 *R/metareg.R
-e08bfc4e5c9db8f5dba54ef3ea22525a *R/metaregi.R
+9c30368308f26e60b8daf78a9516cf22 *R/metareg.R
+c99d0a75d0ae9320112ecbc02682c3af *R/metaregi.R
 6ee29cbb217eb4e2b84138b5bddbcf36 *R/plotnum.R
 cf0d89a42de96e07a6ce2d719180fcf0 *R/regabove.R
 0b0f01507c8246f64cca2e8f3fbc7362 *R/regbelow.R
