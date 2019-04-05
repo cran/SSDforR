@@ -1,6 +1,8 @@
 ABstat <-
 function(behavior,phaseX,v,statX){
- 
+  targetindex<-dev.cur() 
+  targetindex<-recordPlot() 
+  
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("Click the mouse in the beginning of the phase you want the line in")
   writeLines("-------------------------------------------------------------------------------------")
@@ -21,9 +23,7 @@ function(behavior,phaseX,v,statX){
   segments(x0=l$x,x1=mlin,y0=omedian,col=cl,lty=tl,lwd=3)
   u<-readline("accept line? (y/n) ")
   if (u=="n")
-  {replayPlot(ab)}
   
-    ab<-NULL
     
-  ab<<-recordPlot()
+  {replayPlot(targetindex)}
 }

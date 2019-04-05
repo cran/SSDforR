@@ -1,5 +1,9 @@
 Trimline <-
 function(behavior,phaseX,v){
+  
+  targetindex<-dev.cur() 
+  targetindex<-recordPlot() 
+  
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("Click the mouse in the beginning of the phase you want the line in")
   writeLines("-------------------------------------------------------------------------------------")
@@ -21,13 +25,12 @@ function(behavior,phaseX,v){
   l<-locator(1)
   mlin<-l$x+mlin
   segments(x0=l$x,x1=mlin,y0=trimmean,col="red",lty=2,lwd=3)
-  
   u<-readline("accept line? (y/n) ")
   if (u=="n")
-  {replayPlot(ab)}
-  
- ab<-NULL 
-  ab<<-recordPlot()
-  
+    
+    
+    
+  {replayPlot(targetindex)}
+ 
  
 }
