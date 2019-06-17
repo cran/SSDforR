@@ -105,8 +105,11 @@ print(Gci)
   if (a=="s")
     {Label<-readline("Enter a behavior variable label ")
     ES<-data.frame(ES,V,Label)
-  write.csv(ES,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)
   
+    write.csv(ES,file = file.choose(new = T),row.names=FALSE)
+    
+  #write.csv(ES,file = tclvalue(tcl('tk_getSaveFile')),row.names=FALSE)
+    
    } 
 
    if (a=="a")
@@ -114,13 +117,15 @@ print(Gci)
    ES<-cd1
      ES<-data.frame(ES,V,Label)
      writeLines("*****************open file to append to***************************")
+     
      effA<-read.table(file.choose(),header=TRUE,sep=',') 
             out=rbind(effA,ES)
             writeLines(" ")
             writeLines(" ")
             writeLines(" ")
-            writeLines("*****************save appended file***************************")            
-      write.csv(out,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE) }
-   
+            writeLines("*****************save appended file***************************")  
+            
+            write.csv(out,file = file.choose(new = T),row.names=FALSE)}
+  #write.csv(out,file = tclvalue(tcl('tk_getSaveFile')),row.names=FALSE) }
   
 }

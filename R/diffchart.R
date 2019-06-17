@@ -54,7 +54,9 @@ function(behavior,phaseX,v1){
   a<-readline("Save results? (y/n) ")
 
   if (a=="y")
-  {write.csv(transdat,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)}
+    
+    {write.csv(transdat,file = file.choose(new = T),row.names=FALSE)}
+  #{write.csv(transdat,file = tclvalue(tcl("tk_getSaveFile")),row.names=FALSE)}
   
   print(transdat)
   

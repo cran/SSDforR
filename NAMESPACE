@@ -1,10 +1,13 @@
 exportPattern("^[[:alpha:]]+")
 import(psych)
-import(TTR)
+#import(TTR)
 import(MASS)
 import(tcltk)
 import(TSA)
+
 import(MAd)
+
+importFrom(TTR,SMA)
 importFrom(grDevices, dev.cur, dev.new)
 importFrom(MAd,mareg)
 importFrom(metafor,forest)
