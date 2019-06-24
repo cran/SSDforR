@@ -1,4 +1,4 @@
-43aff5d994269f737b0f1d0e071be29a *DESCRIPTION
+d36717ea8bfe54973db1be2696aa6f66 *DESCRIPTION
 54f4cfb3ff766e30b0ef777ebb1d6c73 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -9,7 +9,7 @@ a6068b3238bccf75483a8e933eb59c1b *R/ABautopacf.R
 af7079b7abf607bec058dc3cb954025c *R/ABiqr.R
 d01dfa4212e5169e624b4a7cf1d80bb3 *R/ABlineD.R
 f290d73d2ab73107ac2357c0a4e86d33 *R/ABlines.R
-9580b866fe09d53dd1bd81dea4bd2bfb *R/ABma.R
+edaa1f7487b1dc25faba12c0862c87d2 *R/ABma.R
 9343db0704037572cd1c6f7560491f63 *R/ABplot.R
 272c6ca0ab1be2637972426896332ab9 *R/ABplotm.R
 de34e8f8e5f07075aa8695339b262f9d *R/ABregres.R
@@ -19,7 +19,7 @@ d593fa91f9d06d6d8d9f85b4abb733ac *R/ABrobust.R
 b7162d6496f242b17aeb6a369612a4a5 *R/ABtext.R
 be8068b9a39bb90efffa8fad46cc348e *R/ABtsplot.R
 658e4f1f159c5ed8fa19bf0b76610bbf *R/ABttest.R
-c3e41c0c8a748132b8fd104d29c9fdca *R/Append.R
+a5239b4178c025027ff455875eecf50c *R/Append.R
 4de7d944a11495719bd4aea4ec480f6a *R/Aregres.R
 ecf88a60db3474f331268989cf242ce2 *R/Arimadiff.R
 e95dcdf7297739b05ffba4889ac7bb3d *R/Arimama.R
@@ -27,7 +27,7 @@ faf548a6e806130e858e02b3ace99c65 *R/Arobust.R
 7e126269b1974a602c8d6f1c0bc63ba7 *R/CDCabove.R
 0773b975cf6dfa65894a90079f2c11d9 *R/CDCbelow.R
 df66255efbf0e25f333af883ea801882 *R/Cchart.R
-d9ef3b3d66a97b7de71047581231ea8f *R/Effectsize.R
+ec66719a54c6828fdcf5feb217e2902f *R/Effectsize.R
 3bf83e52423bc12562e890fbbd4d8a43 *R/GABrf2.R
 2d0a654f15c8bc287d1611baf1899440 *R/GABttest.R
 551c448d94ab706339a0ce7b1a089f6f *R/Gindex.R
@@ -65,7 +65,7 @@ d49dafcb66d9ee2a8cc8693ce6701598 *R/SPClegend.R
 000b54fc140eafb23102cbd9955e3079 *R/XRchart.R
 42e44f746a38790d96ebf24fb8e24cbf *R/Xmrchart.R
 25911b451a0f48fa412bcae752538f0e *R/abarrow.r
-2d91f5e1be12efb72bc845b8da53d1fc *R/diffchart.R
+6242ffd32b82105fd3120dc8275f81cf *R/diffchart.R
 ed8652ff720536a4dba29e04c83ba6c0 *R/getcsv.r
 3aeb6d7d8c1524eb22c3a6638e7d2adf *R/insert.R
 c6fa891e719885c5e373d68896343fab *R/listnames.R
