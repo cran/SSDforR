@@ -68,7 +68,7 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   
   #par(mar=c(1, 1, 1, 1))
   #plot.new()
-  #legend("center", c("behavior","Uband","mean","Lband"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
+ #legend("bottom",inset=c(-.3,-.96,-.3),xpd = TRUE, c("behavior","Uband","mean","Lband"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
   
   puband<-c("Uband=",round(Uband,3))
   pmean<-c("mean= ",round(meanA,3))

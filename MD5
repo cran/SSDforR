@@ -1,4 +1,4 @@
-d36717ea8bfe54973db1be2696aa6f66 *DESCRIPTION
+6882e35a13e68feda2f177128c6dd1a1 *DESCRIPTION
 54f4cfb3ff766e30b0ef777ebb1d6c73 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -51,10 +51,10 @@ e6c9bb052e313c7b0fff13b55ad8c95b *R/Pchart.R
 82f648701bb1ac36055efaf2541d20e4 *R/Rchartsd.R
 d39bff9f802f9b32e15b31a68b362487 *R/RobustCDCabove.R
 ef75d4d39a3ada02333b67114b6f2c36 *R/RobustCDCbelow.R
-71f210344bd6bb56c33a83b82512e19e *R/SD1.R
-822170a04efaf8c5f5f8c21d43333220 *R/SD1legend.R
+977944081742701699703ef02cdeb815 *R/SD1.R
+7bda2313424e2ac915a7c3c4127a19b3 *R/SD1legend.R
 0025a5d435bfcae8425c0abe0ca129c3 *R/SD2.R
-a15a8d604dc9f6a236552dd1408cfdcf *R/SD2legend.R
+1ea207c234771a4a642752d462c8b9d8 *R/SD2legend.R
 c6bbf02de585962a718323b02cedc327 *R/SDAband.R
 044eae8437621f75043d97fe11a94588 *R/SN.R
 d49dafcb66d9ee2a8cc8693ce6701598 *R/SPClegend.R
@@ -62,7 +62,7 @@ d49dafcb66d9ee2a8cc8693ce6701598 *R/SPClegend.R
 1e556fcf9867e6081a06663bafee5387 *R/SSDforR.R
 6b788324cccbbbd280833e5230c145e5 *R/Savecsv.R
 1f0a1a6a5fd0e7c131df65a76b004a57 *R/Trimline.R
-000b54fc140eafb23102cbd9955e3079 *R/XRchart.R
+b14da9177f464763dce7ce73e73f2da8 *R/XRchart.R
 42e44f746a38790d96ebf24fb8e24cbf *R/Xmrchart.R
 25911b451a0f48fa412bcae752538f0e *R/abarrow.r
 6242ffd32b82105fd3120dc8275f81cf *R/diffchart.R
@@ -81,8 +81,8 @@ cf0d89a42de96e07a6ce2d719180fcf0 *R/regabove.R
 0b0f01507c8246f64cca2e8f3fbc7362 *R/regbelow.R
 b57b994be7bdfe48a54f99424e1a69af *R/robregabove.R
 901eaa368c106e2db6c554508c565c0c *R/robregbelow.R
-070f11bc729551f7367d3b944cf931b1 *R/sd1bandgraph.R
-839a79f0836e007f2fcd5e65e0d21077 *R/sd2bandgraph.R
+bab8f4e3550af692da038864499b610c *R/sd1bandgraph.R
+3054ffa6b5bd9c84bf1bdb914f26f60f *R/sd2bandgraph.R
 6a1b61a2e188b02c4702dbc54b3d0a61 *R/trimabove.R
 b6db2107981f12a11bb735cdadba2ccb *R/trimbelow.R
 8e35878a7dac5db995f8073a6544089c *man/ABWilcox.Rd

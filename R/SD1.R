@@ -58,7 +58,7 @@ function(behavior,phaseX,v1,ABxlab,ABylab, ABmain){
   pmean<-c("mean",round(meanA,2))
   psdb<-c("-1SD",round(SDbelow,2))
   
-  
+ 
   tprint=c(sdp,psdu,pmean,psdb)
   print(tprint)
   
