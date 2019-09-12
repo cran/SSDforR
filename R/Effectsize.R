@@ -98,7 +98,7 @@ print(Gci)
   print(round(rvalue2,3))
   a<-readline("(s)ave, (a)ppend, or (n)either results? (s/a or n) ")
   
-  ES<-cd1
+  ES<-CD
  
   ES=data.frame(ES)
   
