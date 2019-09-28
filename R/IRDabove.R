@@ -1,4 +1,4 @@
-IRD <-
+IRDabove <-
 function(behavior,phaseX,v1,v2){
   
   t1<-table(phaseX)
@@ -15,7 +15,7 @@ function(behavior,phaseX,v1,v2){
   tmaxB<-t1[names(t1)==v2]
   startB<-match(v2,phaseX)
   endB<-tmaxB+startB-1
-  #tsxB<-behavior[startB:endB]
+  tsxB<-behavior[startB:endB]
   B=(behavior[startB:endB])
   
   
@@ -56,25 +56,28 @@ function(behavior,phaseX,v1,v2){
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="IRD" )
   
-  writeLines("Find the smallest number of data points you need to remove to eliminate all overlap /ties between phases.")
-  writeLines(" ")
-  yo<-readline("enter largest or smallest baseline data point for reference line  " )
-  
+ # writeLines("Find the smallest number of data points you need to remove to eliminate all overlap /ties between phases.")
+  #writeLines(" ")
+ # yo<-readline("enter largest or smallest baseline data point for reference line  " )
+  yo=max(A)-.1
   abline(h=yo,col="gray",lwd=3)
   
   ab<-NULL
   
   ab<<-recordPlot()
   
-  rB<-readline("enter number of intervention points remaining " )
-  rA<-readline("enter number of baseline line points to remove  " )
+  #rB<-readline("enter number of intervention points remaining " )
+ # rA<-readline("enter number of baseline line points to remove  " )
   
-  pA=as.numeric(rA)/length(A)
+  #pA=as.numeric(rA)/length(A)
   
-  pB=as.numeric(rB)/length(B)
-  IRD=(pB-pA)*100
-  IRDP=c(round(IRD,2),"%")
-  print(IRDP)
+  #pB=as.numeric(rB)/length(B)
+  #IRD=(pB-pA)*10
+  #IRDP=c(round(IRD,2),"%")
+  IRD1=IRD(A_data = A, B_data = B)
+  IRD2<-IRD1[[2]]*100
+  IRDP=c("Est =", round(IRD2,2),"%")
+  print(IRDP,quote="FALSE")
   writeLines("-------------------------------------------")
   writeLines("10th percentile = 36.8" )
   writeLines("25th percentile = 47.9")

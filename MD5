@@ -1,5 +1,5 @@
-f0bf38b8f47268a60b2e251caba4eef3 *DESCRIPTION
-54f4cfb3ff766e30b0ef777ebb1d6c73 *NAMESPACE
+86bea21a83c600a5c52a540d12476c59 *DESCRIPTION
+3681a27ad26b597913de6e4f41d5d697 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
 52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
@@ -36,9 +36,10 @@ df66255efbf0e25f333af883ea801882 *R/Cchart.R
 841dc0af79c6f939833166d406093d78 *R/IQRbandgraph.R
 21b5dbd9a512d598f74fffc748e224e6 *R/IQRlegend.R
 058a817bd8a4e631ee243b1cd56733e0 *R/IQRline.R
-f4a982f4f25503e1b0074920e74ebdab *R/IRD.R
-5010184cd2ffb61accd1161218609c43 *R/PANDabove.R
-bc999bc5afd16692e0a8867ec5e740d9 *R/PANDbelow.R
+4e59a3b8c9131c42a0491cd33b86e922 *R/IRDabove.R
+9f7bfe694b58fbba16cc7c0ec4051f45 *R/IRDbelow.R
+2ea8859dba10e891522b0eb3d7e6b143 *R/PANDabove.R
+80d1906901b7e5b6f6284f5810cb0941 *R/PANDbelow.R
 8c0915cef4a98cc85a7661786a15314a *R/PANDlegend.R
 8fcc6f36b758a048afc285c81a256fff *R/PEMabove.R
 0866b42af9dee727b321ba245826c7f0 *R/PEMbelow.R
@@ -121,6 +122,8 @@ c1fbe87141ac3a3804ec4511c578dd07 *man/Gline.Rd
 bb486e3a44caa21fb876bf05f4a3c0b2 *man/IQRbandgraph.Rd
 7d96192e666b33e7a6cc7aafb7db55e2 *man/IQRlegend.Rd
 8a0a2f8cb33e23268f8398dffbc150c7 *man/IQRline.Rd
+5bd5e5c022ce3a6d543fee82a0e59c0f *man/IRDabove.Rd
+4217953f236a9047b41a80949e4511eb *man/IRDbelow.Rd
 ef01af3eaa3a1e6174da1a147135e58b *man/PANDlegend.Rd
 c2d6503e757a9e1dad414152ba95b436 *man/PEMabove.Rd
 4a62b36a30cbeefa3d9dd5292e1711bf *man/PEMbelow.Rd
@@ -146,7 +149,6 @@ f0d842f839d30676771ad9d611ee4040 *man/cdcabove.rd
 70327f4ab2e8062ddd96844fe2fa1509 *man/cdcbelow.rd
 53805d128cc918ff196a174f7113ba1a *man/diffchart.Rd
 d3bcad2ba7ac6875b290a0cfa9fca2ba *man/insert.rd
-9a771eae28c0d5fce63f116cdc1b9df9 *man/ird.rd
 7dbba01171eb4cbd028317bcdbf96b68 *man/listnames.rd
 a3227205600850d1f2b8b9ed3e90e6b0 *man/meanES.Rd
 c7db331226dadee482b034ab38e0fe6a *man/meanabove.rd

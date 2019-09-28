@@ -39,46 +39,48 @@ function(behavior,phaseX,v1,v2){
   layout(rbind(1,2), heights=c(4,1))
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PAND" )
-  yo<-readline("Y ordinate for your reference line  " )
- 
+  #yo<-readline("Y ordinate for your reference line  " )
+ yo=min(A)+.1
   abline(h=yo,col="gray",lwd=3)
   
   
   #***********************below baseline
-  nbelowline<-B>=as.numeric(yo)
-  nump=sum(nbelowline)
-  nx= (length(B)+length(A))-nump
+  #nbelowline<-B>=as.numeric(yo)
+  #nump=sum(nbelowline)
+  #nx= (length(B)+length(A))-nump
   
-  p=nx/(length(B)+length(A))
+  #p=nx/(length(B)+length(A))
   
-  maxy=which.max(cdcl)
+  #maxy=which.max(cdcl)
   
-  max<-cdcl[maxy]+1
-  numx<-sum(!is.na(cdcl))+3
+  #max<-cdcl[maxy]+1
+  #numx<-sum(!is.na(cdcl))+3
   #par(mfrow=c(3,3)) 
   
-  maxy=which.max(behavior)
+  #maxy=which.max(behavior)
   
-  max<-behavior[maxy]+1
+  #max<-behavior[maxy]+1
   
-  numx<-sum(!is.na(behavior))+3
-  numphalf = nump/2
-  a=numphalf
-  b=length(B)-numphalf
-  c=length(A)-numphalf
-  d=numphalf
-  rpandphi=phi(c(a,b,c,d))
+  #numx<-sum(!is.na(behavior))+3
+  #numphalf = nump/2
+  #a=numphalf
+  #b=length(B)-numphalf
+  #c=length(A)-numphalf
+  #d=numphalf
+  #rpandphi=phi(c(a,b,c,d))
   
-  PAND<-c("PAND Below = ",round(p,2),"Minimum overlapping to remove",nump)
-  print(PAND)
+  #PAND<-c("PAND Below = ",round(p,2),"Minimum overlapping to remove",nump)
+  pand=PAND(A_data = A, B_data = B,improvement="decrease")
+  print(pand)
   writeLines("-------------------------------------------")
   writeLines(".90 or above = very effective" )
   writeLines(".70 to .89 = moderate effectiveness")
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
   writeLines("--------------------------------------------")
-  phir<-c("Robust Phi = ",abs(rpandphi))
-  print(phir)
+  #phir<-c("Robust Phi = ",abs(rpandphi))
+  
+  #print(phir)
   
   
 }

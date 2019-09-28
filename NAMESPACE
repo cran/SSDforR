@@ -4,9 +4,8 @@ import(psych)
 import(MASS)
 import(tcltk)
 import(TSA)
-
 import(MAd)
-
+importFrom(SingleCaseES,PAND,IRD)
 importFrom(TTR,SMA)
 importFrom(grDevices, dev.cur, dev.new)
 importFrom(MAd,mareg)

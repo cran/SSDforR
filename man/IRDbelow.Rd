@@ -1,14 +1,14 @@
-\name{IRD}
-\alias{IRD}
+\name{IRDbelow}
+\alias{IRDbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Improvement Rate Difference (IRD) calculation and line
 %%  ~~function to do ... ~~
 }
-\description{This effect size function will compute the IRD and display a graph in the graph window.  The user will be prompted to enter a value for a reference line, identify the number of intervention points remaining and the number of baseline data points that would be needed to be removed in order to eliminate all overlap or ties between phases.
+\description{This effect size function will compute the IRD and display a graph in the graph window.  The desired improvemment is a decrease in the baseline behavior. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-IRD(behavior, phaseX, v1, v2)
+IRDbelow(behavior, phaseX, v1, v2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -49,6 +49,6 @@ Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler Schoo
 cry<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
 pcry<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", 
 NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-IQRbandgraph(cry,pcry,"A","week","amount","Crying")
-IRD(cry,pcry,"A","B")
+#IQRbandgraph(cry,pcry,"A","week","amount","Crying")
+IRDbelow(cry,pcry,"A","B")
 }
