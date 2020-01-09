@@ -1,15 +1,15 @@
-\name{meanES}
-\alias{meanES}
+\name{meanNAP}
+\alias{meanNAP}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Mean Effect Size
 %%  ~~function to do ... ~~
 }
-\description{This function calculates a mean and SD for Cohen's D effect sizes.
+\description{This function calculates a mean and SD for a file containing NAP effect sizes
 A file containing saved effect sizes must be opened by Getcvs() and then attached.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-meanES(es, lab,  esmain)
+meanNAP(es, lab,  esmain)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

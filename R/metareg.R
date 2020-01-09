@@ -5,5 +5,5 @@ metareg <-
     print(summary(m0))
    print(confint(m0, digets=2))
     forest(m0)
-    title(main="Forest Graph of Effect Sizes")
+    title(main="Forest Graph f Effect Sizes")
   }

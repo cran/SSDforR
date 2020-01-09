@@ -78,6 +78,7 @@ function(behavior,phaseX,v1,v2){
   IRD2<-IRD1[[2]]*100
   IRDP=c("Est =", round(IRD2,2),"%")
   print(IRDP,quote="FALSE")
+  
   writeLines("-------------------------------------------")
   writeLines("10th percentile = 36.8" )
   writeLines("25th percentile = 47.9")

@@ -4,9 +4,7 @@ RMlines <-
     targetindex<-dev.cur() 
     targetindex<-recordPlot() 
     
-    writeLines("-------------------------------------------------------------------------------------")
-    writeLines("Click the mouse in the gap between the phases you want the line in.")
-    writeLines("-------------------------------------------------------------------------------------")
+    
    # l<-locator(1)
     
     

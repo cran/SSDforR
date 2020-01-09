@@ -1,10 +1,10 @@
 \name{IRDbelow}
 \alias{IRDbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Improvement Rate Difference (IRD) calculation and line
+\title{Improvement Rate Difference (IRD) calculation 
 %%  ~~function to do ... ~~
 }
-\description{This effect size function will compute the IRD and display a graph in the graph window.  The desired improvemment is a decrease in the baseline behavior. 
+\description{This effect size function will compute the IRD and display a graph in the graph window. The desired improvemment is a decrease in the baseline behavior. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -32,8 +32,7 @@ Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Sing
 
 {Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice:  Guidelines for the accountable professional (6th ed.). New York:  Pearson.
 
-Parker, R.I. & Hagan-Burke, S. (2007). Median-based overlap analysis for single case data:  A second study.  Behavior Modification, 31(6), 919-936.
-
+Parker, R. I., Vannest, K. J., & Brown, L. (2009). The improvement rate difference for single-case research. Exceptional Children, 75(2), 135-150.
 }
 {Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~

@@ -1,4 +1,4 @@
-IRDabove <-
+NAPabove <-
 function(behavior,phaseX,v1,v2){
   
   t1<-table(phaseX)
@@ -54,13 +54,13 @@ function(behavior,phaseX,v1,v2){
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="IRD" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="NAP" )
   
  # writeLines("Find the smallest number of data points you need to remove to eliminate all overlap /ties between phases.")
   #writeLines(" ")
  # yo<-readline("enter largest or smallest baseline data point for reference line  " )
-  yo=max(A)-.1
-  abline(h=yo,col="gray",lwd=3)
+  #yo=max(A)-.1
+  #abline(h=yo,col="gray",lwd=3)
   
   ab<-NULL
   
@@ -74,17 +74,53 @@ function(behavior,phaseX,v1,v2){
   #pB=as.numeric(rB)/length(B)
   #IRD=(pB-pA)*10
   #IRDP=c(round(IRD,2),"%")
-  IRD1=IRD(A_data = A, B_data = B)
-  IRD2<-IRD1[[2]]*100
-  IRDP=c("Est =", round(IRD2,2),"%")
-  #ci<-NAP(A_data = A, B_data = B, SE = "Hanley")
-
-  print(IRDP,quote="FALSE")
-
+ 
+  
+  nap1<-NAP(A_data = A, B_data = B, SE = "Hanley",improvement="increase",confidence = 0.95)
+  napES<-nap1[[2]]
+  napSE<-nap1[[3]]
+  napCIL<-nap1[[4]]
+  napCIU<-nap1[[5]]
+  print(nap1,quote="FALSE")
+  
   writeLines("-------------------------------------------")
-  writeLines("10th percentile = 36.8" )
-  writeLines("25th percentile = 47.9")
-  writeLines("50th percentile = 71.8")
-  writeLines("75th percentile = 89.8")
-  writeLines("90th percentile = 99.9")
+  writeLines(".93 or above = very effective" )
+  writeLines(".66 to .92 = moderate effectiveness")
+  writeLines(" below .66 = not effective")
+  writeLines("--------------------------------------------")
+  writeLines(" ")
+  
+  a<-readline("(s)ave, (a)ppend, or (n)either results? (s/a or n) ")
+  
+  
+  
+  ES=data.frame(napES)
+  
+  if (a=="s")
+  {Label<-readline("Enter a behavior variable label ")
+  ES<-data.frame(napES,napSE,napCIL,napCIU,Label)
+  
+  
+  write.csv(ES,file = tclvalue(tkgetSaveFile()),row.names=FALSE)
+  
+  
+  } 
+  
+  if (a=="a")
+  { Label<-readline("Enter a behavior variable label ")
+  #ES<-cd1
+  ES<-data.frame(napES,napSE,napCIL,napCIU,Label)
+  writeLines("*****************open file to append to***************************")
+  
+  effA<-read.table(file.choose(),header=TRUE,sep=',') 
+  out=rbind(effA,ES)
+  writeLines(" ")
+  writeLines(" ")
+  writeLines(" ")
+  writeLines("*****************save appended file***************************")  
+  
+  
+  
+  write.csv(out,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
+  
 }

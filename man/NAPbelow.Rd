@@ -1,14 +1,14 @@
-\name{IRDabove}
-\alias{IRDabove}
+\name{NAPbelow}
+\alias{NAPbelow}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Improvement Rate Difference (IRD) calculation 
+\title{Non-Overlap of All Pairs (NAP) calculation 
 %%  ~~function to do ... ~~
 }
-\description{This effect size function will compute the IRD and display a graph in the graph window.The desired improvemment is an increase in the baseline behavior. 
+\description{This effect size function will compute the NAP. The desired improvemment is an decreas in the baseline behavior. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-IRDabove(behavior, phaseX, v1, v2)
+NAPbelow(behavior, phaseX, v1, v2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -32,7 +32,7 @@ Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Sing
 
 {Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice:  Guidelines for the accountable professional (6th ed.). New York:  Pearson.
 
-Parker, R. I., Vannest, K. J., & Brown, L. (2009). The improvement rate difference for single-case research. Exceptional Children, 75(2), 135-150.
+Parker, R. I., & Vannest, K. (2009). An improved effect size for single-case research: Nonoverlap of all pairs. Behavior Therapy, 40(4), 357-367.
 
 }
 {Go to www.ssdanalysis.com for more information.
@@ -49,5 +49,5 @@ Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler Schoo
 esteem<-c(3, 4, 2, 5, 3, 4, NA, 2, 2, 3, 2, 1, 2, NA, 2, 2, 1, 2, 1, 0, 0, 0)
 pesteem<-c("A", "A", "A", "A", "A", "A", NA, "B", "B", "B", "B", "B", "B", 
 NA, "B1", "B1", "B1", "B1", "B1", "B1", "B1", "B1")
-IRDabove(esteem,pesteem,"A","B1")
+NAPbelow(esteem,pesteem,"A","B1")
 }

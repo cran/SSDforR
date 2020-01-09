@@ -114,7 +114,7 @@ print(Gci)
 
    if (a=="a")
    { Label<-readline("Enter a behavior variable label ")
-   ES<-cd1
+   ES<-CD
      ES<-data.frame(ES,V,Label)
      writeLines("*****************open file to append to***************************")
      
