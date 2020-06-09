@@ -1,14 +1,24 @@
-\name{Gline}
-\alias{Gline}
+\name{RMGline}
+\alias{RMGline}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Goal Line
+\title{Goal Line for Rmarkdown
 %%  ~~function to do ... ~~
 }
 \description{
-Draws a goal line
+Draws a goal line for RMarkdown
 }
 \usage{
-Gline()
+RMGline(y)
+}
+
+
+
+
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{y}{ordinate on y axis / goal level
+%%     ~~Describe \code{behavior} here~~
+}
 }
 %- maybe also 'usage' for other objects documented here.
 
