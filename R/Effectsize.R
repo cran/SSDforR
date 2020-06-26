@@ -106,8 +106,8 @@ print(Gci)
     {Label<-readline("Enter a behavior variable label ")
     ES<-data.frame(ES,V,Label)
   
-    
-    write.csv(ES,file = tclvalue(tkgetSaveFile()),row.names=FALSE)
+    write.csv(ES,file = file.choose(new = TRUE),row.names=FALSE)
+    #write.csv(ES,file = tclvalue(tkgetSaveFile()),row.names=FALSE)
   
     
    } 
@@ -126,8 +126,8 @@ print(Gci)
             writeLines("*****************save appended file***************************")  
             
             
+  # write.csv(out,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
+  write.csv(out,file = file.choose(new = TRUE),row.names=FALSE)}
   
-  write.csv(out,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
-  #write.csv(out,file = tclvalue(tcl('tk_getSaveFile')),row.names=FALSE) }
-            
+  
 }

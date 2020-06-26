@@ -101,7 +101,8 @@ function(behavior,phaseX,v1,v2){
   ES<-data.frame(napES,napSE,napCIL,napCIU,Label)
   
   
-  write.csv(ES,file = tclvalue(tkgetSaveFile()),row.names=FALSE)
+ # write.csv(ES,file = tclvalue(tkgetSaveFile()),row.names=FALSE)
+  write.csv(ES,file = file.choose(new = TRUE),row.names=FALSE)
   
   
   } 
@@ -121,6 +122,7 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  write.csv(out,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
+  #write.csv(out,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
+  write.csv(out,file = file.choose(new = TRUE),row.names=FALSE)}
   
 }

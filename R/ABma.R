@@ -31,7 +31,9 @@ function(behavior,phaseX,v1){
   
   if (a=="y")
   #{write.csv(transdat,file = file.choose(new = T),row.names=FALSE)}
-  {write.csv(transdat,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
-  
+  #{write.csv(transdat,file = tclvalue(tkgetSaveFile()),row.names=FALSE)}
+  {write.csv(transdat,file = file.choose(new = TRUE),row.names=FALSE)}
+    
+    
   print(transdat)
 }
