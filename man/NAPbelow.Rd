@@ -40,7 +40,10 @@ Parker, R. I., & Vannest, K. (2009). An improved effect size for single-case res
 }
 }
 \author{
-Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
+Charles Auerbach, PhD
+Wurzweiler School of Social Work 
+Wendy Zeitlin, PhD
+Montclair State University 
 }
 %%  ~~who you are~~
 

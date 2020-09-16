@@ -25,7 +25,10 @@ RMarrow(X1,Y1,X2,Y2)
 Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. 
 Oxford University Press, 2014. p46-p50
 }
-\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD
+Wurzweiler School of Social Work 
+Wendy Zeitlin, PhD
+Montclair State University 
 %%  ~~who you are~~
 }
 

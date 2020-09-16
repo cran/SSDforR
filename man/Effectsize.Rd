@@ -40,7 +40,10 @@ Bloom, M., Fischer, J. & Orme, J.G. (2009). Evaluating practice:  Guidelines for
 %% ~put references to the literature/web site here ~
 }
 }
-\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University,  Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD
+Wurzweiler School of Social Work 
+Wendy Zeitlin, PhD
+Montclair State University 
 %%  ~~who you are~~
 }
 

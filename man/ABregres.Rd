@@ -37,7 +37,10 @@ Auerbach, C. & Schudrich, W. Z. (2013). SSD for R A Comprehensive Statistical Pa
 %% ~put references to the literature/web site here ~
 }
 }
-\author{Charles Auerbach, PhD & Wendy Zeiltlin, PhD; Yeshiva University, Wurzweiler School of Social Work
+\author{CCharles Auerbach, PhD
+Wurzweiler School of Social Work 
+Wendy Zeitlin, PhD
+Montclair State University 
 %%  ~~who you are~~
 }
 

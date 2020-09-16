@@ -29,7 +29,10 @@ meanbelow(behavior, phaseX, v1, v2)
 \references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 }
-\author{Charles Auerbach, PhD & Wendy Zeitlin, PhD; Yeshiva University, Wurzweiler School of Social Work
+\author{Charles Auerbach, PhD
+Wurzweiler School of Social Work 
+Wendy Zeitlin, PhD
+Montclair State University 
 %%  ~~who you are~~
 }
 
