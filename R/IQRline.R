@@ -1,5 +1,8 @@
 IQRline <-
 function(behavior,phaseX,v){
+  targetindex<-dev.cur() 
+  targetindex<-recordPlot() 
+  
   instruct<-"Click the mouse in the beginning of the phase you want the line in."
   print(instruct)
   abmedian<-tapply(behavior, phaseX,sd)
@@ -26,12 +29,12 @@ function(behavior,phaseX,v){
   l<-locator(1)
   mlin<-l$x+mlin+1
   segments(x0=l$x,x1=mlin,y0=omedianu,lwd=3,col="black")
-  l<-locator(1)
-  segments(x0=l$x,x1=mlin,y0=omedianb,lwd=3,col="black")
+  #l<-locator(1)
+ 
  u<-readline("accept line? (y/n) ")
-  if (u=="n")
-  {replayPlot(ab)}
-  
-    ab<-NULL
-    ab<<-recordPlot()
+ if (u=="n")
+   
+   
+ {replayPlot(targetindex)}
 }
+

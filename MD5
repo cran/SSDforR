@@ -1,4 +1,4 @@
-790a52a8405c968f58089defe4708ec3 *DESCRIPTION
+a8bd8a4ff7f55771f950490990b2e707 *DESCRIPTION
 f04c83c8dbe01ca378a989c2d85d0db5 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -35,7 +35,7 @@ df66255efbf0e25f333af883ea801882 *R/Cchart.R
 5674fab6a0574d259eba68f40a50a452 *R/Gmedian.R
 841dc0af79c6f939833166d406093d78 *R/IQRbandgraph.R
 21b5dbd9a512d598f74fffc748e224e6 *R/IQRlegend.R
-058a817bd8a4e631ee243b1cd56733e0 *R/IQRline.R
+fdfeb633589cc8b962f9716843b823f0 *R/IQRline.R
 8a75a656d5a2ec4ea2e4176c9000ff76 *R/IRDabove.R
 54caa80fdbf972c62e94270c0ab2e1ed *R/IRDbelow.R
 bb98957ee6d58fa8a9be6e18f1a1ad27 *R/NAPabove.R
@@ -114,10 +114,10 @@ f8d51e72781f5faeddca7751002e7c59 *man/ABrf2.Rd
 181ff5ab2a5592093fa3268ea5f67848 *man/ABtext.Rd
 8e91744332fb8c4b77238bdb3cac9e62 *man/ABtsplot.Rd
 3daafb8cb6bbf4ff01932e5c7a1d1594 *man/ABttest.Rd
-4c463d50a5865d2c8919fd0c1de434d4 *man/Append.Rd
+906d8bf1e1286b863b0ec10427bf83b1 *man/Append.Rd
 2b65b2883384076e5594f33020c70219 *man/Aregres.Rd
 3dd032c5126d9d6f475272c13d142bda *man/Arimadiff.Rd
-1d66b34c58179ace99253302a0c99d74 *man/Arimama.Rd
+2d94abfcab43ac406f284c3f3da3fc47 *man/Arimama.Rd
 de64afadc75264e3b191b0952f851fc8 *man/Arobust.Rd
 50354800dbe3c639059d5739a4b31738 *man/Cchart.Rd
 8b118703fb82942da10317abc199361a *man/Effectsize.Rd
@@ -171,9 +171,9 @@ de3786371e01cf5c3a9a3b80a018a633 *man/meanNAP.Rd
 7aabab071d64d0247780587b9aa0518f *man/meanbelow.rd
 2f3434ddf4edf74f07683184db6b2423 *man/medabove.rd
 c02d734975b3562fa1ed20cb6c706764 *man/medbelow.rd
-c68de06e49af2eb3de60c6092fb89939 *man/metareg.Rd
-1cd5ff1149df1c8d66c78aab84ad54e5 *man/metaregi.Rd
-866fb231732b4efb020e95c6750040c7 *man/pandabove.rd
+5d3d51c4845b61571fd28b12aaa9f832 *man/metareg.Rd
+b77a96500d36af5aee36e48f6e361f8a *man/metaregi.Rd
+9e544ad2288501d4ddca1618a3edc534 *man/pandabove.rd
 4967bdeb58746dcbb127aa7fa7d5f9fe *man/pandbelow.rd
 4f72543e19385f4d8898dd017e165b76 *man/pemlegend.rd
 13e3331bc65f206ca02d16d4d5ad7d02 *man/plotnum.Rd
