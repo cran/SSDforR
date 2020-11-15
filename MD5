@@ -1,4 +1,4 @@
-a8bd8a4ff7f55771f950490990b2e707 *DESCRIPTION
+81de5f2a69ba7fe620a422f930467d57 *DESCRIPTION
 f04c83c8dbe01ca378a989c2d85d0db5 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -30,7 +30,7 @@ df66255efbf0e25f333af883ea801882 *R/Cchart.R
 13d61e34c02e3ee1c8f5192254254cbc *R/Effectsize.R
 3bf83e52423bc12562e890fbbd4d8a43 *R/GABrf2.R
 2d0a654f15c8bc287d1611baf1899440 *R/GABttest.R
-551c448d94ab706339a0ce7b1a089f6f *R/Gindex.R
+f4d25c8b75ad20dce9e2110d2d7afea1 *R/Gindex.R
 77bfa704507294fc5d7990839b67e7cf *R/Gline.R
 5674fab6a0574d259eba68f40a50a452 *R/Gmedian.R
 841dc0af79c6f939833166d406093d78 *R/IQRbandgraph.R
@@ -56,7 +56,7 @@ e6c9bb052e313c7b0fff13b55ad8c95b *R/Pchart.R
 fd4f880905f33b5fc22a50ca11ccd4fb *R/RMstat.R
 42808addea0fb56ded914aa3e43f7bf7 *R/RMtext.R
 8e4929730bf9ac79844e119ca102698a *R/Rchart.R
-82f648701bb1ac36055efaf2541d20e4 *R/Rchartsd.R
+44148ab902f1480ac3d6c2d236ef319b *R/Rchartsd.R
 d39bff9f802f9b32e15b31a68b362487 *R/RobustCDCabove.R
 ef75d4d39a3ada02333b67114b6f2c36 *R/RobustCDCbelow.R
 977944081742701699703ef02cdeb815 *R/SD1.R
@@ -85,7 +85,7 @@ b0dc902f50199a2dcdd02cee7c663512 *R/medabove.R
 39687c7051f7195ca05a114a96a4b848 *R/medbelow.R
 9c30368308f26e60b8daf78a9516cf22 *R/metareg.R
 c99d0a75d0ae9320112ecbc02682c3af *R/metaregi.R
-6ee29cbb217eb4e2b84138b5bddbcf36 *R/plotnum.R
+5f5d4dac2266fb30f1411a0fddccb8b4 *R/plotnum.R
 cf0d89a42de96e07a6ce2d719180fcf0 *R/regabove.R
 0b0f01507c8246f64cca2e8f3fbc7362 *R/regbelow.R
 b57b994be7bdfe48a54f99424e1a69af *R/robregabove.R

@@ -61,6 +61,7 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   
   #graphics.off()
   plot.new()
+  
   layout(rbind(1,2), heights=c(4,1))
   plot(x,p,ylim=c(miny,maxy),xlim=c(1,xmax),type="o",col="red",bty='L',main=ABmain,xlab=ABxlab,ylab=ABylab)
   

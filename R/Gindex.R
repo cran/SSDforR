@@ -108,9 +108,9 @@ function(behavior,phaseX,v1,v2){
   gbline=Bbrline-Abrline
   gbmedian=Bbmedian-Abmedian
   writeLines("")
-  l1<-c("small effect size: <.3")
+  l1<-c("small effect size: < & =.3")
   l2<-c("medium effect size: .31 to .5 ")
-  l3<-c("large effect size: >.51")
+  l3<-c("large effect size: > & =.51")
   writeLines(l1)
   writeLines(l2)
   writeLines(l3)
