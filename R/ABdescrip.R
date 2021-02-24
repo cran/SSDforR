@@ -41,8 +41,11 @@ ABdescrip <-
     print(abiqr)
     
     writeLines("---------quantiles----------")
-    abquan<-tapply(behavior,PhaseX,quantile,na.rm=T)
-    do.call("rbind", abquan)
+    abquan<-(tapply(behavior,PhaseX,quantile,na.rm=T))
+      
+     print(abquan,quote=FALSE)
+    
+    #do.call("rbind", abquan)
     
     layout(rbind(1,2), heights=c(4,1))
     boxplot(behavior~PhaseX)
