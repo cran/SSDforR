@@ -7,7 +7,7 @@ ABlines <-
     writeLines("-------------------------------------------------------------------------------------")
     writeLines("Click the mouse in the gap between the phases you want the line in.")
     writeLines("-------------------------------------------------------------------------------------")
-    l<-locator(1)
+    l<-locator(1) 
     
     
     

@@ -22,7 +22,7 @@ ABanova(behavior, phaseX)
 \references{Go to www.ssdanalysis.com for more information.
 %% ~put references to the literature/web site here ~
 
-Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data. Oxford University Press, 2014. p89, p147}
+Auerbach, Charles, and Zeitlin Wendy. SSD for R: An R Package for Analyzing Single-Subject Data, 2nd ed. Oxford University Press, 2022. p91, p112-116, p191}
 \author{Charles Auerbach, PhD
 Wurzweiler School of Social Work 
 Wendy Zeitlin, PhD

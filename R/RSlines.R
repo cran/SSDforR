@@ -1,8 +1,8 @@
-RMlines <-
+RSlines <-
   function(behavior,x){
     
-   # targetindex<-dev.cur() 
-    #targetindex<-recordPlot() 
+    targetindex<-dev.cur() 
+    targetindex<-recordPlot() 
     
     
    # l<-locator(1)
@@ -17,15 +17,15 @@ RMlines <-
    
     
     
-    #u<-readline("accept line? (y/n) ")
-    #if (u=="n")
+    u<-readline("accept line? (y/n) ")
+    if (u=="n")
       
       
     
-    #{replayPlot(targetindex)}
+    {replayPlot(targetindex)}
     
-      #ab<-NULL
-  #ab<<-recordPlot(ab)
+      ab<-NULL
+  ab<<-recordPlot(ab)
     
     
     
