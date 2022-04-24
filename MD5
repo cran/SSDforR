@@ -1,4 +1,4 @@
-dab8e4cd679e8efbfe0171d6a84f715f *DESCRIPTION
+ae85fe79f4915ed4ba16917f12972d65 *DESCRIPTION
 c140aeb0775db17132747fb1e4146288 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -100,8 +100,8 @@ bab8f4e3550af692da038864499b610c *R/sd1bandgraph.R
 3054ffa6b5bd9c84bf1bdb914f26f60f *R/sd2bandgraph.R
 6a1b61a2e188b02c4702dbc54b3d0a61 *R/trimabove.R
 b6db2107981f12a11bb735cdadba2ccb *R/trimbelow.R
-b4f96606293a9d538d6e6555a6ff36d1 *man/ABWilcox.Rd
-4a7fb856d812d7b6108c62c86a2ac96e *man/ABanova.Rd
+16a8d837ba565b490f1f290046b107f5 *man/ABWilcox.Rd
+bc1dbd72cee491b578cc5d79eb31ee51 *man/ABanova.Rd
 a017cd455b8f5d41fb192b95c8a01279 *man/ABarrow.Rd
 f1c57e648e6f776884f50cf9e2b42fcf *man/ABautoacf.Rd
 8f277103062584b003ae2b75d8e0c2ce *man/ABautopacf.Rd
