@@ -37,10 +37,14 @@ function(behavior,phaseX,v1,v2){
   numx<-sum(!is.na(behavior))+3
   
   
-  
-  #***********************above baseline
+  writeLines(" ")
+  writeLines("***********************Tau above baseline")
   
   tau<-Tau_U(A_data = A, B_data = B,improvement="increase")
   print(tau)
-  
+  writeLines(" ")
+  writeLines("*********************** baseline-corrected Tau index (Tarlow 2017)")
+  writeLines(" ")
+  taubc<-Tau_BC(A_data = A, B_data = B,improvement="increase",pretest_trend = .05,Kendall=TRUE)
+  print(taubc)
 }

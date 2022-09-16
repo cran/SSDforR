@@ -38,9 +38,17 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  #***********************above baseline
+  writeLines("*********************** decrease from baseline")
+  
+  writeLines(" ")
   
   tau<-Tau_U(A_data = A, B_data = B,improvement="decrease")
   print(tau)
+  
+  writeLines(" ")
+  writeLines("*********************** baseline-corrected Tau index (Tarlow 2017)")
+  writeLines(" ")
+  taubc<-Tau_BC(A_data = A, B_data = B,improvement="decrease", pretest_trend = .05,Kendall=TRUE)
+  print(taubc)
   
 }
