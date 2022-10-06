@@ -20,7 +20,7 @@ ABWilcox(behavior, phaseX, v1, v2)
 
 }
   \item{v1}{first phase letter (e.g., "A")
-%%     ~~Describe \code{v1} here~~
+
 }
   \item{v2}{second phase letter (e.g., "B")
 

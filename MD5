@@ -1,5 +1,5 @@
-62168cba9eea71232c685389c77f9059 *DESCRIPTION
-5347e60836fc08b623af13475531d8b4 *NAMESPACE
+7a186526c3e3253f402761eb4e557809 *DESCRIPTION
+c2183d39936ebe83b89e7f83cc3ae51f *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
 52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
@@ -98,9 +98,10 @@ b57b994be7bdfe48a54f99424e1a69af *R/robregabove.R
 901eaa368c106e2db6c554508c565c0c *R/robregbelow.R
 bab8f4e3550af692da038864499b610c *R/sd1bandgraph.R
 3054ffa6b5bd9c84bf1bdb914f26f60f *R/sd2bandgraph.R
+d055e819918d9ffaa17fad98abd5b874 *R/trendtest.R
 6a1b61a2e188b02c4702dbc54b3d0a61 *R/trimabove.R
 b6db2107981f12a11bb735cdadba2ccb *R/trimbelow.R
-16a8d837ba565b490f1f290046b107f5 *man/ABWilcox.Rd
+29c97b8e73adbb16a47d20c41c73f2f6 *man/ABWilcox.Rd
 bc1dbd72cee491b578cc5d79eb31ee51 *man/ABanova.Rd
 a017cd455b8f5d41fb192b95c8a01279 *man/ABarrow.Rd
 f1c57e648e6f776884f50cf9e2b42fcf *man/ABautoacf.Rd
@@ -198,5 +199,6 @@ f8f1eabab9823bdd26ca81f09f8bde89 *man/robregabove.Rd
 51680376800867b2256adec6690ad52c *man/robustCDCbelow.Rd
 1591374cf81653210fe4447fa0e62db9 *man/sd1bandgraph.rd
 dd37d8505d107a1da5ca52576063b1a4 *man/sd2bandgraph.rd
+b861aa262162c1675b4aba17a00932d6 *man/trendtest.Rd
 72852f037cf01c681dbba7885d033645 *man/trimabove.Rd
 442c9fc1ce951e0240847e57eff9cc32 *man/trimbelow.Rd
