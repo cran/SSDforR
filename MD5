@@ -1,4 +1,4 @@
-7a186526c3e3253f402761eb4e557809 *DESCRIPTION
+afd2a2a53f194ade6195448bc5d0c9e8 *DESCRIPTION
 c2183d39936ebe83b89e7f83cc3ae51f *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -55,6 +55,7 @@ e6c9bb052e313c7b0fff13b55ad8c95b *R/Pchart.R
 e1f8c071c1a8a5448ba5b0e5396b9ec8 *R/RMlines.R
 fd4f880905f33b5fc22a50ca11ccd4fb *R/RMstat.R
 42808addea0fb56ded914aa3e43f7bf7 *R/RMtext.R
+56f13ab1bb05b3cfa9aa5172b2ad87f8 *R/RSTrimline.R
 f08efe7f80e4df0159fbb652fc741dc2 *R/RSarrow.R
 487ab4c0c1cb4ba060d1bfbee02247ad *R/RSlines.R
 db2241616f0eaed79ab44289e8fbe92e *R/RSstat.R
@@ -152,6 +153,7 @@ e398c7adfb9f5f72981497930ff5a2d6 *man/PNDlegend.Rd
 d5cd526ce908153c3c706cbe674ce040 *man/RMlines.Rd
 d1d34c0e056422ac6880fbd969455245 *man/RMstat.Rd
 bb0a03dc68dbc1a7a84b46ebbf90df63 *man/RMtext.Rd
+a25ea1b6678bf212fb457b5c108e5267 *man/RSTrimline.Rd
 d1233a2af1e5befe673a6ac4d471c999 *man/RSarrow.Rd
 1bf577c0a417722692a78847483ae2c8 *man/RSlines.Rd
 729d2c86849e8c558220acc47cf22224 *man/RSstat.Rd
