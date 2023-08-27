@@ -24,15 +24,17 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   }
   
   
-  
+  #\href{http://stackoverflow.com/}{Stack Overflow}
   
   layout(rbind(1,2), heights=c(4,1))
   plot(x,y, ylim=c(min,max),xlim=c(0,numx),lwd=2,type="o",col="red", xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L' )
  
-  
-  
-  
-  
+  writeLines("    ")
+  writeLines("If you are using Windows 10/11 or RStudio Cloud, cut and paste the link below") 
+  writeLines("into your browser to view an article about using ABtext() and ABlines():")
+  writeLines("    ")
+  writeLines("https://www.dropbox.com/s/ex7ech9atz896yo/If%20you%20are%20using%20Windows%2010%20or%20RStudio%20Cloud.docx?dl=0")
+  writeLines("    ")
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("1-You can add lines between phases by using the ABlines() function.")
   writeLines("2-You can add text by using the ABtext() function.")
