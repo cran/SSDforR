@@ -29,11 +29,19 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   layout(rbind(1,2), heights=c(4,1))
   plot(x,y, ylim=c(min,max),xlim=c(0,numx),lwd=2,type="o",col="red", xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L' )
  
+   os <- .Platform$OS.type
+  if (grepl("^darwin", R.version$os))
+    os <- "osx"
+  if (grepl("linux-gnu", R.version$os))
+    os <- "linux"
+  if (grepl("windows", R.version$os))
+    os <- "windows"
+ if (os =="osx") {
   writeLines("    ")
-  writeLines("If you are using Windows 10/11 or RStudio Cloud, cut and paste the link below") 
-  writeLines("into your browser to view an article about using ABtext() and ABlines():")
-  writeLines("    ")
-  writeLines("https://www.dropbox.com/s/ex7ech9atz896yo/If%20you%20are%20using%20Windows%2010%20or%20RStudio%20Cloud.docx?dl=0")
+  #writeLines("If you are using Windows 10/11 or RStudio Cloud, cut and paste the link below") 
+  #writeLines("into your browser to view an article about using ABtext() and ABlines():")
+ #writeLines("    ")
+  #writeLines("https://www.dropbox.com/s/ex7ech9atz896yo/If%20you%20are%20using%20Windows%2010%20or%20RStudio%20Cloud.docx?dl=0")
   writeLines("    ")
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("1-You can add lines between phases by using the ABlines() function.")
@@ -41,4 +49,23 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
   writeLines("3-You can add a mean, median, sd line by using the ABstat() function.")
   writeLines("4-You can also add a goal line using the Gline() function.")
   writeLines("-------------------------------------------------------------------------------------")
-}
+ }
+  else {
+    writeLines("    ")
+    
+    
+    writeLines("    ")
+    writeLines("-------------------------------------------------------------------------------------")
+    writeLines("1-You can add lines between phases by using the RSlines() function.")
+    writeLines("2-You can add text by using the RStext() function.")
+    writeLines("3-You can add a mean, median, sd line by using the RSstat() function.")
+    writeLines("4-You can also add a goal line using the Gline() function.")
+    writeLines("5-You can also add an arrow using the RSarrow() function.")
+    writeLines("---------------------------------------------------------------------------------")
+    writeLines("For more information on annotating graphs go to the URL below:")
+    writeLines("https://www.dropbox.com/s/ex7ech9atz896yo/If%20you%20are%20using%20Windows%2010%20or%20RStudio%20Cloud.docx?dl=0")
+ 
+     }
+  
+   
+ }
