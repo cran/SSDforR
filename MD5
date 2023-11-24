@@ -1,4 +1,4 @@
-dc0e6a07f96382881c6fa56c6b293be5 *DESCRIPTION
+18b9767c86752fccb7a8055a9f4e755b *DESCRIPTION
 c2183d39936ebe83b89e7f83cc3ae51f *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
@@ -8,15 +8,15 @@ a6068b3238bccf75483a8e933eb59c1b *R/ABautopacf.R
 398aae223f59a524b145fdef19738c3c *R/ABdescrip.R
 af7079b7abf607bec058dc3cb954025c *R/ABiqr.R
 d01dfa4212e5169e624b4a7cf1d80bb3 *R/ABlineD.R
-b2c41be7a78257cc97efdd033e0a188f *R/ABlines.R
+08885b1d65fbfa900b67154f39538643 *R/ABlines.R
 8fec921e5cbd96f911ece1fb1a3f5d39 *R/ABma.R
-7ef06e51488bffec0690a128e709648c *R/ABplot.R
+3c69e2ddd3e547d8fda89b18ae8d656d *R/ABplot.R
 272c6ca0ab1be2637972426896332ab9 *R/ABplotm.R
 de34e8f8e5f07075aa8695339b262f9d *R/ABregres.R
 cdd21b81d01af4714d712f360121e50f *R/ABrf2.R
 d593fa91f9d06d6d8d9f85b4abb733ac *R/ABrobust.R
-7e861697fc25f28ace4213fce040c17c *R/ABstat.R
-4b0df93742918b05b50aa82ad28a61e9 *R/ABtext.R
+9fcade479991dffda682375f25223cba *R/ABstat.R
+11cda20158e9dc29b440e728da9c1da7 *R/ABtext.R
 be8068b9a39bb90efffa8fad46cc348e *R/ABtsplot.R
 658e4f1f159c5ed8fa19bf0b76610bbf *R/ABttest.R
 e887fd00ca481366f3c6350efe8a8047 *R/Append.R
@@ -79,7 +79,7 @@ d0fff52257ad68e5af95d4638b086762 *R/TauUbelow.R
 1f0a1a6a5fd0e7c131df65a76b004a57 *R/Trimline.R
 b14da9177f464763dce7ce73e73f2da8 *R/XRchart.R
 42e44f746a38790d96ebf24fb8e24cbf *R/Xmrchart.R
-25911b451a0f48fa412bcae752538f0e *R/abarrow.r
+dade068960fece714fe3bb2341a24b13 *R/abarrow.r
 a22eb44d71068037b672bb0ce66daf41 *R/diffchart.R
 ed8652ff720536a4dba29e04c83ba6c0 *R/getcsv.r
 3aeb6d7d8c1524eb22c3a6638e7d2adf *R/insert.R

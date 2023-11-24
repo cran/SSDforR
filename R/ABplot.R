@@ -38,11 +38,7 @@ function(behavior,phaseX,ABxlab,ABylab, ABmain){
     os <- "windows"
  if (os =="osx") {
   writeLines("    ")
-  #writeLines("If you are using Windows 10/11 or RStudio Cloud, cut and paste the link below") 
-  #writeLines("into your browser to view an article about using ABtext() and ABlines():")
- #writeLines("    ")
-  #writeLines("https://www.dropbox.com/s/ex7ech9atz896yo/If%20you%20are%20using%20Windows%2010%20or%20RStudio%20Cloud.docx?dl=0")
-  writeLines("    ")
+
   writeLines("-------------------------------------------------------------------------------------")
   writeLines("1-You can add lines between phases by using the ABlines() function.")
   writeLines("2-You can add text by using the ABtext() function.")
