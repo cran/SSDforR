@@ -9,13 +9,19 @@ function(behavior,phaseX,v1){
   
   x1=(c(seq(1:tmaxA)))
   
-  regA<-MannKendall(A)
+ 
   
 
   layout(rbind(1,2), heights=c(4,1))
+
   
-  writeLines("-----------------Mann-Kendall trend test------------------")
-  print(regA)
-  writeLines("----------------------------------------------------------")
+  
+  KendalA<-mmky1lag(A)
+  
+  writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
+  print(KendalA)
+  writeLines("--------------------------------------------------------------------------------------")
+  
+ 
   
 }

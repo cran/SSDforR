@@ -67,18 +67,29 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  
-  
   needed=nsucces[tmaxB]
   
-  lin1<-c("needed=", needed)
+  trues<-data.frame(nbelowline,nbelowmean)
+  ntrue<-sum(trues$nbelowline=="TRUE" & trues$nbelowmean=="TRUE")
+  
+  lin1<-c("needed=", needed,"TRUE=",ntrue)
   print(lin1)
  
+  trues<-data.frame(nbelowline,nbelowmean)
+  ntrue<-sum(trues$nbelowline=="TRUE" & trues$nbelowmean=="TRUE")
   
-  writeLines("-----------------below lines------------------")
+
+ writeLines("-----------------below lines------------------")
   writeLines ("TRUE, TRUE = Number below the lines")
   print(nbelow)
   
+  writeLines("-------------------------------------------------------------------")
+ if (ntrue > needed){
+ writeLines ("Note: Rsults indicate a singnifican difference between the pahses.")
+  writeLines ("      The number TRUE is greater than or equal to the number needed.")}
+   if (ntrue < needed){
+    writeLines ("Note: Rsults indicate a non singnifican difference between the pahses.")
+    writeLines ("      The number TRUE is less than the number needed.")}
   graphics.off()
   
   layout(rbind(1,2), heights=c(4,1))

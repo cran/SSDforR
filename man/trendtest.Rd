@@ -1,7 +1,7 @@
 \name{trendtests}
 \alias{trendtest}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Tau Trend test for  single phase 
+\title{Tau Trend test and Sen's slope test for single phase 
 %%  ~~function to do ... ~~
 }
 \description{Conducts a Mann-Kendall trend test for any phase.

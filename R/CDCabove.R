@@ -69,16 +69,32 @@ function(behavior,phaseX,v1,v2){
   nabovemean<-B>meanA
   
   nabove<-table(naboveline,nabovemean)
-  
+ 
   needed=nsucces[tmaxB]
+  trues<-data.frame(naboveline,nabovemean)
+  ntrue<-sum(trues$naboveline=="TRUE" & trues$nabovemean=="TRUE")
   
-  lin1<-c("needed=", needed)
+ 
+  lin1<-c("needed=", needed,"TRUE=",ntrue)
   print(lin1)
 
-  writeLines("-----------------above lines------------------")
+  trues<-data.frame(naboveline,nabovemean)
+  ntrue<-sum(trues$naboveline=="TRUE" & trues$nabovemean=="TRUE")
+
+ writeLines("-----------------above lines----------------------------------------")
  writeLines ("TRUE, TRUE = Number above the lines")
+ print(nabove)
+
+  writeLines("-------------------------------------------------------------------")
+  if (ntrue >= needed){
+    writeLines ("Note: Rsults indicate a singnifican difference between the pahses.")
+    writeLines ("      The number TRUE is greater than or equal to the number needed.")
+    }
   
-  print(nabove)
+  if (ntrue < needed){
+    writeLines ("Note: Rsults indicate a non singnifican difference between the pahses.")
+    writeLines ("      The number TRUE is less than the number needed.")}
+  
   
   
   

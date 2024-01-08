@@ -21,5 +21,13 @@ function(behavior,phaseX,v1){
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   print(summary(regA))
   
+  KendalA<-MannKendall(A)
+  
+  KendalA<-mmky1lag(A)
+  
+  writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
+  print(KendalA)
+  writeLines("--------------------------------------------------------------------------------------")
+  
   
 }

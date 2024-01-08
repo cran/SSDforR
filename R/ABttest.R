@@ -1,5 +1,10 @@
 ABttest <-
 function(behavior,phaseX, v1,v2){
+  writeLines(" ")
+  writeLines("Note: the t-test is unreliable if any phase is autocorrelated or has a trend.")
+  writeLines("Use the CDC test if any phase is autocorrelated.")
+  writeLines("If no autocorrelation exists in any phase, but a trend exists,") 
+  writeLines("use the regabove or regbelow test.")
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)

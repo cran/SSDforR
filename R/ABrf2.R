@@ -63,7 +63,29 @@ function(behavior,phaseX,v1){
 sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
   l3=c("sig of rf2=",round(sig1,3))
   print(l3)
+  writeLines("----------------------------------------------------------------------------------")
+ absrf2<-abs(rf2)
+  if (round(sig1,3) <=0.05)
+  { 
 
+  writeLines("Note: Your data has a statistically significant (<=0.05) lag-1 autocorrelation.")
+  }
+  if (absrf2>=.6)
+  { 
+    writeLines("Note: Your data has an rf2  greater than or equal to the absolute value of 0.6.")  
+  }
+  
+  if (round(sig1,3) >0.05)
+  { 
+   
+    writeLines("Note: Your data has a non statistically significant (>0.05) lag-1 autocorrelation.")
+  }
+  if (absrf2 <=.6)
+  { 
+    writeLines("Note: Your data has an rf2  less than the absolute value of 0.6.")  
+    
+  }
+  writeLines(" ")
   writeLines("----------regression------------")
   print(regA)
   yA<-regA$coefficients[1]
@@ -72,5 +94,7 @@ sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
   layout(rbind(1,2), heights=c(4,1))
   plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab="behavior", main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
+  KendalA<-MannKendall(A)
   
+ 
 }
