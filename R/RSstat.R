@@ -3,9 +3,7 @@ function(behavior,phaseX,v,statX,l){
   targetindex<-dev.cur() 
   targetindex<-recordPlot() 
   
-  writeLines("-------------------------------------------------------------------------------------")
-  writeLines("Click the mouse in the beginning of the phase you want the line in")
-  writeLines("-------------------------------------------------------------------------------------")
+ 
   abmedian<-tapply(behavior, phaseX,statX)
   tphase<-table(phaseX)
   mlin<- tphase[names(tphase)==v]
