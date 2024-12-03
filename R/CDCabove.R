@@ -87,12 +87,12 @@ function(behavior,phaseX,v1,v2){
 
   writeLines("-------------------------------------------------------------------")
   if (ntrue >= needed){
-    writeLines ("Note: Rsults indicate a singnifican difference between the pahses.")
+    writeLines ("Note: Rsults indicate a singnifican difference between the phases.")
     writeLines ("      The number TRUE is greater than or equal to the number needed.")
     }
   
   if (ntrue < needed){
-    writeLines ("Note: Rsults indicate a non singnifican difference between the pahses.")
+    writeLines ("Note: Rsults indicate a non singnifican difference between the phases.")
     writeLines ("      The number TRUE is less than the number needed.")}
   
   
