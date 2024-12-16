@@ -82,11 +82,11 @@ function(behavior,phaseX,v1,v2){
   print(nbelow)
   writeLines("-------------------------------------------------------------------")
   if (ntrue > needed){
-    writeLines ("Note: Rsults indicate a singnifican difference between the phases.")
+    writeLines ("Note: Results indicate a significant difference between the phases.")
     writeLines ("      The number TRUE is greater than or equal to the number needed.")}
   
   if (ntrue < needed){
-    writeLines ("Note: Rsults indicate a non singnifican difference between the pahses.")
+    writeLines ("Note: Results indicate a non-significant difference between the phases.")
     writeLines ("      The number TRUE is less than the number needed.")}
   #graphics.off()
   
