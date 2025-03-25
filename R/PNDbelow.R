@@ -46,8 +46,10 @@ function(behavior,phaseX,v1,v2){
   
   numx<-sum(!is.na(behavior))+3
   
-  PND<-c("PND Below = ",round(p,2))
-  print(PND)
+  PND<-c("PND Below = ",as.character(round(p,2)))
+  writeLines(" ")
+  cat(sprintf(PND),"\n") 
+  
   writeLines("-------------------------------------------")
   writeLines(".90 or above = very effective" )
   writeLines(".70 to .89 = moderate effectiveness")

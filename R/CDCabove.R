@@ -75,9 +75,10 @@ function(behavior,phaseX,v1,v2){
   ntrue<-sum(trues$naboveline=="TRUE" & trues$nabovemean=="TRUE")
   
  
-  lin1<-c("needed=", needed,"TRUE=",ntrue)
-  print(lin1)
-
+  lin1<-c("needed=", as.character (needed),"TRUE=",as.character(ntrue))
+  #print(lin1)
+  writeLines(" ")
+  cat(sprintf(lin1),"\n")
   trues<-data.frame(naboveline,nabovemean)
   ntrue<-sum(trues$naboveline=="TRUE" & trues$nabovemean=="TRUE")
 

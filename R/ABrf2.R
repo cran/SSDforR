@@ -53,16 +53,20 @@ function(behavior,phaseX,v1){
   tf2=rf2/tf2sd
   x1=(c(seq(1:endA)))
   regA<-lm(A~x1)
-  l1=c("tf2=",round(tf2,3))
-  print(l1)
+  l1=c("tf2=",as.character( round(tf2,3)))
+  writeLines(" ")
+  writeLines("------------------------------------Autocorrelation----------------------------")
+  cat(sprintf(l1),"\n") 
   
-  l2=c("rf2=",round(rf2,3))
-  print(l2)
+  l2=c("rf2=",as.character(round(rf2,3)))
+ 
+  cat(sprintf(l2),"\n") 
   
   dfx=endA+5
 sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
-  l3=c("sig of rf2=",round(sig1,3))
-  print(l3)
+  l3=c("sig of rf2=",as.character(round(sig1,3)))
+  cat(sprintf(l3),"\n") 
+  
   writeLines("----------------------------------------------------------------------------------")
  absrf2<-abs(rf2)
   if (round(sig1,3) <=0.05)
@@ -86,7 +90,7 @@ sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
     
   }
   writeLines(" ")
-  writeLines("----------regression------------")
+  writeLines("--------------regression------------------")
   print(regA)
   yA<-regA$coefficients[1]
   BetaA<-regA$coefficient[2]
@@ -94,7 +98,8 @@ sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
   layout(rbind(1,2), heights=c(4,1))
   plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab="behavior", main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
+  writeLines("-----------------------------------------")
   KendalA<-MannKendall(A)
-  
- 
+  print(KendalA)
+  writeLines(" ")
 }

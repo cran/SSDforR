@@ -15,6 +15,8 @@ function(behavior,phaseX,v1,v2){
   BetaA<-regA$coefficient[2]
   r2A<-summary(regA)$r.squared
   r2A<-sqrt(r2A)
+  writeLines(" ")
+  writeLines(" ")
   writeLines("-----------------Baseline------------------")
   print(summary(regA))
   KendalA<-MannKendall(A)

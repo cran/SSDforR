@@ -5,6 +5,7 @@ function(phaseX,v1,v2,successA,successB){
   tmaxB<-t1[names(t1)==v2]
   psucessA=successA/tmaxA
   b=binom.test(x=successB, n=tmaxB, p=psucessA)
+  writeLines(" ")
   print(b)
  
 }

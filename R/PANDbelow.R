@@ -71,6 +71,7 @@ function(behavior,phaseX,v1,v2){
   
   #PAND<-c("PAND Below = ",round(p,2),"Minimum overlapping to remove",nump)
   pand=PAND(A_data = A, B_data = B,improvement="decrease")
+  writeLines(" ")
   print(pand)
   writeLines("-------------------------------------------")
   writeLines(".90 or above = very effective" )

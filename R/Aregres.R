@@ -16,9 +16,10 @@ function(behavior,phaseX,v1){
   
 
   layout(rbind(1,2), heights=c(4,1))
-  
+  #par(mar = rep(2, 4))
   plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab="behavior", bty='L',main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
+  writeLines(" ")
   print(summary(regA))
   
   KendalA<-MannKendall(A)

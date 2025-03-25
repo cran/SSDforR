@@ -74,6 +74,7 @@ function(behavior,phaseX,v1,v2){
   
   #print(PAND)
   pand=PAND(A_data = A, B_data = B,improvement="increase")
+  writeLines(" ")
   print(pand)
   writeLines("-------------------------------------------")
   writeLines(".90 or above = very effective" )

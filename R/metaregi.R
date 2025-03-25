@@ -1,5 +1,6 @@
 metaregi <-
-  function(es,i, v){
+  function(es,i, v)
+  {
     m0 <- mareg( es ~ i, var = v, method = "REML"
     )
     print(summary(m0))

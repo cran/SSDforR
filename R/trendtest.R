@@ -17,7 +17,7 @@ function(behavior,phaseX,v1){
   
   
   KendalA<-mmky1lag(A)
-  
+  writeLines(" ")
   writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
   print(KendalA)
   writeLines("--------------------------------------------------------------------------------------")

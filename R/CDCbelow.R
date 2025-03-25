@@ -72,9 +72,10 @@ function(behavior,phaseX,v1,v2){
   trues<-data.frame(nbelowline,nbelowmean)
   ntrue<-sum(trues$nbelowline=="TRUE" & trues$nbelowmean=="TRUE")
   
-  lin1<-c("needed=", needed,"TRUE=",ntrue)
-  print(lin1)
- 
+  lin1<-c("needed=", as.character(needed),"TRUE=",as.character(ntrue))
+  
+  writeLines(" ")
+  cat(sprintf(lin1),"\n") 
   trues<-data.frame(nbelowline,nbelowmean)
   ntrue<-sum(trues$nbelowline=="TRUE" & trues$nbelowmean=="TRUE")
   

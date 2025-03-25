@@ -54,18 +54,40 @@ function(behavior,phaseX, v1,v2){
   
   p<- c(pA,pB)
   
- 
   tm<-table(dzone,p)
   
-
-  
   ctbl<-cbind(tm[,v1],tm[,v2])
+ 
+  nump<-as.table(ctbl)*100
+  
+  
+  num<-(ctbl[4]) 
+       
+  
+  nl<-c("There are", as.character(num),"values below the regression line in the intervention.")
+  
+  
+  colnames (ctbl)<-c("Baselene", "Intervention")
+ 
+  writeLines(" ")
+  writeLines("Note: Intervention TRUE values below the regression line are desired.")
+  cat(sprintf(nl),"\n")
+  
+  
+  writeLines(" ")
   print(ctbl)
+  writeLines(" ")
   print(prop.table(ctbl,1)*100)
+  writeLines(" ")
   print(prop.table(ctbl,2)*100)
-  c1<-chisq.test(ctbl,correct=FALSE)
- f1<-fisher.test(ctbl,alternative = "two.sided")
+  writeLines(" ")
+  c1<-chisq.test(ctbl,simulate.p.value = TRUE)
+   
+  
+ f1<-fisher.test(ctbl,alternative = "two.sided",conf.int = FALSE)
+  
   print(c1)
+  
   print(f1)
   
   t1<-table(phaseX)

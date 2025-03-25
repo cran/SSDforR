@@ -46,8 +46,10 @@ function(behavior,phaseX,v1,v2){
   
   numx<-sum(!is.na(behavior))+3
   
-  PND<-c("PEM Above = ",round(p,2))
-  print(PND)
+  PEM<-c("PEM Above = ",as.character(round(p,2)))
+  writeLines(" ")
+  cat(sprintf(PEM),"\n") 
+  #print(PEM)
   writeLines("-------------------------------------------")
   writeLines(".90 or above = very effective" )
   writeLines(".70 to .89 = moderate effectiveness")
