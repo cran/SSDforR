@@ -5,22 +5,34 @@ function (behavior,phaseX,v1,v2) {
   dzone<-behavior < medianx
   tm<-table(dzone,phaseX) 
   
+  
   ctbl<-cbind(tm[,v1],tm[,v2])
   ctbl<-as.table(ctbl)
-  num<-ctbl[4]
+  
   colnames (ctbl)<-c("Baselene", "Intervention")
-  nl<-c("There are", as.character(num),"values below the mean line in the intervention.")
+  
+  num<-ctbl[4]
+  pre<-(prop.table(ctbl,2)*100)
+  numpre<-pre[4]
+  nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) below the mean line in the intervention.")
   writeLines(" ")
   writeLines("Note: Intervention TRUE values below the mean line are desired.")
   cat(sprintf(nl),"\n")
   
   writeLines(" ")
+  writeLines("Frequencies")
   print(ctbl)
+  
   writeLines(" ")
+  writeLines("Row Percent")
   print(prop.table(ctbl,1)*100)
+  
   writeLines(" ")
+  writeLines("Column Percent")
   print(prop.table(ctbl,2)*100)
+  
   writeLines(" ")
+ 
   c1<-chisq.test(ctbl,simulate.p.value = TRUE)
   f1<-fisher.test(ctbl,alternative = "two.sided",conf.int = FALSE)
   print(c1)

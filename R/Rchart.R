@@ -76,9 +76,12 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   puband<-c("Uband=",round(Uband,3))
   pmean<-c("mean= ",round(xr,3))
   plband<-c("Lband=",round(Lband,3))
-  print(puband)
-  print(pmean)
-  print(plband)
+  #print(puband)
+  #print(pmean)
+  #print(plband)
+  writeLines(" ")
+  tprint<-c("Key:",puband,pmean,plband)
+  cat(sprintf(tprint),"\n") 
   ab<-NULL
   
   ab<<-recordPlot()

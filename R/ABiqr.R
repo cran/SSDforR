@@ -46,13 +46,13 @@ function(behavior,phaseX,v1,ABxlab,ABylab, ABmain){
   abline(h=p25,col="orange",lwd=3)
   
  
-  psdu<-c(round(p75,2))
-  pmean<-c(round(medianA,2))
-  psdb<-c(round(p25,2))
+  psdu<-c("75th percentile =",round(p75,2))
+  pmean<-c("median =",round(medianA,2))
+  psdb<-c("25th percentile =",round(p25,2))
   iqr=q[4]-q[2]
   iqrp=c("IQR=",round(iqr,2))
   
-  tprint=c(psdu,pmean,psdb)
-  print(tprint)
- 
+  tprint=c("key:",psdu,pmean,psdb)
+  #print(tprint)
+  cat(sprintf(tprint),"\n") 
 }

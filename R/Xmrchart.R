@@ -46,7 +46,7 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   if (f2==TRUE)
   {miny=Lband-1}
   
- # graphics.off()
+ graphics.off()
   y<-na.omit(behavior)
   total=length(y)
   x=(1:total)
@@ -77,9 +77,11 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   puband<-c("Uband=",Uband)
   pmean<-c("mean=",round(bmean,2))
   plband<-c("Lband=",Lband)
-  print(puband)
-  print(pmean)
-  print(plband)
-  
-  
+  #print(puband)
+  #print(pmean)
+  #print(plband)
+  writeLines(" ")
+  tprint<-c("Key:",puband,pmean,plband)
+  cat(sprintf(tprint),"\n")
+ 
 }

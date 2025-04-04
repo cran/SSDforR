@@ -57,17 +57,48 @@ function(behavior,phaseX,timeX,v1){
   tf2=rf2/tf2sd
   x1=(c(seq(1:endA)))
   regA<-lm(A~x1)
-  l1=c("tf2=",round(tf2,3))
-  print(l1)
+  l1=c("tf2=",as.character( round(tf2,3)))
+  #l1=c("tf2=",round(tf2,3))
+  #print(l1)
+  writeLines(" ")
+  writeLines("------------------------------------Autocorrelation----------------------------")
+  cat(sprintf(l1),"\n") 
   
-  l2=c("rf2=",round(rf2,3))
-  print(l2)
+  #l2=c("rf2=",round(rf2,3))
+  #print(l2)
+  l2=c("rf2=",as.character(round(rf2,3)))
+  cat(sprintf(l2),"\n")
   
   dfx=endA+5
   sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
-  l3=c("sig of rf2=",round(sig1,3))
-  print(l3)
+  #l3=c("sig of rf2=",round(sig1,3))
+  #print(l3)
+  l3=c("sig of rf2=",as.character(round(sig1,3)))
+  cat(sprintf(l3),"\n") 
   
+  writeLines("----------------------------------------------------------------------------------")
+  absrf2<-abs(rf2)
+  if (round(sig1,3) <=0.05)
+  { 
+    
+    writeLines("Note: Your data has a statistically significant (<=0.05) lag-1 autocorrelation.")
+  }
+  if (absrf2>=.6)
+  { 
+    writeLines("Note: Your data has an rf2  greater than or equal to the absolute value of 0.6.")  
+  }
+  
+  if (round(sig1,3) >0.05)
+  { 
+    
+    writeLines("Note: Your data has a non statistically significant (>0.05) lag-1 autocorrelation.")
+  }
+  if (absrf2 <=.6)
+  { 
+    writeLines("Note: Your data has an rf2  less than the absolute value of 0.6.")  
+    
+  }
+  writeLines(" ")
   writeLines("----------regression------------")
   print(summary(regA))
   yA<-regA$coefficients[1]

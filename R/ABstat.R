@@ -18,8 +18,10 @@ function(behavior,phaseX,v,statX){
   tphase<-table(phaseX)
   mlin<- tphase[names(tphase)==v]
   omedian<- abmedian[names(abmedian)==v]
-  stats<-c(statX,round(omedian,3))
- print(stats)
+  stats<-c(statX,"=",round(omedian,3))
+ #print(stats)
+  writeLines(" ")
+  cat(sprintf(stats),"\n")
   l<-locator(1)
   mlin<-l$x+mlin
   if (statX=="mean") {cl="blue"}   

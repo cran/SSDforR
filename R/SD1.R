@@ -53,13 +53,13 @@ function(behavior,phaseX,v1,ABxlab,ABylab, ABmain){
   abline(h=SDbelow,col="black",lwd=3)
   
   
-  sdp<-c("SD",round(sdA,2))
-  psdu<-c("+1SD",round(SDabove,2))
-  pmean<-c("mean",round(meanA,2))
-  psdb<-c("-1SD",round(SDbelow,2))
+  sdp<-c("SD =",round(sdA,2))
+  psdu<-c("+1SD =",round(SDabove,2))
+  pmean<-c("mean =",round(meanA,2))
+  psdb<-c("-1SD =",round(SDbelow,2))
   
- 
+ writeLines(" ")
   tprint=c(sdp,psdu,pmean,psdb)
-  print(tprint)
-  
+  #print(tprint)
+  cat(sprintf(tprint),"\n") 
 }

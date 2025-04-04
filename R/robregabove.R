@@ -58,7 +58,9 @@ function(behavior,phaseX, v1,v2){
   ctbl<-cbind(tm[,v1],tm[,v2])
   ctbl<-as.table(ctbl)
   num<-ctbl[4]
-  nl<-c("There are",as.character(num),"values above the regression line in the intervention.")
+  pre<-(prop.table(ctbl,2)*100)
+  numpre<-pre[4]
+  nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) above the regression line in the intervention.")
   
   colnames (ctbl)<-c("Baselene", "Intervention")
   writeLines(" ")
@@ -66,9 +68,12 @@ function(behavior,phaseX, v1,v2){
   cat(sprintf(nl),"\n")
   writeLines(" ")
   print(ctbl)
+  writeLines("Frequencies")
   writeLines(" ")
+  writeLines("Row Percent")
   print(prop.table(ctbl,1)*100)
   writeLines(" ")
+  writeLines("Column Percent")
   print(prop.table(ctbl,2)*100)
   writeLines(" ")
   c1<-chisq.test(ctbl,simulate.p.value = TRUE)

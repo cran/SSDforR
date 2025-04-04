@@ -1,6 +1,13 @@
 Trimline <-
 function(behavior,phaseX,v){
-  
+  os <- .Platform$OS.type
+  if (grepl("^darwin", R.version$os))
+    os <- "osx"
+  if (grepl("linux-gnu", R.version$os))
+    os <- "linux"
+  if (grepl("windows", R.version$os))
+    os <- "windows"
+  if (os =="osx") { 
   targetindex<-dev.cur() 
   targetindex<-recordPlot() 
   
@@ -20,8 +27,10 @@ function(behavior,phaseX,v){
   endA<-tmaxA+startA-1
   A<-behavior[startA:endA]
   trimmean=mean(A,trim=.1,na.rm=T)
-  trm<-c("10% Trim Mean=",round(trimmean,3))
-  print(trm)
+  trm<-c("10 percent Trim Mean=",round(trimmean,3))
+  #print(trm)
+  writeLines(" ")
+  cat(sprintf(trm),"\n") 
   l<-locator(1)
   mlin<-l$x+mlin
   segments(x0=l$x,x1=mlin,y0=trimmean,col="red",lty=2,lwd=3)
@@ -31,6 +40,13 @@ function(behavior,phaseX,v){
     
     
   {replayPlot(targetindex)}
- 
+  } 
+  else {
+    writeLines("  ")
+    writeLines("Trimline() command is NOT available for Windows and Posit Cloud operating systems; instead use RSTrimline() command.") 
+    writeLines("For more information on annotating graphs go to the URL below:")
+    writeLines("https://www.dropbox.com/s/ex7ech9atz896yo/If%20you%20are%20using%20Windows%2010%20or%20RStudio%20Cloud.docx?dl=0")
+    
+  }
  
 }

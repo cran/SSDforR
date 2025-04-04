@@ -5,12 +5,31 @@ function (behavior,phaseX,v1,v2) {
   dzone<-behavior > medianx
   tm<-table(dzone,phaseX) 
   ctbl<-cbind(tm[,v1],tm[,v2])
+  num<-ctbl[4]
+  pre<-(prop.table(ctbl,2)*100)
+  numpre<-pre[4]
+  nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) above the trim mean line in the intervention.")
+  
+  colnames (ctbl)<-c("Baselene", "Intervention")
+  
+  writeLines(" ")
+  writeLines("Note: Intervention TRUE values above the trim mean line are desired")
+  cat(sprintf(nl),"\n")
+  writeLines(" ")
+  writeLines("Frequencies ")
   print(ctbl)
+  writeLines(" ")
+  writeLines("Row Percent ")
   print(prop.table(ctbl,1)*100)
+  writeLines(" ")
+  writeLines("Column Percent ")
   print(prop.table(ctbl,2)*100)
-  c1<-chisq.test(ctbl,correct=FALSE)
-  f1<-fisher.test(ctbl,alternative = "two.sided")
+  writeLines(" ")
+  c1<-chisq.test(ctbl,simulate.p.value = TRUE)
+  
+  f1<-fisher.test(ctbl,alternative = "two.sided",conf.int = FALSE)
   print(c1)
+  writeLines(" ")
   print(f1)
  # graphics.off()
   layout(rbind(1,2), heights=c(6,1))

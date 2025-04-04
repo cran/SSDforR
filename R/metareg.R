@@ -1,6 +1,7 @@
 metareg <-
   function(es, v){
-    m0 <- mareg(es~1, var=v , method = "REML")
+    options(warn=-1)
+     m0 <- mareg(es~1, var=v , method = "REML")
     
     
     print(summary(m0))
@@ -9,4 +10,5 @@ metareg <-
     plot.new
     forest(m0)
     title(main="Forest Graph of Effect Sizes")
+    options(warn=-0)
   }

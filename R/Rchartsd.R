@@ -59,10 +59,10 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   if (f2==TRUE)
   {miny=Lband-2}
   
-  #graphics.off()
-  plot.new()
+  graphics.off()
+ 
   
-  layout(rbind(1,2), heights=c(4,1))
+  
   plot(x,p,ylim=c(miny,maxy),xlim=c(1,xmax),type="o",col="red",bty='L',main=ABmain,xlab=ABxlab,ylab=ABylab)
   
   abline(h=xr,col="green")
@@ -70,15 +70,19 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   abline(h=Lband,col="orange")
   
   #par(mar=c(1, 1, 1, 1))
-  #plot.new()
+  
+  layout(rbind(1,2), heights=c(4,1))
   #legend("center", c("behavior","Uband","mean","Lband"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
   
   puband<-c("Uband=",round(Uband,3))
   pmean<-c("mean= ",round(xr,3))
   plband<-c("Lband=",round(Lband,3))
-  print(puband)
-  print(pmean)
-  print(plband)
+ # print(puband)
+ # print(pmean)
+ # print(plband)
+  writeLines(" ")
+  tprint<-c("Key:",puband,pmean,plband)
+  cat(sprintf(tprint),"\n") 
   ab<-NULL
   
   ab<<-recordPlot()

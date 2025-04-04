@@ -9,18 +9,24 @@ function (behavior,phaseX,v1,v2) {
   ctbl<-as.table(ctbl)
   
   num<-ctbl[4]
-  nl<-c("There are",as.character(num),"values above the median line in the intervention.")
+  pre<-(prop.table(ctbl,2)*100)
+  numpre<-pre[4]
+  nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) above the median line in the intervention.")
   
   colnames (ctbl)<-c("Baselene", "Intervention")
   
   writeLines(" ")
-  writeLines("Note: Intervention TRUE values above the median line are desired")
+  writeLines("Note: Intervention TRUE value(s) above the median line are desired")
   cat(sprintf(nl),"\n")
   writeLines(" ")
+  writeLines("Frequencies")
   print(ctbl)
+  
   writeLines(" ")
+  writeLines("Row Percent")
   print(prop.table(ctbl,1)*100)
   writeLines(" ")
+  writeLines("Column Percent")
   print(prop.table(ctbl,2)*100)
   writeLines(" ")
   c1<-chisq.test(ctbl,simulate.p.value = TRUE)
