@@ -5,11 +5,18 @@ ABdescrip <-
     
 writeLines(" ")
     writeLines("-----------Number of Observations------------")
-    t1<-table (PhaseX)
-    t1<-t1[c(-1)]
-    Phase<-as.data.frame(t1)
-    colnames(Phase)<- c("Phase","Freq")
-    print(Phase,row.names=F)
+    Freq<-table (PhaseX)
+   Freq<-Freq[c(-1)]
+    Freq<-as.data.frame(Freq)
+    len=length(Freq)
+
+    if (len > 1 )  {
+   colnames(Freq)<- c("Phase","Freq") 
+  
+  }  else 
+   {  colnames(Freq)<- c("Freq") 
+     } 
+    print(Freq)
    
     abmean<-tapply(behavior,PhaseX,mean,na.rm=T)
     pmean<-c(round(abmean,3))
@@ -75,6 +82,6 @@ writeLines(" ")
     
     
     layout(rbind(1,2), heights=c(4,1))
-    boxplot(behavior~PhaseX)
+    boxplot(behavior~PhaseX,xlab="Phase")
     options(warn=-0)
   }

@@ -1,11 +1,11 @@
-a62cc8fabc71b44eca9c6d88882448eb *DESCRIPTION
+f84db0a92f1d6dc341faaf9f03e14312 *DESCRIPTION
 abb1b18d2c0bb5c6e71f93610f6b42c1 *NAMESPACE
 110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
 7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
 52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
 a6068b3238bccf75483a8e933eb59c1b *R/ABautopacf.R
 cbcea546e3df1a2088ede80f2d85ed85 *R/ABbinomial.R
-e1f6192cacfc7d0a63101bfcbe0788fc *R/ABdescrip.R
+2b5adfc1f17c78275da9bc1bb9f75db5 *R/ABdescrip.R
 17bae6ac3f69a93c5748b895f63981dc *R/ABiqr.R
 d01dfa4212e5169e624b4a7cf1d80bb3 *R/ABlineD.R
 08885b1d65fbfa900b67154f39538643 *R/ABlines.R
@@ -20,7 +20,7 @@ a8db98c263fcebad8c4cf75825bbcafd *R/ABstat.R
 be8068b9a39bb90efffa8fad46cc348e *R/ABtsplot.R
 7cebc02d83dde5731c55dc9951ad9dc0 *R/ABttest.R
 e887fd00ca481366f3c6350efe8a8047 *R/Append.R
-06959870c09574f3660c5e15d96806d9 *R/Aregres.R
+1055ffae52f2e1a9391b3d7a9ff4c1a7 *R/Aregres.R
 ecf88a60db3474f331268989cf242ce2 *R/Arimadiff.R
 e95dcdf7297739b05ffba4889ac7bb3d *R/Arimama.R
 faf548a6e806130e858e02b3ace99c65 *R/Arobust.R
