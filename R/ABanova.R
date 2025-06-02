@@ -1,12 +1,36 @@
 ABanova <-
 function(behavior,phaseX){
-  meanA<-tapply(behavior,phaseX,mean,rm.na=T)
-  aovx<-aov(behavior~as.factor(phaseX))
+  options(warn=-1)
+   options(scipen=999)
+   writeLines(" ")
+   writeLines("Note: the ANOVA test is unreliable if any phase is autocorrelated or has a trend.")
+   writeLines("Use the CDC test if any phase is autocorrelated.")
+   writeLines("If no autocorrelation exists in any phase, but a trend exists,") 
+   writeLines("use the CDC, regabove, or regbelow test.")
+   c<-readline("(c)ontinue or (e)exit and press return (c or e) ")
+   if (c=="c"|c=="C") {
+   writeLines(" ")
+  behavior <-na.omit(behavior)
+  phase<-na.omit(phaseX)
+ phase <- as.character(phase[phase!=""])
+  meanA<-tapply(behavior,phase,mean,rm.na=T)
+  #aovx<-aov(behavior~as.factor(phaseX))
+  aovx<-aov(behavior~phase)
   print(summary(aovx))
-  print(meanA)
+  writeLines(" ")
+  writeLines("------------means------------------")
+  print(round(meanA,digits=3))
+  writeLines("-----------------------------------")
+  writeLines(" ")
   tukeyx<-TukeyHSD(aovx)
   graphics.off()
   plot(tukeyx)
-  tukeyx
-  
+  print(tukeyx)
+  bartest<-bartlett.test(behavior~phase)
+  print(bartest)
+  bnote<-c("A p-value above 0.05 indicates homogeneity of variances." )
+  cat(sprintf(bnote),"\n")
+ 
 }
+
+   options(warn=-0)}

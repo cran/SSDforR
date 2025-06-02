@@ -1,13 +1,13 @@
-f84db0a92f1d6dc341faaf9f03e14312 *DESCRIPTION
-abb1b18d2c0bb5c6e71f93610f6b42c1 *NAMESPACE
-110ba777b479f836287eb16fe4d675dd *R/ABWilcox.R
-7ac32d5de45e4a456a4dcfebe6205c39 *R/ABanova.R
+e247898d7584b909634d3db0d6558d57 *DESCRIPTION
+ef8d5045ff9e4dbba3337ca7fa043cf5 *NAMESPACE
+b400b6a9694f7d94de56971a3570a1fd *R/ABWilcox.R
+8ebff086bcbb8481f0987edd4eadf9e4 *R/ABanova.R
 52486efb2f145f23c0c873d4e8018d79 *R/ABautoacf.R
 a6068b3238bccf75483a8e933eb59c1b *R/ABautopacf.R
-cbcea546e3df1a2088ede80f2d85ed85 *R/ABbinomial.R
-2b5adfc1f17c78275da9bc1bb9f75db5 *R/ABdescrip.R
+93c3acabf12ef0ea5b44022e4aad23a4 *R/ABbinomial.R
+391cbfb404677045d1f02f9ceb5cb771 *R/ABdescrip.R
 17bae6ac3f69a93c5748b895f63981dc *R/ABiqr.R
-d01dfa4212e5169e624b4a7cf1d80bb3 *R/ABlineD.R
+d9a33c105772f97de4c166781838c5c6 *R/ABlineD.R
 08885b1d65fbfa900b67154f39538643 *R/ABlines.R
 8fec921e5cbd96f911ece1fb1a3f5d39 *R/ABma.R
 3c69e2ddd3e547d8fda89b18ae8d656d *R/ABplot.R
@@ -18,7 +18,7 @@ d593fa91f9d06d6d8d9f85b4abb733ac *R/ABrobust.R
 a8db98c263fcebad8c4cf75825bbcafd *R/ABstat.R
 11cda20158e9dc29b440e728da9c1da7 *R/ABtext.R
 be8068b9a39bb90efffa8fad46cc348e *R/ABtsplot.R
-7cebc02d83dde5731c55dc9951ad9dc0 *R/ABttest.R
+5ce62c8154b67beddfc9067da1a4d351 *R/ABttest.R
 e887fd00ca481366f3c6350efe8a8047 *R/Append.R
 1055ffae52f2e1a9391b3d7a9ff4c1a7 *R/Aregres.R
 ecf88a60db3474f331268989cf242ce2 *R/Arimadiff.R
@@ -27,9 +27,9 @@ faf548a6e806130e858e02b3ace99c65 *R/Arobust.R
 084451b7747d41da391d787bafcbab6a *R/CDCabove.R
 34e8828434d7b69e695158ebbc7ecb58 *R/CDCbelow.R
 df66255efbf0e25f333af883ea801882 *R/Cchart.R
-53457341bb6c243b1ed7bd62aab44efa *R/Effectsize.R
+8991fae63347532a853802cc82461749 *R/Effectsize.R
 0738e38811c1584f3228cbe7d6555c1e *R/GABrf2.R
-2d0a654f15c8bc287d1611baf1899440 *R/GABttest.R
+8ab48afcdbbc7abb0a0fcf12fca8a36f *R/GABttest.R
 423affeddd2d8cf993e33360e98f40fb *R/Gindex.R
 77bfa704507294fc5d7990839b67e7cf *R/Gline.R
 5674fab6a0574d259eba68f40a50a452 *R/Gmedian.R
@@ -59,6 +59,7 @@ fd4f880905f33b5fc22a50ca11ccd4fb *R/RMstat.R
 9bde9392cdce44e11dca74f0520e51a6 *R/RSTrimline.R
 f08efe7f80e4df0159fbb652fc741dc2 *R/RSarrow.R
 487ab4c0c1cb4ba060d1bfbee02247ad *R/RSlines.R
+a68d7938882c0f1d749bc996a5855f8b *R/RSlinesD.R
 7e56efd5e78c2e23fc8b5a5e12603fad *R/RSstat.R
 fd91f0cd6f634de9d39d111486e9dd99 *R/RStext.R
 b1b2da05b41f9b7ebda27f9d05af32cb *R/Rchart.R
@@ -158,6 +159,7 @@ bb0a03dc68dbc1a7a84b46ebbf90df63 *man/RMtext.Rd
 a25ea1b6678bf212fb457b5c108e5267 *man/RSTrimline.Rd
 d1233a2af1e5befe673a6ac4d471c999 *man/RSarrow.Rd
 1bf577c0a417722692a78847483ae2c8 *man/RSlines.Rd
+67e94ee0e514b979b3565a15f1cde5f6 *man/RSlinesD.Rd
 729d2c86849e8c558220acc47cf22224 *man/RSstat.Rd
 9657b2c9e061fe5fca4e63a6fdc4f28a *man/RStext.Rd
 7439d763f0d16884a168895c98f3cedd *man/Rchart.Rd

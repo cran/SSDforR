@@ -150,7 +150,7 @@ cat(sprintf(as.character (rvalue)),"\n")
   magnitude<-ret$type_m[1]
   pret<-c("Power=",round(power,3))
   mret<-c("Type M (Magnitude) Errors=",round(magnitude,3))
-  sret<-c("Type S Sign) Errors=",round(sign,3),spercent,"percent")
+  sret<-c("Type S (Sign) Errors=",round(sign,5),spercent,"percent")
   cat(sprintf(pret),"\n") 
   cat(sprintf(mret),"\n") 
   cat(sprintf(sret),"\n") 
