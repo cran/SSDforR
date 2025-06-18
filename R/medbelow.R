@@ -1,5 +1,13 @@
 medbelow <-
 function (behavior,phaseX,v1,v2) {
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Chi-square median below for behavior",'"',DV,'"')
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
+  options (scipen=999)
+  options(warn=-1)
   medianab<-tapply(behavior,phaseX,median)
   medianx= medianx=medianab[names(medianab)==v1]
   dzone<-behavior < medianx
@@ -41,4 +49,4 @@ function (behavior,phaseX,v1,v2) {
   par(mar=c(1, 1, 1, 1))
   plot.new()
   legend("center", c("behavior","median"), col = c("red","green"), lwd = 1,ncol=2,bty ="n")  
-}
+  options(warn=-0)}

@@ -10,7 +10,7 @@ e=length(tsx)
 x=1:end
 x<-ts(x,start=1,end=e,deltat=1)
 tsma<-SMA(tsx,n=m)
-graphics.off()
+layout(rbind(1,2), heights=c(6,1))
 par(mfrow=c(1,2))
 plot.ts(tsx,xlab="time", ylab="behavior")
 plot.ts(tsma,xlab="time", ylab="Moving Average of behavior")

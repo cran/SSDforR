@@ -23,6 +23,7 @@ e<-data.frame(es,lab)
 e<-e[ order(e$es), ]
 
 #dotchart(es,groups=lab,color="red",cex=.8, xlab="Cohen's D",main=esmain)
+layout(rbind(1,2), heights=c(6,1))
 dotchart(e$es,labels=e$lab,color="red",cex=.8, xlab="Cohen's D",main=esmain)
     
   }   

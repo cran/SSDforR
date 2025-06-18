@@ -82,6 +82,13 @@ function(behavior,phaseX,v1,v2){
   napCIL<-nap1[[4]]
   napCIU<-nap1[[5]]
   writeLines(" ")
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("NAP above for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
   print(nap1,quote="FALSE")
   
   writeLines("-------------------------------------------")

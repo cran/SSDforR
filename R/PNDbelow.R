@@ -46,6 +46,12 @@ function(behavior,phaseX,v1,v2){
   
   numx<-sum(!is.na(behavior))+3
   
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("PND below for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
+ 
   PND<-c("PND Below = ",as.character(round(p,2)))
   writeLines(" ")
   cat(sprintf(PND),"\n") 

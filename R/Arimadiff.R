@@ -10,9 +10,10 @@ function(behavior,phaseX,v,d){
   x<-ts(x,start=1,end=e,deltat=1)
   tsdiff<-diff(tsx,differences=d)
   
+  layout(rbind(1,2), heights=c(6,1))
   
   par(mfrow=c(1,2))
-  layout(rbind(1,2), heights=c(4,1))
+  
   plot.ts(tsx,xlab="time", ylab="behavior")
   plot.ts(tsdiff,xlab="time", ylab="difference of behavior")
 }

@@ -114,8 +114,13 @@ function(behavior,phaseX,v1,v2){
   writeLines(l1)
   writeLines(l2)
   writeLines(l3)
-  writeLines("")
-  writeLines("----------------------------------g-index---------------------------------")
+  
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("G-Index for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
+  
   writeLines(" ")
   writeLines("--------------------------- Above Lines-----------------------------------")
   l1<-c("G mean= ",as.character(round(gamean,3)),"  G median= ",as.character(round(gamedian,3)) ,"G Regression line= ",as.character(round(galine,3)))
@@ -127,7 +132,7 @@ function(behavior,phaseX,v1,v2){
   #print(l2)
   cat(sprintf(l2),"\n") 
   #graphics.off()
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="g-index" )
   
@@ -136,6 +141,6 @@ function(behavior,phaseX,v1,v2){
 
   abline(h=medianA,col='black',lwd=2)
   par(mar=c(1, 1, 1, 1))
-  plot.new()
-  legend("center", c("median","mean","regression line"), col = c("black","gray","blue"), lty=c("solid","solid","dotted"),lwd = 3,ncol=3,bty ="n")
+  #plot.new()
+  legend("top", c("median","mean","regression line"), col = c("black","gray","blue"), lty=c("solid","solid","dotted"),lwd = 3,ncol=3,bty ="n")
 }

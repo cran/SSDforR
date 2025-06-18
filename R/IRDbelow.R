@@ -76,9 +76,15 @@ function(behavior,phaseX,v1,v2){
   #IRDP=c(round(IRD,2),"%")
   IRD1=IRD(A_data = A, B_data = B,improvement="decrease")
   IRD2<-IRD1[[2]]*100
-  IRDP=c("Est =", round(IRD2,2),"%")
-  print(IRDP,quote="FALSE")
+  IRDP=c("Est =", round(IRD2,2),"%%")
+ # print(IRDP,quote="FALSE")
+  DV<-( paste(substitute(behavior)) )
   
+  l1<-c("IRD below for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
+  cat(sprintf(IRDP),"\n")
   writeLines("-------------------------------------------")
   writeLines("10th percentile = 36.8" )
   writeLines("25th percentile = 47.9")

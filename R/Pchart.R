@@ -36,7 +36,7 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   
   #graphics.off()
   plot.new()
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
  plot(x,p,ylim=c(min,max),xlim=c(1,xmax),type="o",col="red",bty='L',main=ABmain,xlab=ABxlab,ylab=ABylab)
   
   abline(h=meanA,col="green")

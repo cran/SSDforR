@@ -1,5 +1,11 @@
 trimabove <-
 function (behavior,phaseX,v1,v2) {
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Chi-square trimmed mean above for behavior",'"',DV)
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
   medianab<-tapply(behavior,phaseX,mean,trim=.1)
   medianx=medianab[names(medianab)==v1]
   dzone<-behavior > medianx
@@ -13,7 +19,7 @@ function (behavior,phaseX,v1,v2) {
   colnames (ctbl)<-c("Baselene", "Intervention")
   
   writeLines(" ")
-  writeLines("Note: Intervention TRUE values above the trim mean line are desired")
+  writeLines("Note: Intervention TRUE values above the trimmed mean line are desired")
   cat(sprintf(nl),"\n")
   writeLines(" ")
   writeLines("Frequencies ")

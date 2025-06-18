@@ -78,8 +78,13 @@ function(behavior,phaseX,v1,v2){
   
   needed=nsucces[tmaxB]
   
-  lin1<-c("needed=", needed,"TRUE=",ntrue)
-  print(lin1)
+  DV<-( paste(substitute(behavior)) )
+  lin1<-c("For behavior",'"',DV,'"',"needed =", as.character(needed),"TRUE =",as.character(ntrue))
+  
+  
+  
+  writeLines(" ")
+  cat(sprintf(lin1),"\n")
   writeLines("-----------------above lines------------------")
  writeLines ("TRUE, TRUE = Number above the lines")
   
@@ -96,7 +101,7 @@ function(behavior,phaseX,v1,v2){
   
  # graphics.off()
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="Robust CDC Above" )
   
   abline(h=(meanA),col="green")

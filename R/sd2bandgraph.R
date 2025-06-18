@@ -20,7 +20,7 @@ function(behavior,phaseX,v1,ABxlab,ABylab,ABmain){
   min=SDbelow-2
   
   #graphics.off()
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(A,ylim=c(min,max),xlim=c(0,numx),type="o",xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L')
  # legend("bottom",inset=c(-.3,-.96,-.3),xpd = TRUE, c("+2sd","mean","-2sd"), col = c("blue","orange", "red"), lwd = 1,ncol=3,bty ="n")
   abline(h=SDabove,col="blue")

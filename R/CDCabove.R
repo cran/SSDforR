@@ -74,8 +74,11 @@ function(behavior,phaseX,v1,v2){
   trues<-data.frame(naboveline,nabovemean)
   ntrue<-sum(trues$naboveline=="TRUE" & trues$nabovemean=="TRUE")
   
- 
-  lin1<-c("needed=", as.character (needed),"TRUE=",as.character(ntrue))
+  DV<-( paste(substitute(behavior)) )
+  lin1<-c("For behavior",'"',DV,'"',"needed =", as.character(needed),"TRUE =",as.character(ntrue))
+  
+  
+  #lin1<-c("needed=", as.character (needed),"TRUE=",as.character(ntrue))
   #print(lin1)
   writeLines(" ")
   cat(sprintf(lin1),"\n")
@@ -99,9 +102,9 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  graphics.off()
+  #graphics.off()
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC Above" )
   
   abline(h=(meanA),col="green")

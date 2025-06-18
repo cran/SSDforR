@@ -1,5 +1,6 @@
 ABregres <-
 function(behavior,phaseX,v1,v2){
+  options (scipen=999)
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -17,18 +18,25 @@ function(behavior,phaseX,v1,v2){
   r2A<-sqrt(r2A)
   writeLines(" ")
   writeLines(" ")
-  writeLines("-----------------Baseline------------------")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Regression for behavior",'"',DV,'"',"in the", v1, "phase")
+  
+  cat(sprintf(l1),"\n")
+  #writeLines("-----------------Baseline------------------")
   print(summary(regA))
   KendalA<-MannKendall(A)
   
   KendalA<-mmky1lag(A)
-  
-  writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
+  ls1<-c("Mann-Kendall Trend Test and Sen's Regression for behavior",DV,"in the", v1, "phase")
+  cat(sprintf(ls1),"\n")
+  writeLines("--------------------------------------------------------------------------------------")
+  #writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
   print(KendalA)
   writeLines("--------------------------------------------------------------------------------------")
+  writeLines("")
   
-  
-  writeLines("----------------- Intervention------------------") 
+ # writeLines("----------------- Intervention------------------") 
 
   tmaxB<-t1[names(t1)==v2]
   startB<-match(v2,phaseX)
@@ -44,17 +52,23 @@ function(behavior,phaseX,v1,v2){
   
   r2B<-summary(regB)$r.squared
   r2B<-sqrt(r2B)
+  l2<-c("Regression for behavior",'"',DV,'"',"in the", v2, "phase")
+  
+  cat(sprintf(l2),"\n")
   print(summary(regB))
   
   
   KendalB<-mmky1lag(B)
   
-  writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
+ # writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
+  ls2<-c("Mann-Kendall Trend Test and Sen's Regression for behavior",DV,"in the", v2, "phase")
+  cat(sprintf(ls2),"\n")
+  writeLines("--------------------------------------------------------------------------------------")
   print(KendalB)
   writeLines("--------------------------------------------------------------------------------------")
   
-  
-  par(mfrow=c(2,2))
+  layout(rbind(1,2), heights=c(6,1))
+  par(mfrow=c(1,2))
   
   
   plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab="behavior", bty='L',main=v1 )

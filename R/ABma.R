@@ -8,7 +8,7 @@ function(behavior,phaseX,v1){
   A<-behavior[startA:endA]
   t<-SMA(A,n=2)
   graphics.off()
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   
   plot(A, lwd=2,type="l",col="blue", xlab="Time", ylab="behavior", bty='L',main="Moving Average  Plot" )
   

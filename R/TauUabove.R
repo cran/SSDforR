@@ -37,8 +37,12 @@ function(behavior,phaseX,v1,v2){
   numx<-sum(!is.na(behavior))+3
   
   
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Tau-U above for behavior",'"',DV,'"')
   writeLines(" ")
-  writeLines("***********************Tau above baseline")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
   
   tau<-Tau_U(A_data = A, B_data = B,improvement="increase")
   print(tau)

@@ -17,7 +17,7 @@ max<-behavior[maxy]
 #numx<-sum(!is.na(behavior))+1
 numx=length(x1)+1
 #graphics.off()
-layout(rbind(1,2), heights=c(4,1))
+layout(rbind(1,2), heights=c(6,1))
 plot(A,ylim=c(0,max),xlim=c(0,numx),type="o",xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L')
 #legend("bottom",inset=c(-.3,-.73,-.3),xpd = TRUE, c("+1sd","mean","-1sd"), col = c("blue","orange", "red"), lwd = 1,ncol=3,bty ="n")
 #legend("bottom", c("+1sd","mean","-1sd"), col = c("blue","orange", "red"), lwd = 1,ncol=3,bty ="n")

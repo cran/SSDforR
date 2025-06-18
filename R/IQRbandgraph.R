@@ -20,7 +20,7 @@ function(behavior,phaseX,v1,ABxlab,ABylab,ABmain){
   
   
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(A,ylim=c(0,max),xlim=c(0,numx),type="o",xlab=ABxlab, ylab=ABylab, main=ABmain,bty='L')
   abline(h=p75,col="blue")
   abline(h=p25,col="red")

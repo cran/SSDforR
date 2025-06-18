@@ -1,6 +1,14 @@
 regabove <-
 function(behavior,phaseX, v1,v2){
-  t1<-table(phaseX)
+  options (scipen=999)
+  options(warn=-1)
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Chi-square Reg above for behavior",'"',DV,'"')
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
+   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
   endA<-tmaxA+startA-1
@@ -137,7 +145,7 @@ function(behavior,phaseX, v1,v2){
   
   #graphics.off()
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="Regression Line" )
   
     abline(reg=regA,col='Blue',lty="dashed")
@@ -145,4 +153,4 @@ function(behavior,phaseX, v1,v2){
   plot.new()
   legend("center", c("regression line"), lty=c("dashed"),col = c("blue"), lwd = 1,ncol=2,bty ="n") 
   
-  }
+  options(warn=-0) }

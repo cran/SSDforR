@@ -76,10 +76,17 @@ function(behavior,phaseX,v1,v2){
   #IRDP=c(round(IRD,2),"%")
   IRD1=IRD(A_data = A, B_data = B)
   IRD2<-IRD1[[2]]*100
-  IRDP=c("Est =", round(IRD2,2),"%")
+  IRDP=c("Est =", round(IRD2,2),"%%")
   #ci<-NAP(A_data = A, B_data = B, SE = "Hanley")
-
-  print(IRDP,quote="FALSE")
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("IRD above for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
+  cat(sprintf(IRDP),"\n")
+  #print(IRDP,quote="FALSE")
 
   writeLines("-------------------------------------------")
   writeLines("10th percentile = 36.8" )

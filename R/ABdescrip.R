@@ -2,6 +2,11 @@ ABdescrip <-
   function(behavior,PhaseX){
    
     options(warn=-1)
+    DV<-( paste(substitute(behavior)) )
+    
+    l1<-c("Descriptive statistics for behavior",'"',DV,'"')
+    writeLines(" ")
+    cat(sprintf(l1),"\n")
     
 writeLines(" ")
     writeLines("-----------Number of Observations------------")
@@ -162,7 +167,7 @@ writeLines(" ")
      
     
     
-    layout(rbind(1,2), heights=c(4,1))
+    layout(rbind(1,2), heights=c(6,1))
     boxplot(behavior~PhaseX,xlab="Phase")
     options(warn=-0)
   }

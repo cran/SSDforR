@@ -7,7 +7,7 @@ function(behavior,phaseX, v1,v2){
   writeLines("Use the CDC test if any phase is autocorrelated.")
   writeLines("If no autocorrelation exists in any phase, but a trend exists,") 
   writeLines("use the CDC, regabove, or regbelow test.")
-  c<-readline("(c)ontinue or (e)exit and press return (c or e) ")
+  c<-readline("(c)ontinue or (e)xit and press return (c or e) ")
   if (c=="c"|c=="C") {
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
@@ -28,7 +28,13 @@ function(behavior,phaseX, v1,v2){
 t1<-t.test(A,B)
 var1<-var.test(A,B)
 vartestp<-var.test(A,B)$p.value
-t2<-t.test(A,B,var.equal=TRUE)  
+t2<-t.test(A,B,var.equal=TRUE) 
+DV<-( paste(substitute(behavior)) )
+
+writeLines(" ")
+l1<-c("t-test analysis for behavior",'"',DV,'"')
+cat(sprintf(l1),"\n")
+writeLines(" ")
   print(t2)
   print(var1)
   print(t1)
@@ -37,6 +43,7 @@ t2<-t.test(A,B,var.equal=TRUE)
   
   
  #layout(rbind(1,2), heights=c(4,1))
+ layout(rbind(1,2), heights=c(6,1))
   barplot(Means,ylab="mean",names.arg=c(v1,v2))
   if (vartestp>.05) { 
   note1<-c("Note: Your variances are equal (F test to compare two variances p-value is greater than 0.05) between phases",v1, "and", v2,".","Use the Two Sample t-test")

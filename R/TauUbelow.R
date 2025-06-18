@@ -38,8 +38,11 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  writeLines("*********************** decrease from baseline")
+  DV<-( paste(substitute(behavior)) )
   
+  l1<-c("Tau-U below for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
   writeLines(" ")
   
   tau<-Tau_U(A_data = A, B_data = B,improvement="decrease")

@@ -1,6 +1,22 @@
 Effectsize <-
 function(behavior,phaseX,v1,v2) {
-  mean1 <-tapply(behavior,phaseX,mean,na.rm=T)
+  options (scipen=999)
+  writeLines(" ")
+  writeLines("***********************************************************************")
+  writeLines("Note: the ES index, d-index, and  Hedges's g index are unreliable")
+  writeLines("if any phase is autocorrelated or has a trend.")
+  writeLines("Use the TauU test if any phase is autocorrelated.")
+  writeLines("If no autocorrelation exists in any phase, but a trend exists,") 
+  writeLines("use the TauU or G-index test.")
+  writeLines("***********************************************************************")
+  c<-readline("(c)ontinue or (e)xit and press return (c or e) ")
+  if (c=="c"|c=="C") {
+    writeLines(" ")
+    DV<-( paste(substitute(behavior)) )
+    l9<-c("Effect size for behavior",'"',DV,'"')
+    cat(sprintf(l9),"\n")
+    writeLines(" ")
+    mean1 <-tapply(behavior,phaseX,mean,na.rm=T)
   s1 <-tapply(behavior,phaseX, sd, na.rm=T)
  
   options(scipen=999)
@@ -54,14 +70,7 @@ IV<-c(PA,PB)
   l1<-c("small effect size: <.87")
   l2<-c("medium effect size: .87 to 2.67 ")
   l3<-c("large effect size: >2.67")
-  writeLines(" ")
-  writeLines("***********************************************************************")
-  writeLines("Note: the ES index, d-index, and  Hedges's g index are unreliable")
-  writeLines("if any phase is autocorrelated or has a trend.")
-  writeLines("Use the TauU test if any phase is autocorrelated.")
-  writeLines("If no autocorrelation exists in any phase, but a trend exists,") 
-  writeLines("use the TauU or G-index test.")
-  writeLines("***********************************************************************")
+  
   writeLines(" ")
   writeLines(l1)
   writeLines(l2)
@@ -158,7 +167,8 @@ cat(sprintf(as.character (rvalue)),"\n")
   writeLines("****************************************************")
  
   #dev.off()
-  par(mar = rep(2, 4))
+  #par(mar = rep(2, 4))
+  layout(rbind(1,2), heights=c(6,1))
 sim_plot(CD, SE, alpha = 0.05, df =totaln, n.sims = 10000,gg=F)
  
   
@@ -197,4 +207,4 @@ sim_plot(CD, SE, alpha = 0.05, df =totaln, n.sims = 10000,gg=F)
   write.csv(out,file = file.choose(new = TRUE),row.names=FALSE)}
   
   
-}
+}}

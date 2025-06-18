@@ -22,7 +22,7 @@ while (j <= np){
 }
 
 #graphics.off()
-layout(rbind(1,2), heights=c(4,1))
+layout(rbind(1,2), heights=c(6,1))
 ts.plot(y, ylim=c(0,max),xlim=c(0,numx),col="red", xlab=ABxlab, ylab=ABylab, main=ABmain )
 
 

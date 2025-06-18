@@ -1,6 +1,14 @@
 regbelow <-
 function(behavior,phaseX, v1,v2){
-  t1<-table(phaseX)
+  options (scipen=999)
+  options(warn=-1)
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Chi-square Reg below for behavior",'"',DV,'"')
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
+   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
   endA<-tmaxA+startA-1
@@ -160,4 +168,4 @@ function(behavior,phaseX, v1,v2){
   plot.new()
   legend("center", c("regression line"), lty=c("dashed"), col = c("blue"), lwd = 1,ncol=2,bty ="n") 
   
-}
+  options(warn=-0)}

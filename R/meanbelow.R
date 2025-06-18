@@ -1,6 +1,13 @@
 meanbelow <-
 function (behavior,phaseX,v1,v2) {
-  medianab<-tapply(behavior,phaseX,mean)
+  options (scipen=999)
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Chi-square mean below for behavior",'"',DV,'"',":")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
+   medianab<-tapply(behavior,phaseX,mean)
   medianx= medianx=medianab[names(medianab)==v1]
   dzone<-behavior < medianx
   tm<-table(dzone,phaseX) 

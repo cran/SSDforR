@@ -48,6 +48,12 @@ function(behavior,phaseX,v1,v2){
   
   PND<-c("PND Above = ",as.character(round(p,2)))
   #print(PND)
+ 
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("PND above for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
   writeLines(" ")
   cat(sprintf(PND),"\n") 
   writeLines("-------------------------------------------")

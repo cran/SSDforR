@@ -48,6 +48,12 @@ function(behavior,phaseX,v1,v2){
   
   PEM<-c("PEM Above = ",as.character(round(p,2)))
   writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("PEM above for behavior",'"',DV,'"')
+  writeLines(" ")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
   cat(sprintf(PEM),"\n") 
   #print(PEM)
   writeLines("-------------------------------------------")
@@ -56,7 +62,7 @@ function(behavior,phaseX,v1,v2){
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
   #graphics.off()
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PEM" )
   

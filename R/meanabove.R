@@ -1,5 +1,12 @@
 meanabove <-
 function (behavior,phaseX,v1,v2) {
+  options (scipen=999)
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
+  
+  l1<-c("Chi-square mean above for behavior",'"',DV,'"')
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
   medianab<-tapply(behavior,phaseX,mean)
   medianx=medianab[names(medianab)==v1]
   dzone<-behavior > medianx

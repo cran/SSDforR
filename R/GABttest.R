@@ -9,7 +9,12 @@ function(behavior,phaseX,timeX,v1,v2){
   writeLines("use the CDC, regabove, or regbelow test.")
   c<-readline("(c)ontinue or (e)exit and press return (c or e) ")
   if (c=="c"|c=="C") {
-  t1<-table(phaseX)
+    writeLines(" ")
+    DV<-( paste(substitute(behavior)) )
+    l1<-c("t-test analysis for behavior",'"',DV,'"')
+    cat(sprintf(l1),"\n")
+    writeLines(" ")
+     t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
   endA<-tmaxA+startA-1
@@ -49,7 +54,7 @@ function(behavior,phaseX,timeX,v1,v2){
     cat(sprintf(note2),"\n")
   }
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   barplot(Means,ylab="mean",names.arg=c(v1,v2))
   
   }

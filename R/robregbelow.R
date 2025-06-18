@@ -1,6 +1,12 @@
 robregbelow <-
 function(behavior,phaseX, v1,v2){
+  options (scipen=999)
+  writeLines(" ")
+  DV<-( paste(substitute(behavior)) )
   
+  l1<-c("Chi-square Robust below for behavior",'"',DV,'"',":")
+  cat(sprintf(l1),"\n")
+  writeLines(" ")
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -145,7 +151,7 @@ function(behavior,phaseX, v1,v2){
   
   #graphics.off()
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="Regression Line" )
   
   abline(reg=regA,col='Blue',lty="dashed")

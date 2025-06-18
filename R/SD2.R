@@ -44,7 +44,7 @@ function(behavior,phaseX,v1,ABxlab,ABylab, ABmain){
   }
   
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(x,y,type="o",ylim=c(min,max),col="red",xlab=ABxlab,ylab=ABylab,main=ABmain,bty="l")
   
   abline(h=meanA,col="green",lwd=3)

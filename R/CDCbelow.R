@@ -72,7 +72,12 @@ function(behavior,phaseX,v1,v2){
   trues<-data.frame(nbelowline,nbelowmean)
   ntrue<-sum(trues$nbelowline=="TRUE" & trues$nbelowmean=="TRUE")
   
-  lin1<-c("needed=", as.character(needed),"TRUE=",as.character(ntrue))
+  DV<-( paste(substitute(behavior)) )
+   lin1<-c("For behavior",'"',DV,'"',"needed =", as.character(needed),"TRUE =",as.character(ntrue))
+  
+  
+ 
+  
   
   writeLines(" ")
   cat(sprintf(lin1),"\n") 
@@ -91,9 +96,9 @@ function(behavior,phaseX,v1,v2){
    if (ntrue < needed){
     writeLines ("Note: Results indicate a non-significant difference between the phases.")
     writeLines ("      The number TRUE is less than the number needed.")}
-  graphics.off()
+  #graphics.off()
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC Below" )
   
   abline(h=(meanA),col="green")

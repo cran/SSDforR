@@ -61,8 +61,13 @@ function(behavior,phaseX,timeX,v1){
   #l1=c("tf2=",round(tf2,3))
   #print(l1)
   writeLines(" ")
-  writeLines("------------------------------------Autocorrelation----------------------------")
-  cat(sprintf(l1),"\n") 
+  
+  DV<-( paste(substitute(behavior)) )
+  writeLines(" ")
+  l5<-c("---------------------------Autocorrelation for behavior",'"',DV,'"',"in the", v1, "phase---------")
+  cat(sprintf(l5),"\n") 
+  #writeLines("------------------------------------Autocorrelation----------------------------")
+  #cat(sprintf(l1),"\n") 
   
   #l2=c("rf2=",round(rf2,3))
   #print(l2)
@@ -105,7 +110,7 @@ function(behavior,phaseX,timeX,v1){
   BetaA<-regA$coefficient[2]
   
   
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab="behavior", main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   
