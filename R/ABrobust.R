@@ -34,12 +34,13 @@ function(behavior,phaseX,v1,v2){
   layout(rbind(1,2), heights=c(6,1))
   par(mfrow=c(1,2))
   
-  plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab="behavior", bty='L',main=v1 )
+  DV<-( paste(substitute(behavior)) )
+  plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab=c(DV,"behavior"), bty='L',main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
-  plot(x2,B,lwd=2,type="o",col="green", xlab="time", ylab="",bty='L', main=v2 )
+  plot(x2,B,lwd=2,type="o",col="green", xlab="time", ylab=c(DV,"behavior"),bty='L', main=v2 )
   abline(c(yB,BetaB),col='Blue',lty="dashed")
   writeLines(" ")
-  DV<-( paste(substitute(behavior)) )
+  
   
   l1<-c("Robust regression for behavior",'"',DV,'"',"in the", v1, "phase")
   

@@ -63,7 +63,7 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
     x<-insert(x,NA,e)
     j=j+1
   }
-  layout(rbind(1,2), heights=c(4,1))
+  layout(rbind(1,2), heights=c(6,1))
   
   plot(x,y,ylim=c(miny,maxy),type="o",col="red",bty='L',xlab=ABxlab,ylab=ABylab,main=ABmain)
   
@@ -71,15 +71,10 @@ function(behavior,phaseX,v1,bandX,ABxlab,ABylab, ABmain){
   abline(h=Uband,col="blue")
   abline(h=Lband,col="orange")
   
-  #par(mar=c(1, 1, 1, 1))
-  #plot.new()
-  #legend("center", c("behavior","Uband","mean","Lband"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
+  
   puband<-c("Uband=",Uband)
   pmean<-c("mean=",round(bmean,2))
   plband<-c("Lband=",Lband)
-  #print(puband)
-  #print(pmean)
-  #print(plband)
   writeLines(" ")
   tprint<-c("Key:",puband,pmean,plband)
   cat(sprintf(tprint),"\n")

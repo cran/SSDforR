@@ -10,9 +10,9 @@ SPCline<-function(){
   # swap=l1$y
   #  if(check==TRUE) {l1$y=l$y;l$y=swap} 
   
+  segments(x0=l$x,y0=l$y,y1=l1$y)
   
-  
-  segments(x0=l$x,y0=l$y,y1=rep(l$y:l1$y))
+  #segments(x0=l$x,y0=l$y,y1=rep(l$y:l1$y))
   
  
   u<-readline("accept line? (y/n) ")

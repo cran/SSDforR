@@ -49,12 +49,12 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  
+  DV<-( paste(substitute(behavior)) )
   
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="IRD" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab=c(DV,"behavior"), main="IRD" )
   
  # writeLines("Find the smallest number of data points you need to remove to eliminate all overlap /ties between phases.")
   #writeLines(" ")
@@ -79,7 +79,7 @@ function(behavior,phaseX,v1,v2){
   IRDP=c("Est =", round(IRD2,2),"%%")
   #ci<-NAP(A_data = A, B_data = B, SE = "Hanley")
   writeLines(" ")
-  DV<-( paste(substitute(behavior)) )
+  
   
   l1<-c("IRD above for behavior",'"',DV,'"')
   writeLines(" ")

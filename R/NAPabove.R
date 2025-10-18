@@ -49,12 +49,12 @@ function(behavior,phaseX,v1,v2){
   
   
   
-  
+  DV<-( paste(substitute(behavior)) )
   
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="NAP" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab=c(DV,"behavior"), main="NAP Above" )
   
  # writeLines("Find the smallest number of data points you need to remove to eliminate all overlap /ties between phases.")
   #writeLines(" ")
@@ -83,7 +83,7 @@ function(behavior,phaseX,v1,v2){
   napCIU<-nap1[[5]]
   writeLines(" ")
   writeLines(" ")
-  DV<-( paste(substitute(behavior)) )
+  
   
   l1<-c("NAP above for behavior",'"',DV,'"')
   writeLines(" ")

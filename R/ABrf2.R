@@ -1,5 +1,6 @@
 ABrf2 <-
 function(behavior,phaseX,v1){
+  DV<-( paste(substitute(behavior)) )
   maxy=which.max(behavior)
   max<-behavior[maxy]+2
   miny=which.min(behavior)
@@ -102,7 +103,7 @@ sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
   BetaA<-regA$coefficient[2]
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
-  plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab="behavior", main=v1 )
+  plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab=c(DV,"behavior"), main=c(v1,"Phase" ))
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   writeLines("-----------------------------------------")
   KendalA<-MannKendall(A)

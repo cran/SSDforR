@@ -1,6 +1,6 @@
 PEMbelow <-
 function(behavior,phaseX,v1,v2){
-  
+  DV<-( paste(substitute(behavior)) )
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -49,7 +49,7 @@ function(behavior,phaseX,v1,v2){
   PEM<-c("PEM Below = ",as.character(round(p,2)))
   #print(PND)
   writeLines(" ")
-  DV<-( paste(substitute(behavior)) )
+  
   
   l1<-c("PEM below for behavior",'"',DV,'"')
   writeLines(" ")
@@ -62,9 +62,9 @@ function(behavior,phaseX,v1,v2){
   writeLines(".50 to .69 = debatable effectiveness")
   writeLines(" below .50 = not effective")
   #graphics.off()
-  layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PEM" )
+  layout(rbind(1,2), heights=c(6,1))
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab=c(DV,"behavior"), main="PEM Below" )
   
   abline(h=medianA,col="gray",lwd=3)
   

@@ -13,7 +13,7 @@ function(behavior,phaseX,v,d){
   layout(rbind(1,2), heights=c(6,1))
   
   par(mfrow=c(1,2))
-  
-  plot.ts(tsx,xlab="time", ylab="behavior")
-  plot.ts(tsdiff,xlab="time", ylab="difference of behavior")
+  DV<-( paste(substitute(behavior)) )
+  plot.ts(tsx,xlab="time", ylab=c("difference of behavior",DV))
+  plot.ts(tsdiff,xlab="time", ylab=c("difference of behavior",DV))
 }

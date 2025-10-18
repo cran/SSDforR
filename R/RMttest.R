@@ -1,14 +1,8 @@
-ABttest <-
+RMttest <-
 function(behavior,phaseX, v1,v2){
  options (scipen=999)
   options(warn=-1)
-   writeLines(" ")
-  writeLines("Note: the t-test is unreliable if any phase is autocorrelated or has a trend.")
-  writeLines("Use the CDC test if any phase is autocorrelated.")
-  writeLines("If no autocorrelation exists in any phase, but a trend exists,") 
-  writeLines("use the CDC, regabove, or regbelow test.")
-  c<-readline("(c)ontinue or (e)xit and press return (c or e) ")
-  if (c=="c"|c=="C") {
+  
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -59,5 +53,5 @@ writeLines(" ")
     cat(sprintf(note2),"\n")
   }
  
-  }
+  
   options(warn=-0)  }

@@ -17,9 +17,8 @@ function(behavior,phaseX,v1,v2){
   r2A<-summary(regA)$r.squared
   r2A<-sqrt(r2A)
   writeLines(" ")
-  writeLines(" ")
   DV<-( paste(substitute(behavior)) )
-  
+ 
   l1<-c("Regression for behavior",'"',DV,'"',"in the", v1, "phase")
   
   cat(sprintf(l1),"\n")
@@ -34,7 +33,7 @@ function(behavior,phaseX,v1,v2){
   #writeLines("-----------------Mann-Kendall Trend Test and Sen's Regression-------------------------")
   print(KendalA)
   writeLines("--------------------------------------------------------------------------------------")
-  writeLines("")
+ # writeLines("")
   
  # writeLines("----------------- Intervention------------------") 
 
@@ -68,16 +67,26 @@ function(behavior,phaseX,v1,v2){
   writeLines("--------------------------------------------------------------------------------------")
   
   layout(rbind(1,2), heights=c(6,1))
-  par(mfrow=c(1,2))
+  par(mfrow=c(2,2))
   
   
-  plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab="behavior", bty='L',main=v1 )
+  
+  plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab=c(DV,"behavior"), bty='L',main=c(v1,"Phase" ))
   abline(c(yA,BetaA),col='Blue',lty="dashed")
-  plot(x2,B,lwd=2,type="o",col="green", xlab="time", ylab="",bty='L', main=v2 )
+  
+  
+  
+   plot(x2,B,lwd=2,type="o",col="green", xlab="time", ylab=c(DV,"behavior"),bty='L', main=c(v2,"Phase" ))
   abline(c(yB,BetaB),col='Blue',lty="dashed")
  
+  par(mar=c(.4, .4, .4, .4))
+ plot.new()
   
+  legend("topright", c("behavior","regression line"), col = c("red","blue"),lty = c("solid","dashed"), lwd = 1,ncol=2,bty ="o",cex=.8) 
   
  
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))
+  par(mfrow=c(1,2))
  
 }

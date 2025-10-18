@@ -152,11 +152,14 @@ function(behavior,phaseX, v1,v2){
   #graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="Regression Line" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab=c(DV,"behavior"), main="Robust Regression Below Line" )
   
   abline(reg=regA,col='Blue',lty="dashed")
-  par(mar=c(1, 1, 1, 1))
-  plot.new()
-  legend("center", c("regression line"),lty=c("dashed"), col = c("blue"), lwd = 1,ncol=2,bty ="n") 
   
+  
+  par(mar=c(.5, .5, .5, .5))
+  plot.new()
+  legend("center", c("behavior","regression line"), col = c("red","blue"),lty = c("solid","dashed"), lwd = 1,ncol=2,bty ="n")
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))
 }

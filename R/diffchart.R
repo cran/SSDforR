@@ -34,17 +34,19 @@ function(behavior,phaseX,v1){
   mindiff=mindiff-2
   maxdiff=maxdiff+2
  
-
+  DV<-( paste(substitute(behavior)) )
   #graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(diff,ylim=c(mindiff,max),type="l",col="red",bty='L',lty=2,main="Difference Chart")
+  plot(diff,ylim=c(mindiff,max),type="l",col="red",bty='L',lty=2,ylab=c(DV,"behavior"),main="Difference Chart")
   lines(A,ylim=c(min,max),type="l",col="blue")
-  par(mar=c(1, 1, 1, 1))
+  par(mar=c(.5, .5, .5, .5))
+  
   plot.new()
-  legend("center", c("diff","Behavior"), col = c("red", "blue"), lty=c(2,1),lwd = 1,ncol=2,bty ="n")
-        
+  legend("center", c("diff",c(DV)), col = c("red", "blue"), lty=c(2,1),lwd = 1,ncol=2,bty ="o",cex=.8)
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))     
   diff=c(diff,NA)
   behavior=c(A,NA)
   

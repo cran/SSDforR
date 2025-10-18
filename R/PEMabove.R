@@ -1,6 +1,6 @@
 PEMabove <-
 function(behavior,phaseX,v1,v2){
-  
+  DV<-( paste(substitute(behavior)) )
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
@@ -48,7 +48,7 @@ function(behavior,phaseX,v1,v2){
   
   PEM<-c("PEM Above = ",as.character(round(p,2)))
   writeLines(" ")
-  DV<-( paste(substitute(behavior)) )
+  
   
   l1<-c("PEM above for behavior",'"',DV,'"')
   writeLines(" ")
@@ -64,7 +64,7 @@ function(behavior,phaseX,v1,v2){
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PEM" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab=c(DV,"behavior"), main="PEM Above" )
   
   abline(h=medianA,col="gray",lwd=3)
   

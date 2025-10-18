@@ -24,7 +24,7 @@ function(behavior,phaseX,v1){
   
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
-  plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab="behavior", main=v1 )
+  plot(x1, A,lwd=2,type="o",col="red", xlab="time", ylab=c(DV,"behavior"), main=v1 )
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   print(summary(regA))
   

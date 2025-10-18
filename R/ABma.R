@@ -1,24 +1,26 @@
 ABma <-
 function(behavior,phaseX,v1){
- 
+  DV<-( paste(substitute(behavior)) )
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
   startA<-match(v1,phaseX)
   endA<-tmaxA+startA-1
   A<-behavior[startA:endA]
   t<-SMA(A,n=2)
-  graphics.off()
+  #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(A, lwd=2,type="l",col="blue", xlab="Time", ylab="behavior", bty='L',main="Moving Average  Plot" )
+  plot(A, lwd=2,type="l",col="blue", xlab="Time", ylab=c(DV,"behavior"), bty='L',main="Moving Average  Plot" )
   
   lines(t,lwd=2,type="l",col="red",lty=2 )
-  par(mar=c(1, 1, 1, 1))
-  plot.new()
-  legend("center", c("MA","Behavior"), col = c("red", "blue"),lty=c(2,1), lwd = 1,ncol=2,bty ="n")
-  behavior=c(A,NA)
+par(mar=c(.5, .5, .5, .5))
   
+plot.new()
+  legend("center", c("MA",DV), col = c("red", "blue"),lty=c(2,1), lwd = 1,ncol=2,bty ="o",cex=.8)
+  behavior=c(A,NA)
  
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))
   ma<-c(t,NA)
   endA=length(t)
   phase <- rep(v1, endA-1)

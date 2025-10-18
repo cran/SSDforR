@@ -55,7 +55,7 @@ function(behavior,phaseX,timeX,v1,v2){
   }
   
   layout(rbind(1,2), heights=c(6,1))
-  barplot(Means,ylab="mean",names.arg=c(v1,v2))
+  barplot(Means,ylab=c(DV,"behavior"),names.arg=c(v1,v2),xlab="phase",main="Mean Difference")
   
   }
   options(warn=-0)

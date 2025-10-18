@@ -34,8 +34,8 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   max=Uband+.3
   xmax<-length(p)+1
   
-  #graphics.off()
-  plot.new()
+ 
+ 
   layout(rbind(1,2), heights=c(6,1))
  plot(x,p,ylim=c(min,max),xlim=c(1,xmax),type="o",col="red",bty='L',main=ABmain,xlab=ABxlab,ylab=ABylab)
   
@@ -43,15 +43,16 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   abline(h=Uband,col="blue")
   abline(h=Lband,col="orange")
   
-  #par(mar=c(1, 1, 1, 1))
-  #plot.new()
-  #legend("center", c("behavior","Uband","mean","Lband"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
+ 
   
   puband<-c("Uband=",round(Uband,3))
   pmean<-c("mean= ",round(meanA,3))
   plband<-c("Lband=",round(Lband,3))
-  print(puband)
-  print(pmean)
-  print(plband)
+  writeLines(" ")
+  tprint<-c("Key:",puband,pmean,plband)
+  cat(sprintf(tprint),"\n") 
   
+  ab<-NULL
+  
+  ab<<-recordPlot()
 }

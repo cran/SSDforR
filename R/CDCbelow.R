@@ -99,12 +99,13 @@ function(behavior,phaseX,v1,v2){
   #graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
-  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="CDC Below" )
+  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab=c(DV,"behavior"), main="CDC Below" )
   
   abline(h=(meanA),col="green")
   abline(a=yA,b=BetaA,col='Blue',lty="dashed")
-  par(mar=c(1, 1, 1, 1))
+  par(mar=c(.5, .5, .5, .5))
   plot.new()
-  legend("center", c("Adj. regression line","Adj. mean line"), col = c("blue","green"), lwd = 1,ncol=2,bty ="n")  
- 
+  legend("center", c("Adj. regression line","Adj. mean line"), col = c("blue","green"),lty = c("dashed" ,"solid"), lwd = 1,ncol=2,bty ="o",cex=.8)  
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))
 }

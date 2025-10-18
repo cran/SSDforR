@@ -1,6 +1,6 @@
 RobustCDCabove <-
 function(behavior,phaseX,v1,v2){
-  
+  DV<-( paste(substitute(behavior)) )
   nsucces=c(0,0,0,0,5,6,6,7,8,8,9,9,10,11,12,12,12,13,13,14,14,15,15,17,17,18,18,19,19,20,20,21,22,23,23,24,24,25,25,26,27,27,28,28,29,29,30,31,31,32)
   t1<-table(phaseX)
   tmaxA<-t1[names(t1)==v1]
@@ -78,7 +78,7 @@ function(behavior,phaseX,v1,v2){
   
   needed=nsucces[tmaxB]
   
-  DV<-( paste(substitute(behavior)) )
+ 
   lin1<-c("For behavior",'"',DV,'"',"needed =", as.character(needed),"TRUE =",as.character(ntrue))
   
   
@@ -102,12 +102,13 @@ function(behavior,phaseX,v1,v2){
  # graphics.off()
   
   layout(rbind(1,2), heights=c(6,1))
-  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab="behavior", main="Robust CDC Above" )
+  plot(iv,cdcl, ylim=c(min,max),lwd=2,type="o",col="red", bty="l",xlab="time", ylab=c(DV,"behavior"), main="Robust CDC Above" )
   
   abline(h=(meanA),col="green")
   abline(a=yA,b=BetaA,col='Blue',lty="dashed")
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("Adj. regression line","Adj. mean line"), col = c("blue","green"), lwd = 1,ncol=2,bty ="n")  
- 
+  legend("center", c("Adj. regression line","Adj. mean line"), col = c("blue","green"),lty=c("dashed" ,"solid"), lwd = 1,ncol=2,bty ="o",cex=.8)  
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))
 }

@@ -33,12 +33,12 @@ function(behavior,phaseX,v1,v2){
   maxy=which.max(behavior)
   
   max<-behavior[maxy]+1
-  
+  DV<-( paste(substitute(behavior)) )
   numx<-sum(!is.na(behavior))+3
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="PAND" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab=c(DV,"behavior"), main="PAND Above" )
   #yo<-readline("Y ordinate for your reference line  " )
   yo=max(A)-.1
   abline(h=yo,col="gray",lwd=3)
@@ -74,7 +74,7 @@ function(behavior,phaseX,v1,v2){
   
   #print(PAND)
   pand=PAND(A_data = A, B_data = B,improvement="increase")
-  DV<-( paste(substitute(behavior)) )
+  
   
   l1<-c("PAND above for behavior",'"',DV,'"')
   writeLines(" ")

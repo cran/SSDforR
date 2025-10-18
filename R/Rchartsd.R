@@ -59,9 +59,9 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   if (f2==TRUE)
   {miny=Lband-2}
   
-  graphics.off()
  
-  
+ 
+  layout(rbind(1,2), heights=c(6,1))
   
   plot(x,p,ylim=c(miny,maxy),xlim=c(1,xmax),type="o",col="red",bty='L',main=ABmain,xlab=ABxlab,ylab=ABylab)
   
@@ -71,7 +71,7 @@ function(behavior,groupX,bandX,ABxlab,ABylab, ABmain){
   
   #par(mar=c(1, 1, 1, 1))
   
-  layout(rbind(1,2), heights=c(4,1))
+  
   #legend("center", c("behavior","Uband","mean","Lband"), col = c("red","blue", "green","orange"), lwd = 1,ncol=4,bty ="n")
   
   puband<-c("Uband=",round(Uband,3))

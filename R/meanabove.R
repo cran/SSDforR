@@ -39,9 +39,12 @@ function (behavior,phaseX,v1,v2) {
   print(f1)
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
-  plot(behavior,col="red",type="o")
+  plot(behavior,col="red",type="o",xlab="time",ylab=c(DV,"behavior"),main="Mean Above")
   abline(h=medianx,col="green")
   par(mar=c(1, 1, 1, 1))
   plot.new()
-  legend("center", c("behavior","mean"), col = c("red","green"), lwd = 1,ncol=2,bty ="n")
+  
+  legend("center", c("behavior","mean"), col = c("red","green"), lwd = 1,ncol=2,bty ="o",cex=.8)  
+  par(mar = c(5.1, 4.1, 4.1, 2.1))
+  layout(rbind(1,2), heights=c(6,1))
 }

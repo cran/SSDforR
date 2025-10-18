@@ -134,13 +134,16 @@ function(behavior,phaseX,v1,v2){
   #graphics.off()
   layout(rbind(1,2), heights=c(6,1))
   
-  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab="behavior", main="g-index" )
+  plot(iv,cdcl, ylim=c(0,max),lwd=2,type="o",col="red",bty="l", xlab="time", ylab=c(DV,"behavior"), main="g-index" )
   
   abline(reg=regA,col='blue',lty="dotted",lwd=3)
-  abline(h=meanA,col="gray",lwd=2)
+  abline(h=meanA,col="gray",lty="dashed",lwd=2)
 
   abline(h=medianA,col='black',lwd=2)
-  par(mar=c(1, 1, 1, 1))
-  #plot.new()
-  legend("top", c("median","mean","regression line"), col = c("black","gray","blue"), lty=c("solid","solid","dotted"),lwd = 3,ncol=3,bty ="n")
-}
+  par(mar=c(.5, .5, .5, .5))
+  plot.new()
+
+    legend("center", c("median","mean","regression line"), col = c("black","gray","blue"), lty=c("solid","dashed","dotted"),lwd = 3,ncol=3,bty ="o",cex=.8)
+    par(mar = c(5.1, 4.1, 4.1, 2.1))
+    layout(rbind(1,2), heights=c(6,1))
+    }

@@ -111,7 +111,7 @@ function(behavior,phaseX,timeX,v1){
   
   
   layout(rbind(1,2), heights=c(6,1))
-  plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab="behavior", main=v1 )
+  plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab=c(DV,"behavior"), main=c(v1,"Phase" ))
   abline(c(yA,BetaA),col='Blue',lty="dashed")
   
 }

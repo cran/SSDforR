@@ -37,7 +37,8 @@ function(behavior,phaseX,v,l){
   
   #l<-locator(1)
   mlin<-l+mlin
-  segments(x0=l,x1=mlin,y0=iqr1,col="black",lty=2,lwd=3)
+  #segments(x0=l,x1=mlin,y0=iqr1,col="black",lty=2,lwd=3)
+  segments(x0=l,x1=mlin,y0=iqr1,col="black",lwd=3)
   #l<-locator(1)
  
  u<-readline("accept line? (y/n) ")

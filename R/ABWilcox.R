@@ -56,6 +56,6 @@ function(behavior,phaseX, v1,v2){
   print(u)
  
   layout(rbind(1,2), heights=c(6,1))
-  boxplot(behavior~phaseX,xlab="Phase")
+  boxplot(behavior~phaseX,xlab="phase",ylab=c(DV,"Behavior"),main="Wilcoxon Rank Sum Test")
   }  
   options(warn=-0)}

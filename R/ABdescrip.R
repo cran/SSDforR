@@ -168,6 +168,7 @@ writeLines(" ")
     
     
     layout(rbind(1,2), heights=c(6,1))
-    boxplot(behavior~PhaseX,xlab="Phase")
+    boxplot(behavior~PhaseX,xlab="Phase",ylab=c(DV,"behavior"))
+    #boxplot(behavior~PhaseX,xlab="Phase")
     options(warn=-0)
   }
