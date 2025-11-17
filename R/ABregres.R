@@ -24,7 +24,7 @@ function(behavior,phaseX,v1,v2){
   cat(sprintf(l1),"\n")
   #writeLines("-----------------Baseline------------------")
   print(summary(regA))
-  KendalA<-MannKendall(A)
+  #KendalA<-MannKendall(A)
   
   KendalA<-mmky1lag(A)
   ls1<-c("Mann-Kendall Trend Test and Sen's Regression for behavior",DV,"in the", v1, "phase")

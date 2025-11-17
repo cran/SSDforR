@@ -37,7 +37,7 @@ function(behavior,phaseX,v1){
    print(summary(regA))
   
   
-  KendalA<-MannKendall(A)
+  
   
   KendalA<-mmky1lag(A)
   

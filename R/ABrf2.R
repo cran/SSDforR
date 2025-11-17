@@ -105,8 +105,15 @@ sig1<-pt(abs(tf2),df=dfx,lower.tail=FALSE)*2
   layout(rbind(1,2), heights=c(6,1))
   plot(x1,A,lwd=2,type="p",col="red", xlab="time", ylab=c(DV,"behavior"), main=c(v1,"Phase" ))
   abline(c(yA,BetaA),col='Blue',lty="dashed")
-  writeLines("-----------------------------------------")
-  KendalA<-MannKendall(A)
-  print(KendalA)
+  
+  KendalA<-mkttest(A)
+  
+
+ pvalue<-as.character(round(KendalA[5],4))
+  Ptau<-as.character(round(KendalA[6],4))
+  
+ Kendal<-c("tau=",Ptau,"pvalue=",pvalue)
+ writeLines("-----------------------------------------")
+ cat(sprintf(Kendal),"\n")
   writeLines(" ")
 }
