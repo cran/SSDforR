@@ -65,7 +65,7 @@ function(behavior,phaseX,v1,v2){
     writeLines("Your data does not have a statistically significant baseline trend...use Tau-U.")
   }
   writeLines(" ")
-  writeLines("*********************** baseline-corrected Tau index (Tarlow 2017)")
+  writeLines("*********************** baseline-corrected Tau-BC index (Tarlow 2017)")
   writeLines(" ")
   taubc<-Tau_BC(A_data = A, B_data = B,improvement="decrease")
   print(taubc)

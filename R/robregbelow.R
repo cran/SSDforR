@@ -75,7 +75,7 @@ function(behavior,phaseX, v1,v2){
   nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) below the rgression line in the intervention.")
   
   
-  colnames (ctbl)<-c("Baselene", "Intervention")
+  colnames (ctbl)<-c("Baseline", "Intervention")
   
   writeLines(" ")
   writeLines("Note: Intervention TRUE values below the regression line are desired")

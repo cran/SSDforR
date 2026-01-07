@@ -13,7 +13,7 @@ function (behavior,phaseX,v1,v2) {
   tm<-table(dzone,phaseX) 
   ctbl<-cbind(tm[,v1],tm[,v2])
   num<-ctbl[4]
-  colnames (ctbl)<-c("Baselene", "Intervention")
+  colnames (ctbl)<-c("Baseline", "Intervention")
   pre<-(prop.table(ctbl,2)*100)
   numpre<-pre[4]
   nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) above the mean line in the intervention.")

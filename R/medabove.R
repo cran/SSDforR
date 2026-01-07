@@ -21,7 +21,7 @@ function (behavior,phaseX,v1,v2) {
   numpre<-pre[4]
   nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) above the median line in the intervention.")
   
-  colnames (ctbl)<-c("Baselene", "Intervention")
+  colnames (ctbl)<-c("Baseline", "Intervention")
   
   writeLines(" ")
   writeLines("Note: Intervention TRUE value(s) above the median line are desired")

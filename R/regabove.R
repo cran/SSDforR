@@ -69,7 +69,7 @@ function(behavior,phaseX, v1,v2){
   numpre<-pre[4]
   nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) above the regression line in the intervention.")
   
-  colnames (ctbl)<-c("Baselene", "Intervention")
+  colnames (ctbl)<-c("Baseline", "Intervention")
   #rownames (ctbl)<-c("Above","Below")
   writeLines(" ")
   writeLines("Note: Intervention TRUE values above the regression line are desired")

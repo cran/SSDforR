@@ -15,7 +15,7 @@ function (behavior,phaseX,v1,v2) {
   
  
   num<-ctbl[4]
-  colnames (ctbl)<-c("Baselene", "Intervention")
+  colnames (ctbl)<-c("Baseline", "Intervention")
   pre<-(prop.table(ctbl,2)*100)
   numpre<-pre[4]
   nl<-c("There are", as.character(num),"value(s)","(",as.character(round(numpre,2)), "percent) below the trim mean line in the intervention.")

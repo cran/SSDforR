@@ -16,7 +16,7 @@ function (behavior,phaseX,v1,v2) {
   ctbl<-cbind(tm[,v1],tm[,v2])
   ctbl<-as.table(ctbl)
   
-  colnames (ctbl)<-c("Baselene", "Intervention")
+  colnames (ctbl)<-c("Baseline", "Intervention")
   
   num<-ctbl[4]
   pre<-(prop.table(ctbl,2)*100)
